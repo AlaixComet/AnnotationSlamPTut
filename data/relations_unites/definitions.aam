@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<annotationModel>
+	
+	<units>
+		<type name="Segment1">
+			<featureSet>
+				<feature name="Unite1">
+					<value type="free" default="" />
+				</feature>	
+			</featureSet> 
+		</type>
+		<type name="Segment1bis">
+			<featureSet>
+				<feature name="Unite2">
+					<value type="free" default="" />
+				</feature>	
+			</featureSet> 
+		</type>
+		<type name="Segment2">
+			<featureSet>
+				<feature name="Unite1">
+					<value type="free" default="" />
+				</feature>	
+			</featureSet> 
+		</type>
+		<type name="Segment2bis">
+			<featureSet>
+				<feature name="Unite1">
+					<value type="free" default="" />
+				</feature>	
+			</featureSet> 
+		</type>
+	</units>
+	
+	<relations>
+	
+		<type name="Narration" oriented="true">
+		</type>
+
+		<type name="Elaboration descriptive" oriented="true">
+		</type>
+
+		<type name="Elaboration prescriptive" oriented="true">
+		</type>
+
+		<type name="Elaboration evaluative" oriented="true">
+		</type>
+		
+		<type name="Conduite" oriented="true">
+		</type>
+		
+		<type name="Phatique" oriented="true">
+		</type>
+		
+		<type name="Contre-élaboration" oriented="true">
+		</type>
+		
+		<type name="Question" oriented="true">
+		</type>
+		
+		<type name="Réponse" oriented="true">
+		</type>
+		
+		<type name="Méta-question" oriented="true">
+		</type>
+		
+	</relations>
+
+</annotationModel>
+

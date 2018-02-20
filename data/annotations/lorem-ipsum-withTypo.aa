@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotations>
+<unit id="anonymous_-1">
+<metadata>
+<author>anonymous</author>
+<creation-date>-1</creation-date>
+</metadata>
+<characterisation>
+<type>title</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="0"/>
+</start>
+<end>
+<singlePosition index="11"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-2">
+<metadata>
+<author>anonymous</author>
+<creation-date>-2</creation-date>
+</metadata>
+<characterisation>
+<type>subTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="11"/>
+</start>
+<end>
+<singlePosition index="41"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-3">
+<metadata>
+<author>anonymous</author>
+<creation-date>-3</creation-date>
+</metadata>
+<characterisation>
+<type>abstract</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="41"/>
+</start>
+<end>
+<singlePosition index="2091"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-4">
+<metadata>
+<author>anonymous</author>
+<creation-date>-4</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2091"/>
+</start>
+<end>
+<singlePosition index="2113"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-5">
+<metadata>
+<author>anonymous</author>
+<creation-date>-5</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2113"/>
+</start>
+<end>
+<singlePosition index="4163"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-6">
+<metadata>
+<author>anonymous</author>
+<creation-date>-6</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="4163"/>
+</start>
+<end>
+<singlePosition index="6213"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-7">
+<metadata>
+<author>anonymous</author>
+<creation-date>-7</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="6213"/>
+</start>
+<end>
+<singlePosition index="6237"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-8">
+<metadata>
+<author>anonymous</author>
+<creation-date>-8</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="6237"/>
+</start>
+<end>
+<singlePosition index="8287"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-9">
+<metadata>
+<author>anonymous</author>
+<creation-date>-9</creation-date>
+</metadata>
+<characterisation>
+<type>list</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="8287"/>
+</start>
+<end>
+<singlePosition index="10337"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-10">
+<metadata>
+<author>anonymous</author>
+<creation-date>-10</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="8287"/>
+</start>
+<end>
+<singlePosition index="9258"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-11">
+<metadata>
+<author>anonymous</author>
+<creation-date>-11</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="9258"/>
+</start>
+<end>
+<singlePosition index="10337"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-12">
+<metadata>
+<author>anonymous</author>
+<creation-date>-12</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="10337"/>
+</start>
+<end>
+<singlePosition index="12387"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-13">
+<metadata>
+<author>anonymous</author>
+<creation-date>-13</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="12387"/>
+</start>
+<end>
+<singlePosition index="12411"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-14">
+<metadata>
+<author>anonymous</author>
+<creation-date>-14</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="12411"/>
+</start>
+<end>
+<singlePosition index="14461"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-15">
+<metadata>
+<author>anonymous</author>
+<creation-date>-15</creation-date>
+</metadata>
+<characterisation>
+<type>numberedList</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="14461"/>
+</start>
+<end>
+<singlePosition index="16511"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-16">
+<metadata>
+<author>anonymous</author>
+<creation-date>-16</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="14461"/>
+</start>
+<end>
+<singlePosition index="15432"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-17">
+<metadata>
+<author>anonymous</author>
+<creation-date>-17</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="15432"/>
+</start>
+<end>
+<singlePosition index="16511"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-18">
+<metadata>
+<author>anonymous</author>
+<creation-date>-18</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="16511"/>
+</start>
+<end>
+<singlePosition index="18561"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-19">
+<metadata>
+<author>anonymous</author>
+<creation-date>-19</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="18561"/>
+</start>
+<end>
+<singlePosition index="18585"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-20">
+<metadata>
+<author>anonymous</author>
+<creation-date>-20</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="18585"/>
+</start>
+<end>
+<singlePosition index="20635"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-21">
+<metadata>
+<author>anonymous</author>
+<creation-date>-21</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="20635"/>
+</start>
+<end>
+<singlePosition index="22685"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-22">
+<metadata>
+<author>anonymous</author>
+<creation-date>-22</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="22685"/>
+</start>
+<end>
+<singlePosition index="24735"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-23">
+<metadata>
+<author>anonymous</author>
+<creation-date>-23</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="24735"/>
+</start>
+<end>
+<singlePosition index="24759"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-24">
+<metadata>
+<author>anonymous</author>
+<creation-date>-24</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="24759"/>
+</start>
+<end>
+<singlePosition index="26809"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-25">
+<metadata>
+<author>anonymous</author>
+<creation-date>-25</creation-date>
+</metadata>
+<characterisation>
+<type>list</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="26809"/>
+</start>
+<end>
+<singlePosition index="28859"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-26">
+<metadata>
+<author>anonymous</author>
+<creation-date>-26</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="28859"/>
+</start>
+<end>
+<singlePosition index="30909"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-27">
+<metadata>
+<author>anonymous</author>
+<creation-date>-27</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="30909"/>
+</start>
+<end>
+<singlePosition index="30933"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-28">
+<metadata>
+<author>anonymous</author>
+<creation-date>-28</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="30933"/>
+</start>
+<end>
+<singlePosition index="32983"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-29">
+<metadata>
+<author>anonymous</author>
+<creation-date>-29</creation-date>
+</metadata>
+<characterisation>
+<type>list</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="32983"/>
+</start>
+<end>
+<singlePosition index="35033"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-30">
+<metadata>
+<author>anonymous</author>
+<creation-date>-30</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="35033"/>
+</start>
+<end>
+<singlePosition index="37083"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-31">
+<metadata>
+<author>anonymous</author>
+<creation-date>-31</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="37083"/>
+</start>
+<end>
+<singlePosition index="37107"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-32">
+<metadata>
+<author>anonymous</author>
+<creation-date>-32</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="37107"/>
+</start>
+<end>
+<singlePosition index="39157"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-33">
+<metadata>
+<author>anonymous</author>
+<creation-date>-33</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="39157"/>
+</start>
+<end>
+<singlePosition index="41207"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-34">
+<metadata>
+<author>anonymous</author>
+<creation-date>-34</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="41207"/>
+</start>
+<end>
+<singlePosition index="43257"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-35">
+<metadata>
+<author>anonymous</author>
+<creation-date>-35</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="43257"/>
+</start>
+<end>
+<singlePosition index="43281"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-36">
+<metadata>
+<author>anonymous</author>
+<creation-date>-36</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="43281"/>
+</start>
+<end>
+<singlePosition index="45331"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-37">
+<metadata>
+<author>anonymous</author>
+<creation-date>-37</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="45331"/>
+</start>
+<end>
+<singlePosition index="47381"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-38">
+<metadata>
+<author>anonymous</author>
+<creation-date>-38</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="47381"/>
+</start>
+<end>
+<singlePosition index="49431"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-39">
+<metadata>
+<author>anonymous</author>
+<creation-date>-39</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="49431"/>
+</start>
+<end>
+<singlePosition index="49455"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-40">
+<metadata>
+<author>anonymous</author>
+<creation-date>-40</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="49455"/>
+</start>
+<end>
+<singlePosition index="51505"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-41">
+<metadata>
+<author>anonymous</author>
+<creation-date>-41</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="51505"/>
+</start>
+<end>
+<singlePosition index="53555"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-42">
+<metadata>
+<author>anonymous</author>
+<creation-date>-42</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="53555"/>
+</start>
+<end>
+<singlePosition index="55605"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-43">
+<metadata>
+<author>anonymous</author>
+<creation-date>-43</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="55605"/>
+</start>
+<end>
+<singlePosition index="55630"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-44">
+<metadata>
+<author>anonymous</author>
+<creation-date>-44</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="55630"/>
+</start>
+<end>
+<singlePosition index="57680"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-45">
+<metadata>
+<author>anonymous</author>
+<creation-date>-45</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="57680"/>
+</start>
+<end>
+<singlePosition index="59730"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-46">
+<metadata>
+<author>anonymous</author>
+<creation-date>-46</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="59730"/>
+</start>
+<end>
+<singlePosition index="61780"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-47">
+<metadata>
+<author>anonymous</author>
+<creation-date>-47</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="61780"/>
+</start>
+<end>
+<singlePosition index="61805"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-48">
+<metadata>
+<author>anonymous</author>
+<creation-date>-48</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="61805"/>
+</start>
+<end>
+<singlePosition index="63855"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-49">
+<metadata>
+<author>anonymous</author>
+<creation-date>-49</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="63855"/>
+</start>
+<end>
+<singlePosition index="65905"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-50">
+<metadata>
+<author>anonymous</author>
+<creation-date>-50</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="65905"/>
+</start>
+<end>
+<singlePosition index="67955"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-51">
+<metadata>
+<author>anonymous</author>
+<creation-date>-51</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="67955"/>
+</start>
+<end>
+<singlePosition index="67980"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-52">
+<metadata>
+<author>anonymous</author>
+<creation-date>-52</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="67980"/>
+</start>
+<end>
+<singlePosition index="70030"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-53">
+<metadata>
+<author>anonymous</author>
+<creation-date>-53</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="70030"/>
+</start>
+<end>
+<singlePosition index="72080"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-54">
+<metadata>
+<author>anonymous</author>
+<creation-date>-54</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="72080"/>
+</start>
+<end>
+<singlePosition index="74130"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-55">
+<metadata>
+<author>anonymous</author>
+<creation-date>-55</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="74130"/>
+</start>
+<end>
+<singlePosition index="74155"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-56">
+<metadata>
+<author>anonymous</author>
+<creation-date>-56</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="74155"/>
+</start>
+<end>
+<singlePosition index="76205"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-57">
+<metadata>
+<author>anonymous</author>
+<creation-date>-57</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="76205"/>
+</start>
+<end>
+<singlePosition index="78255"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-58">
+<metadata>
+<author>anonymous</author>
+<creation-date>-58</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="78255"/>
+</start>
+<end>
+<singlePosition index="80305"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-59">
+<metadata>
+<author>anonymous</author>
+<creation-date>-59</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="80305"/>
+</start>
+<end>
+<singlePosition index="80330"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-60">
+<metadata>
+<author>anonymous</author>
+<creation-date>-60</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="80330"/>
+</start>
+<end>
+<singlePosition index="82380"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-61">
+<metadata>
+<author>anonymous</author>
+<creation-date>-61</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="82380"/>
+</start>
+<end>
+<singlePosition index="84430"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-62">
+<metadata>
+<author>anonymous</author>
+<creation-date>-62</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="84430"/>
+</start>
+<end>
+<singlePosition index="86480"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-63">
+<metadata>
+<author>anonymous</author>
+<creation-date>-63</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="86480"/>
+</start>
+<end>
+<singlePosition index="86505"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-64">
+<metadata>
+<author>anonymous</author>
+<creation-date>-64</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="86505"/>
+</start>
+<end>
+<singlePosition index="88555"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-65">
+<metadata>
+<author>anonymous</author>
+<creation-date>-65</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="88555"/>
+</start>
+<end>
+<singlePosition index="90605"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_-66">
+<metadata>
+<author>anonymous</author>
+<creation-date>-66</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="90605"/>
+</start>
+<end>
+<singlePosition index="92655"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1252681247234">
+<metadata>
+<author>awidloch</author>
+<creation-date>1252681247234</creation-date>
+</metadata>
+<characterisation>
+<type>quote</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="21201"/>
+</start>
+<end>
+<singlePosition index="21585"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294234835">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294234835</creation-date>
+</metadata>
+<characterisation>
+<type>quote</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="3245"/>
+</start>
+<end>
+<singlePosition index="3708"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294257976">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294257976</creation-date>
+</metadata>
+<characterisation>
+<type>bold</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="4854"/>
+</start>
+<end>
+<singlePosition index="4887"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294268043">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294268043</creation-date>
+</metadata>
+<characterisation>
+<type>italic</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="5408"/>
+</start>
+<end>
+<singlePosition index="5436"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294360336">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294360336</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="26809"/>
+</start>
+<end>
+<singlePosition index="27604"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294402680">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294402680</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="27605"/>
+</start>
+<end>
+<singlePosition index="28859"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294418108">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294418108</creation-date>
+</metadata>
+<characterisation>
+<type>numberedList</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="27941"/>
+</start>
+<end>
+<singlePosition index="28662"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294444942">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294444942</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="27941"/>
+</start>
+<end>
+<singlePosition index="28404"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294453840">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294453840</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="28405"/>
+</start>
+<end>
+<singlePosition index="28663"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294552027">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294552027</creation-date>
+</metadata>
+<characterisation>
+<type>quote</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="9697"/>
+</start>
+<end>
+<singlePosition index="9988"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294609746">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294609746</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="32983"/>
+</start>
+<end>
+<singlePosition index="34115"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294618409">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294618409</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="34115"/>
+</start>
+<end>
+<singlePosition index="35033"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294635603">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294635603</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="33354"/>
+</start>
+<end>
+<singlePosition index="34115"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294755112">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294755112</creation-date>
+</metadata>
+<characterisation>
+<type>italic</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2366"/>
+</start>
+<end>
+<singlePosition index="2471"/>
+</end>
+</positioning>
+</unit>
+<unit id="awidloch_1253294776305">
+<metadata>
+<author>awidloch</author>
+<creation-date>1253294776305</creation-date>
+</metadata>
+<characterisation>
+<type>bold</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2688"/>
+</start>
+<end>
+<singlePosition index="2700"/>
+</end>
+</positioning>
+</unit>
+</annotations>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<annotationModel>
+
+	<units>
+		<type name="Introduction">
+			<featureSet>
+				<feature name="withPredefinedValues">
+					<possibleValues default="A">
+						<value>A</value>
+						<value>B</value>
+						<value>C</value>
+					</possibleValues>
+				</feature>
+				<feature name="withoutPredefinedValues">
+					<value type="free" default="" />
+				</feature>
+			</featureSet>
+		</type>
+	</units>
+	
+	<relations>
+		<type name="Elaboration">
+			<featureSet>
+				<feature name="withPredefinedValues">
+					<possibleValues default="A">
+						<value>A</value>
+						<value>B</value>
+						<value>C</value>
+					</possibleValues>
+				</feature>
+				<feature name="withoutPredefinedValues">
+					<value type="free" default="" />
+				</feature>
+			</featureSet>
+		</type>
+	</relations>
+	
+	<schemas>
+		<type name="ComplexPattern">
+			<featureSet>
+				<feature name="withPredefinedValues">
+					<possibleValues default="A">
+						<value>A</value>
+						<value>B</value>
+						<value>C</value>
+					</possibleValues>
+				</feature>
+				<feature name="withoutPredefinedValues">
+					<value type="free" default="" />
+				</feature>
+			</featureSet>
+		</type>
+	</schemas>
+	
+</annotationModel>

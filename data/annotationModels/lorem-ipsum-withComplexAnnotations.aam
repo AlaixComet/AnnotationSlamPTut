@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<annotationModel>
+
+	<units>
+		<type name="Nom" groups="Syntaxe">
+			<featureSet>
+				<feature name="genre">
+					<value type="free" default="masculin" />
+				</feature>
+				<feature name="nombre">
+					<value type="free" default="singulier" />
+				</feature>
+			</featureSet>
+		</type>
+
+		<type name="Pronom" groups="Syntaxe, Reference">
+			<featureSet>
+				<feature name="genre">
+					<value type="free" default="masculin" />
+				</feature>
+				<feature name="nombre">
+					<value type="free" default="singulier" />
+				</feature>
+			</featureSet>
+		</type>
+
+		<type name="Verbe" groups="Syntaxe">
+			<featureSet>
+				<feature name="groupe">
+					<value type="free" default="premier" />
+				</feature>
+				<feature name="temps">
+					<value type="free" default="present" />
+				</feature>
+			</featureSet>
+		</type>
+
+		<type name="Phrase" groups="Structure">
+			<featureSet>
+				<feature name="demo">
+					<value type="free" default="" />
+				</feature>			
+			</featureSet>
+		</type>
+		
+		<type name="Paragraphe" groups="Structure">
+			<featureSet>
+				<feature name="taille">
+					<value type="free" default="moyenne" />
+				</feature>
+			</featureSet>
+		</type>
+	</units>
+
+
+	<!-- Ajouter relations de reprise, de selection -->
+	
+	<relations>
+		
+		<type name="Anaphore" oriented="false" groups="Reference">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="demo" />
+				</feature>
+			</featureSet>
+		</type>
+		<type name="Elaboration" oriented="true" groups="Discours">
+			<featureSet>
+				<feature name="demo">
+					<value type="free" default="" />
+				</feature>
+			</featureSet>
+		</type>
+		
+		<type name="sujet" oriented="true" groups="Syntaxe">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="" />
+				</feature>
+			</featureSet>
+		</type>
+
+		<type name="complement" oriented="true" groups="Syntaxe">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="de temps" />
+				</feature>
+			</featureSet>
+		</type>
+		
+	</relations>
+	
+	
+	<schemas>
+		
+		<type name="Schema-Anaphorique" groups="Reference">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="" />
+				</feature>
+			</featureSet>
+		</type>
+		<type name="Schema-Elaboratif" groups="Discours">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="" />
+				</feature>
+			</featureSet>
+		</type>
+
+		<type name="Unite-Discontinue" groups="Syntaxe">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="Nominal" />
+				</feature>
+			</featureSet>
+		</type>
+
+		
+	</schemas>
+	
+</annotationModel>

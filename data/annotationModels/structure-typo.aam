@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<annotationModel>
+
+	<units>
+		<type name="paragraph">
+			<!--
+			<featureSet>
+				<feature name="x">
+					<value type="free" />
+				</feature>
+				<feature name="y">
+					<value type="int" />
+				</feature>
+				<feature name="z">
+					<possibleValues>
+						<value>A</value>
+						<value>B</value>
+					</possibleValues>
+				</feature>
+			</featureSet>
+			-->
+		</type>
+		
+		<type name="title" />
+		
+		<type name="subTitle" />
+		
+		<type name="abstract" />
+		
+		<type name="sectionTitle" />
+		
+		<type name="subSectionTitle" />
+		
+		<type name="subSubSectionTitle" />
+		
+		<type name="subSubSubSectionTitle" />
+		
+		<type name="list" />
+		
+		<type name="numberedList" />
+		
+		<type name="listItem" />
+		
+		<type name="quote" />
+		
+		<type name="bold" />
+		
+		<type name="italic" />
+		
+	</units>
+	
+</annotationModel>

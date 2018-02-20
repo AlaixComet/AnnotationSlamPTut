@@ -1,0 +1,71 @@
+Un exemple de titre
+
+Un exemple de sous-titre
+
+Ici un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé, un résumé.
+
+1 - Un titre de section
+
+Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte.
+
+1.1 - Un titre de sous-section.
+
+Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte.
+
+1.1.1 - Un titre de sous-sous-section.
+
+Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte.
+
+a) Un titre de sous-sous-sous-section.
+
+Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte. Du texte, du texte, toujours du texte.
+
+2 - Gras et italique
+
+Il est possible d'obtenir du gras ou de l'italique
+
+3 - Citations
+
+Les citations sont représentées de la manière suivante:
+
+Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité. Le texte cité.
+
+4 - Listes et énumérations
+
+Il est possible de représenter des listes numérotées ou non.
+
+Un exemple de liste non numérotée:
+
+un item;
+
+un autre item.
+
+Un exemple de liste numérotée:
+
+un item;
+
+un autre item.
+
+Les listes peuvent être imbriquées.
+
+Un item;
+
+un sous-item;
+
+un autre sous-item.
+
+Un autre item.
+
+Un item de liste peut contenir plusieurs paragraphes, des citations...:
+
+Un item;
+
+Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes. Un item contenant plusieurs paragraphes.
+
+Un item contenant une citation. Un item contenant une citation. Un item contenant une citation. Un item contenant une citation. Un item contenant une citation. Un item contenant une citation. Un item contenant une citation. Un item contenant une citation. Un item contenant une citation. Un item contenant une citation. Un item contenant une citation. Un item contenant une citation. Un item contenant une citation. Un item contenant une citation:
+
+La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. La citation. 
+
+Fin de l'item contenant la citation. Fin de l'item contenant la citation. Fin de l'item contenant la citation. Fin de l'item contenant la citation. Fin de l'item contenant la citation. Fin de l'item contenant la citation. Fin de l'item contenant la citation. Fin de l'item contenant la citation. 
+
+

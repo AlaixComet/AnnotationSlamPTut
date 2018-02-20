@@ -1,0 +1,839 @@
+################################################################################
+
+
+                    CHANGELOG version 2.0.1
+
+
+################################################################################
+
+#########################
+Remarques préliminaires :
+#########################
+
+À partir de cette version, se reporter systématiquement aux manuels disponibles sur http://www.glozz.org pour connaître les fonctionnalités disponibles.
+
+################################################################################
+
+1) Passage prochain en open source (licence en cours d'établissement).
+
+2) Mécanisme de plug-ins permettant le développement d'extensions au logiciel sans modifier son noyau. Quiconque peut ainsi développer ses propres plug-ins, et éventuellement les diffuser, en limitant les risques d'incompatibilité. Nous encourageons les développeurs intéressés à privilégier la création de plug-ins plutôt que de modifier directement le noyau (quand cela sera possible). Nous répondrons avec plaisir aux demandes de précisions concernant ces aspects.
+
+3) Nouveau plug-in "Concordancer" offrant une vue de type concordancier. Cette vue synthétique permet de consulter rapidement des unités annotées dans leur contexte, contexte composé de texte mais aussi éventuellement d'autres objets annotés. Un manuel dédié est disponible sur www.glozz.org
+
+4) Généralisation du principe du "Basket" à toute l'application et aux plug-ins. Il permet ainsi de stocker des annotations spécifiquement choisies (à la main, en sortie d'une requête GlozzQL ou via le concordancier), afin de mieux le observer, de les enregistrer dans un fichier spécifique, ou encore de leur affecter automatiquement un couple attribut-valeur. Se reporter au manuel dédié sur www.glozz.org
+
+5) Raccourcis clavier paramétrables (Options/Préférences/Shortcuts) permettant d'annoter rapidement une portion de texte sélectionné avec une unité dont le type et les attributs-valeurs sont indiqués pour un raccourci donné. Par exemple, une fois un segment de texte sélectionné à la souris, la touche "F1" pourra créer une unité de type "Nom", avec le trait "genre" à la valeur "masculin" et le trait nombre à la valeur "singulier", tandis que "F2" pourra être utilisé pour un nom féminin singulier. Ces raccourcis peuvent être sauvergardés et transmis à d'autres utilisateurs, si bien que le responsable de campagne peut délivrer une configuration prête à l'emploi pour tous ses annotateurs.
+
+6) Nouveaux export et import CSV, pour un emploi dans un tableur, et une éventuelle passerelle vers d'autres applications, en entrée ou en sortie de Glozz.
+
+7) Ajout d'une contrainte "Same Position" dans GlozzQL, qui concerne les Units et indique si deux unités sont situées exactement au même endroit dans le texte. Cela peut notamment être utile dans le cas où il y a plusieurs couches d'annotation indépendantes, et que l'on souhaite voir s'il existe des superpositions d'unités entre ces couches.
+
+8) Interface graphique remaniée. Notamment, utilisation d'onglets pour les différents rarement utilisés simultanément.
+
+9) Export SQL corrigé et amélioré.
+
+
+################################################################################
+
+
+                    CHANGELOG version 1.1.0-beta
+
+
+################################################################################
+
+#########################
+Remarques préliminaires :
+#########################
+
+Ces notes s'ajoutent à celles des précédentes versions, dont la lecture est recommandée.
+
+IMPORTANT ! Un manuel est désormais disponible. S'il n'est pas encore tout à fait complet, il présente néanmoins la très grande majorité des fonctionnalités de Glozz, qui n'étaient jusqu'ici introduites que par le biais du présent Changelog. La lecture de ce manuel est évidemment très vivement recommandée. Le présent Changelog ne fera désormais qu'indiquer les fonctionnalités nouvelles, l'utilisateur devant se reporter au manuel pour une présentation détaillée de leur utilisation.
+
+################################################################################ 
+
+1) Module d'alignement et de mesure d'accord
+
+Ce nouveau module peut être utilisé lorsque plusieurs annotateurs ont annoté un même texte indépendamment, et que l'on souhaite obtenir une mesure de l'accord inter-annotateurs. En l'état, ce module ne concerne que les unités (ni les relations, ni les schémas ne sont pris en charge).
+
+Ce module délivre simultanément un alignement des unités et un taux d'accord global compris entre 0 (alignements multiples aléatoires) et 1 (unités toutes strictement identiques).
+
+Nous vous invitons à vous reporter au manuel de Glozz pour un descriptif complet de ce module, et à l'article intitulé "Une approche holiste et unifiée de l'alignement et de la mesure d'accord inter-annotateurs" (actes de la conférence TALN 2011), article qui présente la méthode dont ce module est l'implémentation.
+
+
+2) Nouveaux modes de visualisation
+
+Jusqu'à présent, la coloration des éléments annotés dépendait uniquement de leur type, tous les éléments d'une même classe étant représentés de la même manière.
+
+Un sélecteur de mode de visualisation est désormais accessible dans la barre d'outils, qui permet de modifier ce comportement par défaut.
+
+Mode "individuel" : Il est désormais possible de spécifier la coloration d'un individu particulier, en utilisant pour cela un trait au nom réservé, dont la valeur indique la couleur à appliquer à l'individu. Le modèle d'annotation colors.aam (fourni avec la plate-forme) permet de tester cette possibilité.
+
+Mode "connecté" : Il est également possible d'associer une couleur à chaque sous-graphe connexe de l'ensemble des annotations. Cela est par exemple particulièrement utile dans le cadre du traitement des chaînes de référence, tous les éléments d'une même chaîne se trouvant ainsi colorés de la même manière.
+
+
+3) Nouveaux modes du Grapher spécifiques aux chaînes de référence
+
+Deux nouveaux modes de représentation sous forme de graphe (module Grapher) ont été ajoutés, spécifiquement destinés aux travaux sur les chaînes de référence. 
+
+Si les chaînes sont représentées par des ensembles de relations, le mode "Relations Coref." pourra être utilisé. Si elles sont représentées par des schémas, le mode "Schemas Coref." pourra être utilisé.
+
+
+4) Imports multiples de données en provenance de LinguaStream
+
+Il est désormais possible d'importer simplement des données LinguaStream présentes dans de multiples fichiers.
+
+
+5) Finalisation du système de plugins
+
+Des plugins seront désormais progressivement mis à disposition sur le site de la plate-forme. Un effort de documentation reste à faire pour que chacun puisse développer ses propres plugins.
+
+
+6) Corrections de bugs et modifications légères diverses dont : correction de l'export parenthésé, centrage des labels sur les relations dans le Grapher, orientation des relations entre Schémas dans le Grapher... 
+
+
+
+
+################################################################################
+
+
+                    CHANGELOG version 1.0.0-beta
+
+
+################################################################################
+
+#########################
+Remarques préliminaires :
+#########################
+
+Ces notes s'ajoutent à celles des précédentes versions, dont la lecture est nécessaire. En particulier, la version 0.9.9 n'ayant pas été publiée, il est important de lire les remarques qui s'y rapportent.
+
+################################################################################
+
+1) Module de visualisation de graphes
+
+Accessible depuis le menu Viewers/Grapher ce module permet la représentation d'un texte annoté sous forme de graphe. Un seul mode est disponible pour l'instant, qui sera prochainement complété par des modes plus adaptés à des objets linguistiques particuliers.
+
+Les unités constituent les sommets du graphe et les relations en constituent les arêtes. Selon le paramétrage retenu (cf. ci-après), les relations seront représentées horizontalement ou verticalement. Les schémas sont représentés par des boîtes englobantes.
+
+Le clic sur un élément permet de le sélectionner, dans le Grapher et dans la fenêtre principale d'annotation.
+
+Le double-clic sur une unité permet d'en afficher le contenu textuel ou de masquer celui-ci.
+
+Les unités et les schémas peuvent être repositionnés manuellement.
+
+Zoom et dé-zoom peuvent être réalisés en scrollant avec le dispositif de pointage.
+
+Les couleurs définies dans la feuille de style pour les unités, relations et schémas sont utilisées par le Grapher. De plus, la représentation des schémas exploite (si l'option est activée) la couleur des bordures pour expliciter les relations d'appartenance des éléments aux schémas, selon la règle suivante:  chaque schéma, i.e. chaque boîte le représentant, possède une couleur de bordure qui est également utlisée pour identifier les éléments intégrés à ce schéma. Cela est en particulier nécessaire à la lisibilité des relations d'appartenance quand des unités non intégrées à un schéma prennent visuellement place dans la zone couverte par lui.
+
+Le bouton présentant deux doubles flèches croisées permet d'afficher (ou de masquer) le contenu textuel de toutes les unités. Le bouton présentant des cercles concentriques permet d'activer (ou de désactivier) l'option relative à l'utilisation des couleurs de bordure pour expliciter les relations d'appartenance aux schémas. Le bouton d'actualisation permet de tenir compte d'éventuelles modifications survenues dans la fenêtre principale d'annotation. Attention : si la disposition du graphe a été modifiée, elle sera réinitialisée.
+
+Depuis le menu fichier, il est possible d'exporter le graphe en PNG ou Postscript. 
+
+Pour sélectionner puis exporter (en PNG ou PostScript) une zone limitée, il est possible de sélectionner un rectangle (avec Pomme + sélection rectangulaire à la souris sous Mac OSX et sélection rectangulaire au bouton droit sinon) puis de choisir l'option désirée dans le menu contextuel qui s'affiche alors.
+
+Depuis le menu View, les options permettant d'afficher (ou de masquer) le contenu textuel des unités et d'activer (ou de désactiver) les couleurs de bordures traduisant l'appartenance aux schémas sont accessibles. Il est par ailleurs possible de modifier le mode de rendu de ces bordures (option "Fill unit borders") et de spécifier les couleurs à utiliser pour ces bordures, pour les différents niveaux de profondeur (option "Color scale preferences"). Enfin, il est possible de spécifier, pour chaque type de relation disponible, s'il doit être tracé horizontalement ou verticalement. Ainsi, on pourra par exemple, conformément à l'usage, tracer horizontalement les relations de coordination et verticalement les relations subordonnantes.
+
+Un exemple a été ajouté au SandBox pour permettre de tester rapidement le Grapher.
+
+
+2) Impression
+
+Depuis le menu File/Print, il est possible d'imprimer le texte annoté, éventuellement dans un fichier.
+
+
+3) Imprimer la sélection
+
+Avec Pomme + sélection rectangulaire à la souris sous Mac OSX et sélection rectangulaire au bouton droit sinon, il est possible de sélectionner une zone de la fenêtre d'annotation principale, en vue de son impression, éventuellement dans un fichier.
+
+
+4) Export parenthésé
+
+Correspondant à un format souvent utilisé dans les travaux sur la coréférence, ce mode d'export en texte brut consiste à parenthéser les différents constituants d'un schéma (par exemple une chaîne de coréférence), en leur attribuant à tous un même identifiant. 
+
+Ainsi, par exemple, pour deux schémas liant SN et Pronoms dans la séquence "Le chat a traversé la rivière. Elle fait 100m de large à ce niveau. Il a nagé pendant plus de 10 minutes", on obtiendra, lors de l'export "[Le chat]_1 a traversé [la rivière]_2. [Elle]_2 fait 100m de large à ce niveau. [Il]_1 a nagé pendant plus de 10 minutes".
+
+
+5) Export SQL
+
+L'export SQL permet d'obtenir une représentation des annotations associées à un corpus, qui pourra être aisément chargée dans une base de données relationnelle et interrogée en bénéficiant de l'expressivité et de la puissance de SQL. 
+
+Insistons sur le fait que cet export peut porter non seulement sur un texte et un jeu d'annotations, mais aussi sur un ensemble de textes dont chacun possède éventuellement plusieurs jeux d'annotations. 
+
+La structure de la base de données produite repose notamment sur les principes suivants, qui visent à rendre aussi explicites et simples que possible les requêtes qui pourront être formulées. Pour chaque type identifié par le modèle d'annotation, la base contiendra une table portant le nom du type, par exemple SN (unité), Pronom (unité), Verbe (unité), Sujet-Verbe (relation) et Coréférence (Schéma). S'il s'agit d'un type d'unité, les positions de début et de fin seront indiquées, de même que le texte contenu dans l'unité. S'il s'agit  d'un type de relation, les identifiants des termes de la relations seront précisés. S'il s'agit d'un type de schéma, on pourra accéder aux identifiants de ses constituants. Dans tous les cas (unités, relations et schémas) on pourra de plus connaître l'auteur de l'annotation et des attributs portant le nom des traits associés aux différents types (structure de traits définies dans le modèle d'annotation) permettront de récupérer aisément les valeurs prises par ces traits, pour telle ou telle instance de la classe considérée. Par ailleurs, on pourra choisir de pré-calculer automatiquement les relations d'inclusion et de proximité entre unités, relations qui seront représentées par deux tables dédiées.
+
+L'export SQL est accessible depuis le menu Export. Dans la boîte de dialogue associée, on peut indiquer un ou plusieurs fichiers .ac (corpus) avec, pour chacun, un ou plusieurs jeux d'annotations (.aa). Pour la sélection de .ac et des .aa, notons que la sélection multiple est possible dans le FileChooser proposé. Ainsi, on pourra charger d'emblée un ensemble de .ac, puis, pour chacun, charger un ensemble de .aa. On doit de plus préciser le chemin du fichier SQL à produire, et indiquer si l'on souhaite pré-calculer inclusion et proximité, en précisant le cas échéant le seuil de proximité, c'est-à-dire la distance (en nombre de caractères) au-delà de laquelle deux éléments ne seront plus considérés comme proches. 
+
+Dans le fichier SQL résultant, seront présentes à la fois les instructions nécessaires à la création de la structure de la base de données et les instructions nécessaires au chargement des données dans la structure ainsi établie.
+
+Il est naturellement impossible de lister toutes les possibilités d'interrogation pouvant être formulées sur la base resultant de cet export. A titre d'exemple et pour nous en tenir à des requêtes excessivement simples, disons qu'il sera par exemple très simple de compter les annotations de tel ou tel type, de récupérer leur texte, de comparer leurs tailles, de sélectionner les annotations possédant telle ou telle combinaison de valeurs de traits, de rechercher les annotations de tel ou tel type présentes à proximité d'annotations de tel autre type...
+
+
+6) Time player
+
+Un nouveau composant, nommé "Time Player", est accessible à tout moment en cliquant sur le bouton éponyme de la barre d'outils. Son but est de retracer la chronologie de la génèse des annotations, en offrant la possibilité de revenir à tout moment du passé et d'afficher uniquement les annotations créées antérieurement à ce moment.
+
+Ce composant se présente sous la forme d'une interface graphique comportant pour élément essentiel un "slider" (curseur que l'on peut déplacer à la souris), montrant la position du temps choisi :
+- lorsque ce curseur est complètement à droite (cas par défaut au lancement), il s'agit de la date de l'annotation la plus récente, si bien que toutes les annotations sont visibles ;
+- lorsque ce curseur est complètement à gauche, il s'agit de la date de création de la première annotation, donc aucune annotation n'est visible ;
+- lorsque l'on fait glisser le curseur de la gauche vers la droite, on voit donc apparaître pas à pas la génèse des annotations.
+
+Deux modes temporels sont proposés :
+a) "true timing". Lorsque la case correspondante est cochée, on opte pour la chronologie réelle. Dans ce cas, le "slider" agit propotionnellement sur le temps. Par exemple, si le curseur est à mi-course, l'instant affiché est situé exactement à mi-chemin de la période allant du temps de début (première annotation) au temps de fin (dernière annotation);
+b) Le second mode, qui n'a pas de nom et qui a cours lorsque la case est décochée, est le mode par défaut. Plutôt que de proposer une chronologie réelle, il gère le temps de sorte que les annotations apparaissent graduellement en fonction de la position du curseur : pour le curseur placé à mi-course, on montre les n/2 premières annotations. De façon générale, pour un curseur placé à x%, on montre les x% premières annotations.
+
+L'emploi du "true timing" permet de voir la génèse réelle des annotations. En particulier, si il y a une pause de plusieurs mois au cours de l'annotation d'un texte, on ne verra rien changer sur une grande plage de mouvement du curseur temporel. Ce mode est donc intéressant lorsque l'on veut se rendre compte des phases temporelles d'un processus d'annotation, et lorsque l'on souhaite voir précisément à quelle vitesse tel type d'annotation est effectué. A contrario, en choisissant le second mode, même si la chronologie réelle de l'annotation est très variable, on verra apparaître les annotations régulièrement, seul leur ordre étant pris en compte.
+
+En plus de la possibilité de déplacer ce slider manuellement par drag&drop à la souris, il est possible d'utiliser le "magnéto" (pour "magnétoscope"), permettant de lancer le défilement du temps de façon automatique, de l'accélérer, de revenir en arrière, etc. Ceci vaut pour les deux modes précités.
+
+
+7) Correction d'un bug dans GlozzQL (suppression d'éléments à partir du "Basket")
+
+Dans les versions antérieures de Glozz, lorsque l'on utilisait le "basket" de GlozzQL pour supprimer son contenu des annotations de Glozz, seules les Unités étaient retirées, et non les relations ni les schémas. C'est à présent corrigé.
+
+Par ailleurs, la suppression des éléments est "forcée", i.e. sans demander confirmation au cas par cas par l'utilisateur (ce qui serait souvent fastidieux).
+
+Attention, ne pas oublier qu'il y a des "effets de bord" naturels lorsque l'on supprime certains éléments. Par exemple si on supprime une unité étant l'un des termes d'une relation, cela a pour effet de supprimer aussi cette dernière.
+
+
+
+################################################################################
+
+
+                    CHANGELOG version 0.9.9
+
+
+################################################################################
+
+#########################
+Remarques préliminaires :
+#########################
+
+Ces notes s'ajoutent à celles des précédentes versions, dont la lecture est nécessaire.
+
+################################################################################
+
+ATTENTION ! Nous vous rappelons que, lors de l'attribution d'un type à un élément, tous les traits actuellement attribués sont supprimés, et cela même si le type sélectionné est le même que celui qui était anciennement affecté. Les traits définis dans le modèle et les valeurs par défaut seront attribués en remplacement des anciens traits et des anciennes valeurs.
+
+1) Amélioration de l'éditeur de structures de traits. Rappelons qu'un modèle d'annotation (.aam) définit notamment, pour chaque type d'élément (unité, relation ou schéma), les traits qui doivent lui être associés. Pour chaque trait, le modèle d'annotation précise la ou les valeurs qu'il peut prendre, ainsi, éventuellement, que la valeur affectée par défaut. Jusqu'à présent, Glozz ne supportait que le type de valeur "free", qui permet à l'annotateur de saisir n'importe quelle valeur. Par exemple, pour un trait "commentaire", dont la valeur peut être librement saisie, et pour lequel on ne souhaite pas affecter de valeur par défaut, le .aam indiquera:
+
+     <feature name="commentaire">
+          <value type="free" default="" />
+     </feature>
+
+Certains exemples de .aam fournis avec les précédentes versions prévoyaient déjà l'utilisation de listes de valeurs prédéfinies, mais celles-ci n'étaient pas prises en compte par l'interface d'annotation. Désormais, elles le sont. Pour indiquer que le trait "saison" pourra prendre les valeurs "printemps" ou "été", et que "printemps" sera la valeur par défaut, le .aam précisera:
+
+     <feature name="saison">
+          <possibleValues default="printemps">
+               <value>printemps</value>
+               <value>été</value>
+          </possibleValues>
+     </feature> 
+     
+Un exemple de fichier (possibleValues.aam) présent dans data/annotationModels illustre ces nouvelles possibilités.
+
+Dans l'interface d'annotation, les valeurs prédéfinies pour un trait donné sont représentées par une liste déroulante rendue accessible par un clic sur la valeur de ce trait.
+
+2) La nouvelle version de l'éditeur de features permet par ailleurs d'indiquer à l'annotateur qu'un trait utilisé n'est pas déclaré dans le modèle d'annotation. Admettons par exemple que l'utilisateur annote une unité de type "Personne" avec un premier modèle d'annotation (model-1.aam), qui prévoit un trait "Adresse", puis charge un nouveau modèle d'annotation (model-2.aam), qui ne prévoit pas de trait "Adresse". Lors de la sélection de l'élément annoté, la structure de traits présentée comportera tous les traits actuellement associés à cet objet, dont l'adresse résultant de l'utilisation de model-1.aam. Toutefois, si l'utilisateur souhaite éditer la valeur de ce trait adresse, alors que model-2.aam est chargé, la zone de saisie prendra alors un fond rouge indiquant que ce trait n'est pas prévu par le modèle en cours d'utilisation. Admettons à présent que model-2.aam ne prévoie pas le type "Personne" (et non plus seulement l'un de ses traits). Dans ce cas, tous les traits actuellement associés à l'objet donneront lieu, si ils sont édités, à une zone de saisie sur fond rouge indiquant qu'aucun de ces traits n'est disponible dans le modèle en cours d'utilisation, ceci manifestant indirectement le fait que le type lui-même n'est pas présent dans le modèle.
+
+3) De même, la nouvelle version de l'éditeur de trais permet d'indiquer à l'annotateur qu'une valeur de trait utilisée (et non plus un trait) n'est pas prévue par le modèle comme valeur possible. Admettons qu'un premier modèle d'annotation (model-1.aam) prévoie, pour un trait "saison", les valeurs prédéfinies "printemps", "été", "automne", "hiver" et qu'un second modèle d'annotation (model-2.aam) déclare ce même trait saison, mais sans contraindre les valeurs possibles. Si l'annotateur utilise d'abord model-2.aam, il pourra saisir librement, par exemple, la valeur "winter" pour le trait "saison" d'un élément porteur de ce trait. S'il charge ensuite le model-1.aam et sélectionne l'élément précédemment édité, la valeur qui lui sera présentée sera bien "winter". Lors de l'édition de cette valeur, la liste déroulante présentant les valeurs possibles intégrera, en plus des valeurs effectivement autorisées par model-1.aam, la valeur "winter" actuellement affectée, mais sur fond rouge, pour indiquer à l'utilisateur que cette valeur n'est pas autorisée par le présent modèle d'annotation. L'annotateur pourra toutefois, en connaissance de cause, préserver cette valeur.
+
+4) Ajout dans les annotations stockées (.aa), et pour chacune d'entre elles, de l'identifiant (login) du dernier annotateur à avoir procédé à une modification.
+On trouve donc dans le contenu xml d'une unité, d'une relation ou d'un schéma, en plus du login et de la date correspondant à sa création, le login et la date correspondant à la dernière modification.
+Ceci permet de connaître la paternité d'une annotation, et, sinon son historique, au moins sa dernière modification.
+
+5) Ajout dans GlozzQL de deux nouvelles contraintes :
+- recherche d'annotations par login du créateur. En option, on peut relacher la contrainte en n'imposant que la présence du sous-chaine dans le login recherché, par exemple "dup" au lieu de "dupont"
+- idem, mais par login de la dernière personne à avoir modifié l'annotation
+Ces ajouts dans GlozzQL, combinés à l'utilisation du "panier", permettent notamment d'extraire d'un .aa les seules annotations faites par un annotateur donné, puis de sauver ces dernières dans un nouveau .aa
+
+6) Enrichissement des contraintes "Contains", "TargetContains" et "StartContains". Il est désormais possible de préciser ces contraintes en spécifiant un nombre minimal ainsi qu'un nombre maximal d'entités recherchées (par exemple, quels sont les schémas contenant entre 2 et 5 éléments Unit1).
+Ceci se fait par deux curseurs liés (l'un repoussant l'autre au besoin), permettant de fixer la valeur minimale (entre 0 et 11) et la valeur maximale (entre 0 et 10, puis, "NO_LIMITS" siginifiant qu'il n'y a pas de nombre maximal).
+Par défaut, ces valeurs sont respectivement fixées à 1 de minimum et NO_LIMITS de maximum, ce qui revient à "contient au moins un élément de ce type", et est donc conforme aux versions antérieures de GlozzQL qui n'intégraient pas cette nouveauté.
+Par ailleurs, la rétro-compatibilité avec d'anciens fichiers GlozzQL est assurée, en utilisant là aussi les valeurs par défaut assurant la même sémantique que précédemment.
+
+
+################################################################################
+
+
+                    CHANGELOG version 0.9.8
+
+
+################################################################################
+
+#########################
+Remarques préliminaires :
+#########################
+
+Ces notes s'ajoutent à celles des précédentes versions, dont la lecture est nécessaire.
+
+#########################
+Omission :
+#########################
+
+1) Nous avons oublié de faire état, dans les CHANGELOG précédents, d'une fonctionnalité introduite depuis la version 0.9.6.
+Il s'agit de l'enrichissement de l'outil de recherche, qui peut désormais annoter automatiquement (sous forme d'unités) les éléments trouvés.
+Par exemple, si l'on veut annoter semi-automatiquement toutes les occurrences d'un nom propre tel que "Mitterrand", il faut tout d'abord sélectionner une unité qui servira de modèle (au niveau du type),
+puis, dans l'outil de recherche, entrer la chaine "Mitterrand", puis, cliquer autant de fois que souhaité, sur "Annotate" (au lieu de "Next").
+Chaque occurrence trouvée sera automatiquement annotée en tant qu'unité du même type que l'entité pré-selectionnée.
+
+#########################
+Correction de bug :
+#########################
+2) La modification d'une valeur d'attribut n'était pas reconnue, dans les version précédentes, comme étant une modification à part entière des annotations.
+En conséquence, il n'était pas possible de sauver une modification ne concernant que les feature-sets avant de faire une modification plus importante (comme la création ou la modification d'une unité, par exemple).
+Autre conséquence, si l'on fermait l'application après une telle modification, aucun message d'alerte n'indiquait que la sauvergarde n'était pas effectuée.
+Ceci est à présent corrigé (ce qui se traduit notamment par le fait que dès la modification d'un feature-set, l'icone permettant de sauver redevient active).
+
+#########################
+Améliorations :
+#########################
+3) GlozzQL possède une nouvelle option, sous forme de case à cochée "discard typography", permettant de choisir la prise en compte ou non des annotations de type typographiques.
+Dans les versions précédentes, la typographie ne pouvait pas être prise en compte par GlozzQL.
+En conséquence, il est par exemple possible d'écrire des requêtes GlozzQL qui trouvent toutes les annotations typographiques, puis, grace au panier, les sauvent dans un fichier .aa spécifique.
+
+4) Exports PNG (menu "Export"). Deux types d'export sous forme d'image PNG sont possibles.
+L'un, d'un seul tenant, crée une (éventuelle très grande) image contenant l'intégralité des annotations.
+L'autre, paginé, découpe le document en tronçons de 1000 pixels de haut. Dans ce cas, on obtient autant de fichiers .png que nécessaires, numérotés. Par exemple "annotations.png","annotations1.png","annotations2.png", etc. Il est donc conseillé de prévoir un dossier spécifique où les ranger.
+Lire N.B. ci-dessous
+
+5) Impression (menu "File" --> "Print"). Il est possible d'imprimer le document annoté sur l'une des imprimantes disponibles.
+En utilisant une imprimante virtuelle, ou, sous mac, directement via le gestionnaire d'impression, il est donc aussi possible de générer un fichier .pdf
+L'impression est paginée (découpage en autant de pages que nécessaire), avec un ajustement automatique suivant la largeur du document.
+Attention : l'impression tient compte du réglage, à l'écran, de la largeur de la fenêtre principale de visualisation. Il faut donc ajuster la largeur de cette dernière à sa convenance avant de lancer l'impression (plus cette dernière est large, plus il y a de caractères par ligne, et donc plus les texte sera de taille réduite)
+Lire N.B. ci-dessous
+
+6) Impression d'une sélection du document chargé (menu "File" --> "Print visible excerpt") : idem point précédent, mais seule la partie visible à l'écran (dans le scroll principal) est imprimée (et tient donc sur une portion de feuille).
+Il est nécessaire de faire scroller la vue principale sur la partie souhaitée avant de lancer cette fonction.
+
+N.B. : Dans cette première version de ces nouvelles fonctions (exports PNG et impression), le découpage qui est fait lors de la pagination est susceptible de couper horizontalement une ligne de texte qui apparaît alors pour partie au bas d'une page, et pour l'autre au haut de l'autre page.
+Nous essaierons d'améliorer ce point dans une version future.
+
+
+################################################################################
+
+
+                    CHANGELOG version 0.9.7
+
+
+################################################################################
+
+
+#########################
+Remarques préliminaires :
+#########################
+
+Cette version 0.9.7 corrige uniquement certains bugs de la version de test 0.9.6 et n'apporte aucune nouvelle fonctionnalité. La version 0.9.6 n'ayant été diffusée qu'auprès d'un public restreint d'utilisateurs-testeurs, la lecture de notes s'y rapportant est particulièrement utile.
+
+
+################################################################################
+
+
+                    CHANGELOG version 0.9.6 (Version de test)
+
+
+################################################################################
+
+
+#########################
+Remarques préliminaires :
+#########################
+
+Cette version 0.9.6 (version de test) n'est diffusée qu'auprès d'un public restreint d'utilisateurs-testeurs. Elle introduit d'assez nombreuses nouvelles fonctionnalités et peut contenir encore des bugs potentiellement importants.
+
+Les notes qui suivent s'ajoutent à celles des précédentes versions, dont la lecture est nécessaire.
+
+
+############################
+Améliorations et nouveautés:
+############################
+
+
+0) Possibilité de choisir la taille de la police et de l'interligne, qui améliore de façon notable la lisibilité des annotations denses.
+
+1) Nouvel outil : GlozzQL. Langage de requêtes d'interrogation + moteur associé. Accessible via un bouton "GlozzQL" sur la barre de boutons. Un guide vidéo est disponible sur le site http://www.glozz.org
+
+2) Les fichiers de corpus .ac se voient attribuer un "hashcode" qui permet de les identifier de façon unique (avec plus de 99.99% de certitude), et les .aa enregistrent désormais cet identifiant de corpus. En conséquence, il est désormais possible de vérifier qu'un .aa correspond bien au .ac avec lequel on essaie de l'ouvrir. Aussi, lors de l'ouverture du sélecteur de fichiers .aa, seuls les fichiers .aa correspondant au .ac sélectionné sont proposés. Pour des raisons de compatibilité ascendante, les anciens fichiers .aa, dépourvus de référence à un hashcode, sont acceptés (donc proposés) quel que soit le fichier .ac avec lequel on essaie de les ouvrir (dans le cas contraire, on ne pourrait tout simplement ouvrir aucun ancien fichier .aa). En conséquence, il peut être utile de charger ses anciens fichiers .aa et de les ré-enregistrer (cela nécessite d'y apporter une modification - par exemple, ajout d'une unité puis suppression de celle-ci - afin d'activer la possibilité d'enregistrer) sous Glozz 0.9.6 afin qu'ils intègrent le hashcode de leur .ac.
+
+3) Possibilité de charger plusieurs fichiers d'annotation sur un même document. Dans le menu File, un nouvel item "load additional annotations" permet de charger les annotations contenues dans un fichier .aa, et les ajoute aux annotations déjà chargées. Ceci n'est possible qu'à partir du moment où un "corpus" est déja chargé. A noter que les annotations typographiques sont filtrées lors de ces ajouts, afin de ne pas dupliquer inutilement ces dernières.
+Bien sûr, le fichier .aa doit être compatible avec le .ac déjà chargé (voir point 2).
+
+4) Menu "File" enrichi, reprenant à présent "Load", l'ajout d'annotations évoqué au poit 3, "Save", "Save as", et ajoutant "Quit" pour fermer l'application.
+
+5) Correction d'un problème d'ergonomie potentiellement dangereux. Lors d'un import à partir d'un fichier TXT, si le fichier d'annotations .aa existe déjà, une fenêtre de confirmation est proposée afin de vérifier qu'il n'y a pas écrasement involontaire. Il n'y a pas de vérification concernant le .ac pour le moment.
+
+6) Correction d'un problème d'ergonomie : lorsque l'utilisateur n'avait pas activé l'option "selection automatique de l'entité nouvellement créée", l'éditeur de feature set n'était pas mis à l'écoute de l'unité nouvellement créée (unité créée mais non sélectionnée), ce qui introduisait le risque de modifier les traits d'une entité précédemment créée ou éditée. A présent, dès qu'une unité est créée, et quelle que soit l'option choisie, ses traits apparaissent et peuvent être modifiés.
+
+7) Le sélecteur de types voit à présent ses types colorés, le cas échéant, selon le style chargé.
+
+8) Lors du chargement d'un nouveau document, si un style a été préalablement chargé, ce dernier reste actif (dans les versions précédentes, le style était fermé).
+
+9) Correction d'un bug relatif à l'import de documents et d'annotations produits avec LinguaStream, bug qui se traduisait par l'impossibilité de convertir ces documents et annotations et par le blocage de la procédure d'import.
+
+
+
+################################################################################
+
+
+                    CHANGELOG version 0.9.5
+
+
+################################################################################
+
+
+#########################
+Remarques préliminaires :
+#########################
+
+La version 0.9.5 doit être considérée comme une version "intermédiaire" amenée à être rapidement remplacée. Afin de ne pas retarder la mise en service de fonctionnalités plus particulièrement attendues, afin de procéder à d'importantes corrections de bugs pouvant être bloquants, et afin de procéder à certaines optimisations nécessaires à la manipulation de données volumineuses, nous avons en effet suspendu certains développements en cours de finalisation (système de plugins et API pour la réalisation d'extensions, outils d'alignement et d'évaluation...), dont les résultats ne seront ainsi mis à diposition des utilisateurs que dans les prochaines versions.
+
+Les notes qui suivent s'ajoutent à celles des précédentes versions, dont la lecture est nécessaire.
+
+
+############################
+Améliorations et nouveautés:
+############################
+
+1) Création/modification de styles via l'interface graphique. La modification du nom d'un style est désormais guidée par le modèle d'annotation en cours d'utilisation. Seul un nom de style correspondant à un nom de type présent dans le modèle est possible, la saisie ne se faisant plus en texte libre mais par le biais d'une liste déroulante des noms possibles. Seuls les types ne disposant pas encore de style sont proposés dans cette liste, et le nom des styles correspondant à un type existant est non modifiable. Il faut créer un nouveau style pour pouvoir lui affecter le nom d'un type "libre" du modèle. Pour affecter un style à un type d'annotation non présent dans le modèle, on éditera directement le fichier XML (.as) correspondant.
+
+2) Optimisation de la phase de chargement des annotations, qui pouvait s'avérer excessivement longue lors de la manipulation de données volumineuses.
+
+3) Correction d'un bug particulièrement problématique lié aux schémas impliquant d'autres schémas dans la liste de leurs constituants. Depuis la version 0.9.3, rappelons qu'il est en effet possible, pour un schéma, d'être constitué d'autres schémas. Lors de la suppression d'un schéma référencé par un schéma englobant, le schéma englobant n'était cependant pas correctement mis à jour. Si l'enregistrement des annotations ainsi produites pouvait sembler se dérouler correctement, le chargement ultérieur du fichier ainsi produit était cependant impossible. Si vous avez rencontré ce problème en utilisant la version 0.9.4 et que certains de vos fichiers d'annotation sont ainsi rendus inexploitables, nous devrions pouvoir les corriger, si vous nous les faites parvenir par e-mail.
+
+4) Résolution d'un bug se produisant lors du chargement de certains jeux de données comportant des schémas imbriqués.
+
+5) Sur certains systèmes, la police à empattements utilisée pour le rendu du texte dans la fenêtre principale pouvait poser problème. Avant que le choix de la police ne soit laissé à l'utilisateur, dans une prochaine version, nous désignons à présent une fonte à empattements générique, que chaque environnement pourra mettre en correspondance avec une police effectivement disponible.
+
+6) Le système de rendu des informations typo-dispositionnelles a été revu et enrichi afin de permettre le rendu d'éléments typo-dispositionnels nouveaux (sous-titre, résumé, citations, gras, italique...), de permettre le rendu de leurs éventuelles imbrications (citations dans des items de liste, listes emboîtées, items comportant plusieurs paragraphes...), et de multiplier les niveaux de titres. Le modèle d'annotation fourni dans la distribution (data/annotationModels/structure-typo.aam) a été enrichi en conséquence et indique les nouveaux types d'annotation typographique disponibles. Dans le menu Sandbox, le chargement d'un nouvel exemple est proposé, qui illustre ces différents types.
+
+7) Optimisation de la méthode de rendu des schémas. Affichage significativement plus rapide sur des jeux d'annotations riches en schémas.
+
+8) Suite à l'ouverture des exemples du menu Sandbox, il est à présent possible d'utiliser les fonctionnalités liées aux chargements classiques de données: bouton de sauvegarde rapide, "open last job"...
+
+
+
+################################################################################
+
+                  
+                    CHANGELOG version 0.9.4
+
+
+################################################################################
+
+
+#########################
+Remarques préliminaires :
+#########################
+
+Ces notes s'ajoutent à celles des précédentes versions, dont la lecture est nécessaire. En particulier, la version 0.9.3 n'ayant pas été "publiée", la lecture de notes s'y rapportant est particulièrement utile.
+
+
+############################
+Améliorations et nouveautés:
+############################
+
+1) Création et édition d'unités : une nouvelle option (options-->preferences-->control-->"consider words as atoms") permet de considérer les mots, plutôt que les caractères, comme "atomes". De la sorte, lorsque le curseur est placé sur l'intérieur d'un mot, c'est le début (resp. la fin) de ce mot qui est considéré lors de la saisie de la borne de début (resp. de la borne de fin). Si cette option est activée, lors du double clic sur un mot, une unité est créée autour de ce mot (puisque le premier clic induit une borne de début calée sur le début du mot, et le second clic sur la fin de ce même mot). Cette option est mémorisée d'une session sur l'autre, mais il est tout à fait possible de changer de mode en cours d'utilisation, selon les besoins propres à telle ou telle phase d'annotation. Lorsque l'option n'est pas activée, il est possible de l'activer provisoirement le temps d'un clic en appuyant sur la touche SHIFT en même temps que l'on appuie sur la souris (Shift-Click), que ce soit pour la création d'une unité ou son édition.
+
+
+
+
+################################################################################
+
+                  
+                    CHANGELOG version 0.9.3
+
+
+################################################################################
+
+
+#########################
+Remarques préliminaires :
+#########################
+
+Ces notes s'ajoutent à celles des précédentes versions, dont la lecture est nécessaire.
+
+
+############################
+Améliorations et nouveautés:
+############################
+
+1) Généralisation du modèle concernant les termes possibles d'une relation, qui peuvent à présent être non seulement des unités (ce à quoi se limitaient les versions précédentes), mais aussi des relations et des schémas. On peut par exemple mettre en relation une unité et un schéma, deux relations entre elles, etc.
+
+2) Généralisation du modèle concernant les schémas: possibilité d'ajouter un schéma à un schéma. Pour mémoire, dans les versions précédentes, un schéma ne pouvait contenir que des unités et des relations
+
+3) Amélioration du rendu typographique du texte (polices, interlignes, marges...).
+
+4) Les schémas disposent désormais de styles.
+
+5) L'aspect visuel des schémas est revu de façon substantielle. A présent, un schéma (possédant au moins une entité) est visualisé au moyen d'une pastille colorée (couleur définie dans le style associé) qui est reliée par des lignes en pointillés à chacun de ses constituants. Cinq modes de présentation sont possibles (à choisir et à définir, là aussi, dans le style associé) :
+	a) Le mode de base "barycentré" positionne la pastille comme "centroïde" des éléments constitutifs;
+	b) Le mode "barycentré à gauche" procède de même en ce qui concerne l'axe vertical mais place la pastille dans la marge gauche;
+	c) Le mode "barycentré à droite" : idem à droite;
+	d) Le mode "linked-reordered" fait apparaître le schéma sous forme chaînée, suivant l'ordre donné par la position textuelle de ses constituants, et sera particulièrement indiqué, par exemple, pour des schémas relatifs à des chaînes de référence;
+	e) Le mode "linked", qui respecte l'ordre d'entrée des constituants (avec d'éventuels allers-retours par rapport à l'ordre textuel).
+De plus, comme dans la version précédente, les unités et relations contenues dans un schéma sont sur-encadrées aux couleurs de ce schéma, et ce de façon éventuellement récursive dans le cas de schémas imbriqués. Lorsqu'un schéma contient un autre schéma, le lien dessiné entre les deux pastilles correspondantes est rendu de façon asymétrique de sorte que l'on puisse identifier le schéma contenant et le schéma contenu (une protubérance apparaît à la base du lien du côté du schéma contenant).
+
+6) Il est à présent possible de créer des styles directement depuis l'interface (sans écrire le code XML correspondant). Un bouton "+" permet l'ajout d'un nouveau style, que l'on peut ensuite modifier.
+
+7) Possibilité de sauvegarder un style sous un nouveau nom.
+
+8) Le "curseur positionnel" est connecté au "as text" (descriptions logicoïdes des annotations): lorsque l'on place la souris au-dessus d'une représentation logicoïde, les curseurs positionnels des deux vues graphiques se placent (si ils sont activés) sur l'entité correspondante.
+
+9) Correction des sauts intempestifs (liés au scroll automatique) qui se produisaient dans le module "as text" lorsqu'une entité était sélectionnée par un clic sur son identifiant, et qui conduisaient parfois à une certaine confusion (par ex. le clic sur l'ID d'une unité contenue dans un schéma faisait remonter le texte vers l'unité en question). A présent, c'est une action volontaire de l'utilisateur qui permet de scroller, à la demande, vers l'entité actuellement sélectionnée (via le bouton "show selected").
+
+10) Dans le module "as text", il est désormais possibile de masquer/démasquer individuellement toute entité, par double clic sur sa représentation "as text". Celle-ci est alors "barrée", et l'objet correspondant n'apparaît plus dans les vues principales. Un second double clic sur sa représentation la fait réapparaître. Si on masque un schéma, tous ses constituants "libres" (qui n'appartiennent pas à un autre schéma ou à une relation) sont automatiquement masqués.
+
+11) Un menu "File" a été ajouté.
+
+12) La fonction "Load last job", disponible depuis le menu File, permet de retrouver le dernier environnement de travail chargé, en ouvrant automatiquement :
+	a) le dernier ensemble corpus + annotations ouvert;
+	b) le dernier modèle d'annotation;
+	c) la dernière feuille de style.
+
+13) Une icône de suppression (la traditionnelle corbeille) a été ajoutée. Elle possède le même rôle que la touche DEL (suppression de l'entité sélectionnée). Elle s'avère notamment pratique sous MacOSX, en remplacement de la combinaison Fn+BackSpace.
+
+14) Les relations sont désormais, optionnellement, orientées. Dans le modèle d'annotation, un nouvel attribut booléen "oriented" est renseigné en conséquence. Exemple d'une déclaration de type de relation orientée :
+
+	<relations>
+		<type name="Elaboration" oriented="true" >
+			<featureSet>
+			(...)
+			
+La compatibilité ascendante est assurée, les types de relation ne précisant pas l'attribut "oriented" étant considérés par défaut comme orientés. Nous vous suggérons cependant de modifier vos fichiers .aam en conséquence pour le rendre plus explicites.
+
+15) Ajout de la notion de groupe de types. Les groupes permettent à l'annotateur de se focaliser rapidement sur un aspect de l'annotation. Chaque type d'unité, de relation ou de schéma peut revendiquer son appartenance à un ou à plusieurs groupes. Les groupes n'ont pas besoin d'être déclarés en tant que tels préalablement. Un type peut appartenir à plusieurs groupes. 
+
+Par exemple, si l'on souhaite indiquer que les relations d'élaboration appartiennent au groupe "meso", il suffit de renseigner l'attribut "groups" dans le fichier .aam :
+
+	<relations>
+		<type name="Elaboration" oriented="true" groups="meso">
+			<featureSet>
+			(...)
+			
+Pour déclarer l'appartenance d'un type à plusieurs groupes, il suffit d'énumérer ces derniers en les séparant par une virgule (les espaces étant ignorées) :
+
+		<type name="Similarité" oriented="true" groups="micro, meso">
+
+16) Ajout d'un menu "Groups".
+
+17) Le module "manage visibility", accessible depuis le menu "Groups", permet d'accéder à la manipulation des groupes et de "désactiver" certains groupes, ce qui a pour conséquence de désactiver les types correspondants, et de rendre invisibles les annotations appartenant à ces types, qu'il s'agisse d'unités, de relations ou de schémas.
+
+18) Sauvegarde des annotations : il y a désormais deux boutons, "Save" et "Save As". Lorsqu'un fichier a déjà été chargé, un simple clic sur "Save" en permet la sauvegarde à la demande. "Save As" permet de faire un enregistrement sous un autre nom, et est automatiquement invoqué lorsque l'on clique sur "Save" alors qu'aucun fichier n'a préalablement été chargé.
+
+19) Ajout automatique des extensions de fichiers lors de la sauvegarde d'annotations (.aa) ou de styles (.as).
+
+20) Les boutons "Save" et "Save As" ne sont rendus accessibles que lorsque les opérations correspondantes sont pertinentes. En particulier, si aucune modification n'a été effectuée depuis le dernier chargement ou la dernière sauvegarde, ils sont tous deux désactivés.
+
+21) D'une manière générale, les actions pouvant mettre en péril les données d'annotation non enregistrées demandent, autant que possible, confirmation de l'utilisateur. C'est notamment le cas lors de la fermeture de l'application, et lors du chargement de nouvelles données d'annotation d'autre part.
+
+22) Sauvegarde automatique. Les données d'annotation en cours sont enregistrées automatiquement toutes les minutes, dans un fichier dédié qui porte le nom du fichier dont les données sont initialement issues, suivi de ".autosav", et qui est placé dans le même répertoire. Par exemple, suite au chargement de "demo.aa", le fichier "demo.aa.autosav" sera créé et actualisé, si nécessaire (c-à-d en cas de modifications), une fois par minute.
+
+23) Deux dispositions des différents modules et outils sont désormais disponibles, entre lesquelles on peut basculer à l'aide des boutons H et V. La disposition H (Horizontale) est celle qui était préalablement utilisée. Elle repose sur la juxtaposition horizontale 1) du ruban, 2) de la vue principale 3) des outils (mode selector, annotation as text, annotation model, feature sets...). La disposition V (Verticale), particulièrement adaptée aux basses résolutions, place le ruban et la vue principale sur toute la largeur de l'écran, et réserve une ligne séparée aux outils.
+
+24) D'une session sur l'autre, la disposition retenue est mémorisée.
+
+
+
+########################################################################
+
+                  
+                    CHANGELOG version 0.9.2
+                    
+
+########################################################################
+
+
+#########################
+Remarques préliminaires :
+#########################
+
+Ces notes s'ajoutent à celles des précédentes versions, dont la lecture est nécessaire. La version 0.9.1 n'ayant pas été "publiée", la lecture de notes s'y rapportant est particulièrement utile.
+
+
+############################
+Améliorations et nouveautés:
+############################
+
+1) Lors de la manipulation d'un corpus intégrant de nombreuses annotations, différents problèmes (d'occupation mémoire et de temps de calcul) se manifestaient, notamment lors de la suppression d'une unité. Ces problèmes sont résolus.
+
+2) Le temps de chargement et de rendu visuel d'un corpus et de ses annotations est considérablement réduit, ce qui s'avère particulièrement sensible quand les annotations sont nombreuses et/ou sur une machine peu performante.
+
+3) Dans certaines configurations, la sélection d'une unité imbriquée était impossible. Ce bug est résolu.
+
+4) Confirmation lors de la sauvegarde. Lors de la sauvegarde d'annotations, une boîte de dialogue exige à présent confirmation si le fichier désigné existe déjà, afin d'éviter d'accidentels écrasements de données.
+
+5) Amélioration de la mise à jour visuelle lors d'une suppression d'unité. Lorsque l'on supprime une unité, l'encadrement graphique des éventuelles unités englobantes est ajusté en conséquence.
+
+6) Amélioration du rendu graphique de certaines annotations typo-dispositionnelles.
+
+
+
+########################################################################
+
+                  
+                    CHANGELOG version 0.9.1
+                    
+
+########################################################################
+
+
+#########################
+Remarques préliminaires :
+#########################
+
+Ces notes s'ajoutent à celles des précédentes versions, dont la lecture est nécessaire.
+
+
+############################
+Améliorations et nouveautés:
+############################
+
+1) L'application est désormais nommée "Glozz".
+
+2) Amélioration du rendu graphique des schémas. La représentation visuelle d'un schéma prend désormais la forme d'un cadre englobant, distant de quelques pixels, ne masquant plus la représentation des éléments qui le composent.
+
+3) Amélioration du rendu graphique des relations sélectionnables et sélectionnées, afin de ne pas masquer, lors de la sélection, la couleur de la ligne matérialisant la relation.
+
+4) Import de documents annotés dans LinguaStream. Il est désormais possible de charger dans Glozz le résultat d'annotations issues de chaînes de traitements LinguaStream. On pourra charger les documents annotés (namespace LSD), les structures de traits (LSS) et les relations (LSR). Il est de plus possible d'indiquer un converter (GAC, cf. ci-après) afin de filtrer et de traduire les annotations lors de l'import. Cette fonction d'import est disponible depuis le menu Import/Import from LinguaStream. Notons que l'import n'implique pas l'ouverture du résultat de la conversion dans Glozz. Celle-ci doit être réalisée de la manière habituelle, en spécifiant le .ac (Annodis Corpus) et le .aa (Annodis Annotations) résultant de l'import.
+
+5) Converters. Glozz dispose à présent d'un mécanisme générique de conversion d'annotations. Celui-ci n'est pour l'heure utilisé que par le module d'import de documents LinguaStream, mais son utilisation sera généralisée dans les prochaines versions. La conversion est paramétrée par un fichier XML au format GAC (Glozz Annotation Converter), dont un exemple simple est fourni dans la répertoire data/converters de la distribution. Ce fichier permet notamment d'indiquer "sources" et "cibles" de la conversion. Si l'attribut excludeUnmapped, présent à la racine, prend la valeur "true", la conversion sera filtrante, toutes les annotations non mises en correspondance étant éliminées de la sortie. 
+
+6) Corrections de bugs dans le rendu de certaines annotations typo-dispositionnelles. En particulier, dans certaines situations, le style utilisé pour les titres de section était propagé à tort sur les paragraphes voisins.
+
+7) Explicitation de l'identification des préférences de l'utilisateur (options, chemins...) dont la persistance est assurée de manière variable pour chaque système d'exploitation. Le nom de package fr.unicaen.annodis est utilisé pour l'ensemble de ces préférences. Lors du passage de la version 0.9.0 (ou antérieure) à la version 0.9.1 (ou ultérieure) les anciennes préférences seront perdues. Lors du passage de la version 0.9.1 (ou ultérieure) à une version suivante, les préférences seront en revanche préservées.
+
+8) Corrections de bugs divers.
+
+
+
+########################################################################
+
+                  
+                    CHANGELOG version 0.9.0
+                    
+
+########################################################################
+
+
+
+#########################
+Remarques préliminaires :
+#########################
+
+Cette version 0.9.0 est une version de développement, qui peut conséquemment comporter différents bugs ou s'avérer encore parfois peu ergonomique dans l'accès à certaines fonctionnalités. 
+
+Nous comptons évidemment sur vous pour nous faire part des dysfonctionnements que vous observerez. Nous pourrons ainsi accelérer la sortie de la version stabilisée 1.0.0. Lors de l'observation d'un bug, l'idéal serait que vous nous fassiez parvenir les fichiers de configuration et de sauvegarde correspondant à la situation problématique.
+
+Pour l'heure, l'application est encore sobrement nommée Annodis Tool, ce qui devrait rapidement changer, sans doute à l'occasion du passage à la version 1.0.0.
+
+L'application est toujours intégralement développée en Java et devrait fonctionner de manière quasi similaire sur les différentes plates-formes.
+
+La distribution prend la forme d'une archive contenant:
+
+	- le jar de l'application (annodis-platform.jar);
+	
+	- différents fichiers de test (répertoire data/); 
+	
+	- le présent changelog (CHANGELOG.utf8);
+	
+	- un script de lancement destiné aux utilisateurs de Windows rencontrant des difficultés lors de l'utilisation directe des jars (StartAnnodis.bat).
+
+Rappelons qu'un système d'authentification des utilisateurs a été mis en place pour garantir l'unicité des identifiants associés aux annotations. Un couple login/clé peut être obtenu par simple envoi d'un email de la forme suivante:
+	Destinataire: mathet@info.unicaen.fr,awidloch@info.unicaen.fr
+	Sujet: Clé annodis
+	Contenu: le login de votre choix
+	
+Le lancement de l'application pourra être réalisé, selon les cas:
+	
+	- en invoquant la commande java -jar annodis-platform.jar, sur la plupart de systèmes;
+	
+	- en double-cliquant sur l'archive jar, dans la plupart des environnements fenêtrés tels que Gnome ou KDE sous Linux, MacOSX ou encore Windows;
+	
+	- en utilisant le script de lancement StartAnnodis.bat sous Windows.
+
+L'interface s'est peu à peu munie d'icones pouvant remplacer les boutons textuels. Il est cependant possible de choisir entre icones et texte, en sélectionnant l'option adéquate dans le menu Options-->Preferences-->Control, puis en redémarrant l'application pour que cette nouvelle configuration soit prise en compte de manière systématique, par les différents composants.
+
+Certaines des explications ci-dessous font référence au texte des boutons. Il peut être utile de passer en mode textuel le temps de trouver ce à quoi elles renvoient (bien que les icones parlent souvent d'elles-mêmes).
+
+Le format de certains des fichiers de configuration et de persistance (.aa, .aam, .as...) a pu changer depuis la version 0.0.1. Les exemples fournis dans le répertoire data/ permettront de prendre connaissance de ces modifications et enrichissements.
+
+
+############################################################
+Remarque importante sur l'utilisation de Backspace et Delete 
+############################################################
+
+Depuis la version 0.0.1, la suppression des éléments annotés et séléctionnés était réalisée à l'aide de la touche Backspace. L'annulation de la dernière création était réalisée par le même biais. À partir de la version 0.9.0, on distinguera:
+
+	- l'annulation de la dernière opération de création, toujours réalisée à l'aide de la touche Backspace;
+	
+	- la suppression d'un objet sélectionné, réalisée à l'aide de la touche Delete (ou Fonction-Backspace sous MacOSX).
+	
+
+############################
+Améliorations et nouveautés:
+############################
+
+1) Affichage des unités :
+
+	- degré de transparence réglable, dans le menu Options-->Preferences-->Viewer. Réglage initial conseillé aux environs de 35%, à ajuster ensuite selon l'utilisation;
+	
+	- texte superposé, toujours lisible, même en cas de forte imbrication (dans la version précédente, le texte disparaissait peu à peu sous les différentes annotations);
+	
+	- corrections de bugs dans la gestion des emboîtements d'unités.
+	
+2) L'ensemble des types d'annotation prédéfinis, utilisés notamment pour le rendu typographique du corpus, a été enrichi. 
+
+	- Rappelons que ces annotations peuvent être générées en amont de l'utilisation de l'interface, lors de la préparation du corpus. 
+	
+	- En plus des unités de type "paragraph", "title" et "sectionTitle" disponibles depuis la version 0.0.1, il est désormais possible de définir des unités de type "list" et des unités de type "numberedList" qui correspondent aux types classiques d'énumération. Les annotations de ces types devront contenir des annotations de type "listItem", qui correspondront aux items de ces énumérations.
+	
+	- Le rendu typographique de ces annotations sera pris en charge automatiquement (retrait à droite par rapport à la position classique des annotations de type "paragraph"). 
+	
+	- L'affichage de la puce ou de l'entier, et son éventuelle incrémentation, sont pris en charge par la plate-forme.
+	
+	- Le modèle d'annotation (.aam) dédié à la préparation des corpus (défini dans data/annotationModels/structure-typo.aam) contient les déclarations des types nécessaires à la création de telles unités. Rappelons que l'option Preferences-->Typography-->Show typographical annotations/ doit être activée pour que l'édition de ces éléments depuis l'interface soit possible.
+
+3) Création et sélection automatique. Le menu Options-->Preferences-->Control-->Select objects once created/ permet de choisir entre deux modes de "contrôle". Il s'agit notamment de savoir si une unité créée est automatiquement sélectionnée. Cela a en particulier une incidence sur la façon dont on peut attribuer un type à un objet. Si l'option est activée, la sélection d'un type dans le modèle d'annotation affecte le dernier objet créé et non pas seulement le prochain. Nous vous conseillons vivement de tester les deux modes qui se traduisent par des "ergonomies" assez différentes.
+
+4) Le menu Options-->Preferences est désormais plus réactif : lorsqu'un réglage dans les préférences a une incidence visuelle, celle-ci est répercutée immédiatement dans les vues. Les réglages (comme celui du degré de transparence par exemple) sont ainsi souvent rendus plus aisés.
+
+5) Une modèle d'annotation peut désormais comporter l'indication des relations et des schémas (cf. ci-après) pouvant être annotés par l'utilisateur. 
+
+	- Le format des fichiers .aam (Annodis Annotation Model) a été enrichi en conséquence. 
+	
+	- Il est conséquemment désormais possible d'associer un type et une structure de traits aux relations et aux schémas. Cela peut être réalisé par le biais des mêmes outils que pour les unités.
+	
+	- Les relations et les schémas sont sauvegardés dans le même fichier que les unités.
+	
+	- Le format .aa (Annodis Annotations) a été enrichi en conséquence.
+
+6) Evolutions du style editor :
+
+	- l'affichage des couleurs respecte à présent le degré de transparence choisi. En d'autres termes, les couleurs apparaissent désormais à l'identique dans l'interface et dans le panneau de choix des couleurs;
+	
+	- il est désormais possible d'attribuer un style aux différents types de relations. Le rendu de ces dernières est à présent luxueusement antialiasé.
+	
+	- le format des fichiers .as (Annodis Style) a été enrichi en conséquence.
+
+7) Introduction des structures de type "schéma". Nous en proposons ici une version simplifiée par rapport aux différentes discussions que nous avons eues et continuerons sans doute à avoir, mais qui a le mérite d'être d'ores et déjà opérationnelle. En voici les principales propriétés.
+
+	- Un schéma est tout simplement une regroupement d'unités et de relations. Aucune contrainte n'est imposée (ni imposable) par l'interface : il conviendra alors de se conformer au manuel d'annotation.
+	
+	- Un clic sur le mode "Schéma" ouvre un sous-panneau de contrôle des schémas.
+	
+	- Un clic sur "créer un nouveau schéma" introduit un schéma, encore vide. Son identifiant apparaît dans "current schema", et il peut dès lors accueillir unités et relations.
+	
+	- Un clic sur "add unit to schema" ou "add relation to schema" permet d'ajouter respectivement unités ou relations. Dans l'un de ces modes, il suffit ensuite de cliquer sur les annotations choisies pour les ajouter au schéma en cours d'édition. Tout élément ajouté au schéma apparaît en orange dans la vue principale.
+	
+	- On peut retirer des unités et des relations d'un schéma via les boutons "remove unit from schema" et "remove relation from schema". Il suffit alors de sélectionner à la souris les éléments à retirer du schéma en cours d'édition. Les éléments concernés retrouvent alors leur couleur originelle.
+
+	- Si l'on souhaite revenir sur un schéma déjà créé pour le modifier (ajouts et/ou retraits d'unités et de relations) ou le supprimer, il convient de passer en mode "Select a schema", et de cliquer sur l'une des unités ou relations qui le constituent. Lors du passage de la souris devant l'un des éléments du schéma, l'identifiant de ce dernier apparaît sous la souris. Lorsque l'on clique dessus, il se trouve sélectionné (on peut alors vérifier que l'identifiant de ce schéma apparaît effectivement dans la boîte de manipulation des schémas).
+
+	- Du point de vue de l'ergonomie, des améliorations devront être apportées dans le futur concernant la visualisation desdits schémas. D'éventuelles suggestions en la matière seront toujours les bienvenues.
+
+8) Glue note : Il est désormais possible de planter des "glue notes" dans le corps du document. Cela pourra s'avérer particulièrement utile au cours de la phase d'annotation, lorsqu'un doute subsistera sur un choix, ou que l'on souhaitera indiquer, à tel endroit du texte, qu'une décision reste à prendre. Leur fonctionnement est le suivant:
+
+	- pour créer une telle note, il faut passer en mode "Glue note" (icone en forme de drapeau jaune) dans la barre d'actions. Un cadre jaune apparaît. On écrit alors le texte de la note dans ce cadre (les retours à la ligne étant manuels). Puis, à la souris, on positionne un drapeau à l'endroit choisi dans le texte.
+	
+	- Les glue notes s'affichent en surimpression du texte et des annotations. Il peut ainsi être souhaitable de modifier leur apparence afin qu'elles soient aussi peu envahissantes que possible. Chaque note peut être "deployed" (elle apparaît alors avec sont texte) ou non "deployed" (seule sa position apparaît). Le mode "Deploy Y/N" permet de faire basculer individuellement une note d'un état à l'autre (par clics successifs), en cliquant sur la position (et non le texte) de cette dernière. Pour appliquer ce basculement à toutes les notes, il est possible d'utiliser le bouton "Deploy ALL Y/N", qui, pour sa part, a une action immédiate sur l'ensemble des glue notes.
+	
+	- On peut modifier ou supprimer une note en passant en mode "Edit", puis en cliquant sur la position de l'élément choisi. On peut alors modifier le texte dans la zone de saisie (et constater la modification immédiate dans la fenêtre principale), ou appuyer sur la touche BACKSPACE pour la supprimer.
+
+9) Mode Default. Ce mode, dans lequel l'interface est placée au lancement de l'application, est neutre vis à vis de la gestion des annotations (aucune action n'est possible), mais autorise le copier-coller d'éléments du texte. On peut sélectionner du texte par tous les moyens habituels (sélection sur une zone de texte, double-clic sur un mot, ou triple-clic sur une ligne), puis copier via la combinaison de touches CTRL-C, et coller dans une application externe avec CTRL-V.
+
+
+Les 4 outils présentés ci-après ont en commun la façon dont leur présence au sein de l'interface est gérée:
+
+	- pour faire apparaître l'un de ces outils, on peut, soit le choisir dans le menu "Tools", soit utiliser le raccourci clavier SHIFT suivi de la touche 'f', 'u', 't' ou 'd' selon l'outil souhaité.
+	
+	- pour faire disparaître l'outil (et gagner de la place dans l'interface), il suffit de cliquer sur la croix rouge apparaissant en haut à droite de la boîte correspondante.
+	
+	- L'interface mémorise, d'une session sur l'autre, l'état de sélection de chacun de ces 4 outils.
+
+Ces outils sont:
+
+10) Outil de recherche (menu Tools-->Find text/ ou shift-f)
+
+	- Il s'agit d'une recherche full-text dans le corpus actuellement chargé. Lors de la saisie du mot (ou de l'ensemble de mots) recherché, la saisie en cours apparaît en vert tant qu'il en existe au moins une occurrence dans le texte, et en couleur rouge dans le cas contraire. Cela permet de se rendre compte immédiatement des erreurs de frappe, ou, bien sûr, de l'absence du mot recherché.
+	
+	- Pour un mot (ou ensemble de mots) recherché et trouvé (donc affiché en vert), on peut naviguer entre ses occurences successives en cliquant sur "next" ou en appuyant sur la touche "Entrée" autant de fois que nécessaire. On peut revenir à la première occurrence en cliquant sur "first".
+	
+	- Il est possible de limiter la recherche à un type d'unité donné. Pour cela, il suffit d'ajouter le nom de ce type dans le champ "Restrain to unit type". Là encore, les couleurs vert et rouge permettent de vérifier rapidement que les informations saisies sont cohérentes et disponibles.
+	
+	- À chaque fois qu'un élément est trouvé, il apparaît en surbrillance dans le texte, et la vue principale est centrée sur la zone de texte concernée.
+
+11) Outil de recherche d'unités (menu Tools-->Find Units/ ou shift-u)
+
+	- cet outil ressemble au précédent, et permet de rechercher, non plus du texte, mais des unités (parmi les annotations disponibles).
+	
+	- le champ principal est "Search Unit", dans lequel on saisit le nom du type des unités recherchées. Au cours de la saisie du type, ce champ apparaît en rouge, jusqu'à ce que le nom d'un type "licite" soit entièrement indiqué. Il apparaît alors en vert, et le texte se centre sur la première unité de ce type trouvée, qui est alors sélectionnée.
+	
+	- il est possible de restreindre la sélection en exigeant que les unités du type recherché soient associées à une structure de traits conforme à un couple attribut/valeur donné. Il suffit alors de renseigner les champs correspondants ("Attribute constraint" et "Value constraint") avec les valeurs souhaitées.
+
+12) Outil "Depth Selector" (menu Tools-->Depth Selector/ ou shift-d). L'une des difficultés soulevées lors de notre venue à Toulouse résidait dans le fait qu'une forte imbrication des unités (certaines pouvant couvrir l'intégralité du texte) rendait difficile le repérage visuel. En réponse à cette difficulté, cet outil propose un contrôle des unités à afficher en fonction de leur profondeur d'imbrication:
+
+	- Deux sliders de contrôle permettent de gérer respectivement la profondeur minimale et la profondeur maximale des unités que l'on souhaite afficher.
+	
+	- Ces sliders sont mutuellement (et automatiquement) contraints au sens ou le maximum de l'un conditionne le minimum de l'autre, et vice-versa. 
+	
+	- Le slider Min Depth permet de restreindre l'affichage aux seules unités ayant une profondeur au moins égale à la valeur spécifiée. En faisant glisser ce slider vers la droite, on voit progressivement s'effacer les unités des plus englobantes aux plus imbriquées.
+	
+	- Réciproquement, le slider Max depth spécifie une contrainte de profondeur maximale. Les unités ayant une profondeur supérieure à la valeur spécifiée ne sont pas affichées.
+	
+	- Remarque : cet outil doit être considéré comme fortement contextuel : pour un lieu du texte donné et pour une tâche d'annotation donnée, on réglera ces sliders à des valeurs faisant apparaître les seules unités souhaitées. Mais dès que l'on s'intéressera à une autre partie du texte ou à une autre tâche, il est probable que ces valeurs devront être modifiées pour rester pertinentes. Pour cette raison, elles ne sont pas mémorisées d'une session d'annotation à l'autre.
+	
+	- On peut revenir à la configuration par défaut (i.e. afficher toutes les profondeurs) en un clic sur le bouton "Reset".
+
+13) Outil "Annotations as text". Cet outil constitue un premier pas vers une notation conforme à celle que les "ascendants" manipulent habituellement, notation dans laquelle les relations seront par exemple exprimées sous une forme du type "elaboration(a,b)". Cet outil permet d'une part d'avoir une vue synthétique de toutes les annotations créées, et d'autre part d'en créer parfois plus rapidement que par la méthode "graphique" (notamment en ce qui concerne les schémas).
+
+	- Une fois cet outil actif, il suffit de créer graphiquement une nouvelle annotation pour voir apparaître immédiatement son "équivalent" textuel. 
+	
+	- Par exemple, lors de la création de la "deuxième" unité, nous obtenons : 
+		u_default(99,207) ID=2
+	Ici, "u_" signifie que l'annotation est de type unité, "default" est son type, 99 et 207 sont respectivement les positions de début et de fin de l'unité, et ID=2 indique son identifiant.
+	
+	- Autre exemple, lors de la création d'une relation, nous obtenons :
+		r_defaultRelation(8,4) ID=9
+	Ici, "r_defaultRelation" indique qu'il s'agit d'une relation ("r_"), que son type est "defaultRelation", et qu'elle met en relation les unités d'identifiants respectifs 8 et 4.
+	
+	- Enfin, pour les schémas, nous obtenons une ligne commençant par "s_", et contenant les identifiants des unités et relations qu'il contient.
+	
+	- Ces formes textuelles sont "sensibles" : en approchant la souris de l'un de leurs constituants, ce dernier apparaît en orange ; s'il s'agit d'un identifiant d'annotation, la ligne comportant cette annotation apparaît alors avec un fond bleu. Un clic sur le constituant orange permet alors de se focaliser, dans la vue textuelle principale, sur ce constituant. Par exemple un clic sur 99 centrera le texte sur la position de début de l'unité 2. De même, un clic sur 8 ou 4 de la ligne relative à la relation imposera un centrage sur (et une sélection de) l'unité 8 ou 4.
+	
+	- Il est possible de trier ces formes textuelles de deux façons. Soit par date de création, de la plus ancienne à la plus récente, ce qui est le cas par défaut, soit par type d'élément (unités, relations, schémas).
+	
+	- Une ligne de commande permet de saisir manuellement des annotations. Un clic permet d'activer cette ligne, cette activation étant indiquée par un fond vert. Dès lors, il suffit d'écrire une commande respectant la syntaxe évoquée ci-dessus. La saisie est rapide et sans erreur possible dans la mesure où l'outil gère la complétion automatique en permanence, et n'autorise aucune erreur de saisie.
+	
+	- Par exemple, pour obtenir manuellement la relation précédente r_defaultRelation(8,4), il suffit de :
+	
+		1) taper "r"; on obtient alors, dans la ligne de commande, "r_" par complétion automatique;
+		
+		2) taper "d"; on obtient alors "r_defaultRelation(" si le modèle d'annotation ne comporte que ce type de relation commençant par la lettre "d" (ce qui est le cas par défaut);
+		
+		3) taper "8", on obtient alors "r_defaultRelation(8,";
+		
+		4) taper "4', on obtient alors "r_defaultRelation(8,4)";
+		
+		5) il suffit alors de valider avec la touche entrée. Cette nouvelle relation est alors entrée dans le système et apparaît conséquemment dans les différentes vues.
+		
+		6) Notons que nous n'aurons ainsi saisi que la séquence "rd84" pour obtenir "r_defaultRelation(8,4)".
+
+14) Authentification et identifiants d'annotations. 
+
+	- Comme il a été dit, il est nécessaire d'être authentifié pour pouvoir enregistrer des annotations. De façon plus précise, une annotation est identifiée de façon absolument univoque via le login de l'utilisateur et un entier généré à partir de sa date de création. De la sorte, nous sommes assurés de la bi-univocité des identifiants, étant donné que deux annotateurs ont nécessairement deux logins distincts, et étant entendu qu'un annotateur donné ne peut générer deux annotations au même instant.
+	
+	- Le revers de la médaille est que les identifiants en question sont relativement peu lisibles et difficiles à manipuler par un humain. Un identifiant complet d'annotation sera en effet de la forme dupont_1231261938669.
+	
+	- Quoi qu'il advienne, une annotation possèdera toujours un tel identifiant réel. Cependant, nous avons mis en place un système parallèle d'identification des unités, plus "user friendly", mais qui n'assure ni l'unicité ni la pérennité, sa durée de vie étant limitée à une session d'utilisation de l'interface.
+	
+	- Chaque annotation apparaissant dans l'interface (qu'elle soit chargée via un fichier ou directement créée) se voit assigner un identifiant temporaire, le temps de la session, sous la forme d'un simple entier correspondant au rang de son apparition, quel que soit son type.
+	
+	- Ces identifiants, à la différence des identifiants réels, pourront totalement différer d'une session à l'autre. Il ne faut donc se référer à ces identifiants "virtuels" qu'au sein d'une même session. 
+	
+	- Au sein d'une même session, et en particulier au sein du composant Annotations as text, il est naturellement possible d'utiliser ces identifiants virtuels, qui seront implicitement traduits, au moment opportun, en leur équivalent réel.
+	
+	- En cas de besoin de "stabilité" des identifiants d'une session à l'autre (notamment si on les utilise à l'extérieur de l'interface, par exemple dans un commentaire ou un email destiné à un autre annotateur), il est nécessaire d'utiliser les identifiants réels.
+	
+	- L'interface permet de basculer à tout moment de l'identification "réelle" à l'identification "user friendly". Pour cela, le menu Options-->Preferences-->Control-->Use user friendly annotations ID's (versus) real ID/, peut être utilisé. Les identifiants sont immédiatement mis à jour dans l'interface.
+
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<converter excludeUnmapped="true">
+
+	<conversion>
+		<source><type>paragraphe</type></source>
+		<target><type>paragraph</type></target>
+	</conversion>
+
+	<conversion>
+		<source><type>titreDuDocument</type></source>
+		<target><type>title</type></target>
+	</conversion>
+
+	<conversion>
+		<source><type>titreDeSection</type></source>
+		<target><type>sectionTitle</type></target>
+	</conversion>
+	
+</converter>

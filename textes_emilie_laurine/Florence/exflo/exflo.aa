@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<annotations>
+<metadata corpusHashcode="512-37966203"/>
+<unit id="TXT_IMPORTER_1495642926009">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1495642926009</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="0"/>
+</start>
+<end>
+<singlePosition index="5"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1495642926010">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1495642926010</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="5"/>
+</start>
+<end>
+<singlePosition index="119"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1495642926011">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1495642926011</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="119"/>
+</start>
+<end>
+<singlePosition index="161"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1495642926012">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1495642926012</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="161"/>
+</start>
+<end>
+<singlePosition index="180"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1495642926013">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1495642926013</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="180"/>
+</start>
+<end>
+<singlePosition index="294"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1495642926014">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1495642926014</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="294"/>
+</start>
+<end>
+<singlePosition index="307"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1495642926015">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1495642926015</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="307"/>
+</start>
+<end>
+<singlePosition index="323"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1495642926016">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1495642926016</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="323"/>
+</start>
+<end>
+<singlePosition index="353"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1495642926017">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1495642926017</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="353"/>
+</start>
+<end>
+<singlePosition index="496"/>
+</end>
+</positioning>
+</unit>
+</annotations>

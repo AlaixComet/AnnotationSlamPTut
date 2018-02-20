@@ -1,0 +1,2396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotations>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>title</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="0"/>
+</start>
+<end>
+<singlePosition index="11"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>title</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="11"/>
+</start>
+<end>
+<singlePosition index="41"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="41"/>
+</start>
+<end>
+<singlePosition index="2091"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2091"/>
+</start>
+<end>
+<singlePosition index="2113"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2113"/>
+</start>
+<end>
+<singlePosition index="4163"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="4163"/>
+</start>
+<end>
+<singlePosition index="6213"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="6213"/>
+</start>
+<end>
+<singlePosition index="6237"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="6237"/>
+</start>
+<end>
+<singlePosition index="8287"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>list</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="8287"/>
+</start>
+<end>
+<singlePosition index="10337"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="8287"/>
+</start>
+<end>
+<singlePosition index="9258"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="9258"/>
+</start>
+<end>
+<singlePosition index="10337"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="10337"/>
+</start>
+<end>
+<singlePosition index="12387"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="12387"/>
+</start>
+<end>
+<singlePosition index="12411"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="12411"/>
+</start>
+<end>
+<singlePosition index="14461"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>numberedList</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="14461"/>
+</start>
+<end>
+<singlePosition index="16511"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="14461"/>
+</start>
+<end>
+<singlePosition index="15432"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>listItem</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="15432"/>
+</start>
+<end>
+<singlePosition index="16511"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="16511"/>
+</start>
+<end>
+<singlePosition index="18561"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="18561"/>
+</start>
+<end>
+<singlePosition index="18585"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="18585"/>
+</start>
+<end>
+<singlePosition index="20635"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="20635"/>
+</start>
+<end>
+<singlePosition index="22685"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="22685"/>
+</start>
+<end>
+<singlePosition index="24735"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="24735"/>
+</start>
+<end>
+<singlePosition index="24759"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="24759"/>
+</start>
+<end>
+<singlePosition index="26809"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="26809"/>
+</start>
+<end>
+<singlePosition index="28859"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="28859"/>
+</start>
+<end>
+<singlePosition index="30909"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="30909"/>
+</start>
+<end>
+<singlePosition index="30933"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="30933"/>
+</start>
+<end>
+<singlePosition index="32983"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="32983"/>
+</start>
+<end>
+<singlePosition index="35033"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="35033"/>
+</start>
+<end>
+<singlePosition index="37083"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="37083"/>
+</start>
+<end>
+<singlePosition index="37107"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="37107"/>
+</start>
+<end>
+<singlePosition index="39157"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="39157"/>
+</start>
+<end>
+<singlePosition index="41207"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="41207"/>
+</start>
+<end>
+<singlePosition index="43257"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="43257"/>
+</start>
+<end>
+<singlePosition index="43281"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="43281"/>
+</start>
+<end>
+<singlePosition index="45331"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="45331"/>
+</start>
+<end>
+<singlePosition index="47381"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="47381"/>
+</start>
+<end>
+<singlePosition index="49431"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="49431"/>
+</start>
+<end>
+<singlePosition index="49455"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="49455"/>
+</start>
+<end>
+<singlePosition index="51505"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="51505"/>
+</start>
+<end>
+<singlePosition index="53555"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="53555"/>
+</start>
+<end>
+<singlePosition index="55605"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="55605"/>
+</start>
+<end>
+<singlePosition index="55630"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="55630"/>
+</start>
+<end>
+<singlePosition index="57680"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="57680"/>
+</start>
+<end>
+<singlePosition index="59730"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="59730"/>
+</start>
+<end>
+<singlePosition index="61780"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="61780"/>
+</start>
+<end>
+<singlePosition index="61805"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="61805"/>
+</start>
+<end>
+<singlePosition index="63855"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="63855"/>
+</start>
+<end>
+<singlePosition index="65905"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="65905"/>
+</start>
+<end>
+<singlePosition index="67955"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="67955"/>
+</start>
+<end>
+<singlePosition index="67980"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="67980"/>
+</start>
+<end>
+<singlePosition index="70030"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="70030"/>
+</start>
+<end>
+<singlePosition index="72080"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="72080"/>
+</start>
+<end>
+<singlePosition index="74130"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="74130"/>
+</start>
+<end>
+<singlePosition index="74155"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="74155"/>
+</start>
+<end>
+<singlePosition index="76205"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="76205"/>
+</start>
+<end>
+<singlePosition index="78255"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="78255"/>
+</start>
+<end>
+<singlePosition index="80305"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="80305"/>
+</start>
+<end>
+<singlePosition index="80330"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="80330"/>
+</start>
+<end>
+<singlePosition index="82380"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="82380"/>
+</start>
+<end>
+<singlePosition index="84430"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="84430"/>
+</start>
+<end>
+<singlePosition index="86480"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>sectionTitle</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="86480"/>
+</start>
+<end>
+<singlePosition index="86505"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="86505"/>
+</start>
+<end>
+<singlePosition index="88555"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="88555"/>
+</start>
+<end>
+<singlePosition index="90605"/>
+</end>
+</positioning>
+</unit>
+<unit id="anonymous_0">
+<metadata>
+<author>anonymous</author>
+<creation-date>0</creation-date>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="90605"/>
+</start>
+<end>
+<singlePosition index="92655"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557397128">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557397128</creation-date>
+</metadata>
+<characterisation>
+<type>Nom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="53"/>
+</start>
+<end>
+<singlePosition index="58"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557400533">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557400533</creation-date>
+</metadata>
+<characterisation>
+<type>Nom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="334"/>
+</start>
+<end>
+<singlePosition index="343"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557406225">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557406225</creation-date>
+</metadata>
+<characterisation>
+<type>Nom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="74"/>
+</start>
+<end>
+<singlePosition index="81"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557407511">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557407511</creation-date>
+</metadata>
+<characterisation>
+<type>Nom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="91"/>
+</start>
+<end>
+<singlePosition index="100"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557409314">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557409314</creation-date>
+</metadata>
+<characterisation>
+<type>Nom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="273"/>
+</start>
+<end>
+<singlePosition index="281"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557410833">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557410833</creation-date>
+</metadata>
+<characterisation>
+<type>Nom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="617"/>
+</start>
+<end>
+<singlePosition index="629"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557412536">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557412536</creation-date>
+</metadata>
+<characterisation>
+<type>Nom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="776"/>
+</start>
+<end>
+<singlePosition index="780"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557414188">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557414188</creation-date>
+</metadata>
+<characterisation>
+<type>Nom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="880"/>
+</start>
+<end>
+<singlePosition index="893"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557415724">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557415724</creation-date>
+</metadata>
+<characterisation>
+<type>Nom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1233"/>
+</start>
+<end>
+<singlePosition index="1244"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557421449">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557421449</creation-date>
+</metadata>
+<characterisation>
+<type>Pronom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="107"/>
+</start>
+<end>
+<singlePosition index="114"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557423303">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557423303</creation-date>
+</metadata>
+<characterisation>
+<type>Pronom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="290"/>
+</start>
+<end>
+<singlePosition index="300"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557877823">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557877823</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="439"/>
+</start>
+<end>
+<singlePosition index="447"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557879609">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557879609</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="160"/>
+</start>
+<end>
+<singlePosition index="170"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557883832">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557883832</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1787"/>
+</start>
+<end>
+<singlePosition index="1815"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557885835">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557885835</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1263"/>
+</start>
+<end>
+<singlePosition index="1270"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557888089">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557888089</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2840"/>
+</start>
+<end>
+<singlePosition index="2860"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557889191">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557889191</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2235"/>
+</start>
+<end>
+<singlePosition index="2255"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557890338">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557890338</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="3058"/>
+</start>
+<end>
+<singlePosition index="3065"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557903980">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557903980</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="3596"/>
+</start>
+<end>
+<singlePosition index="3604"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557905433">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557905433</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="4532"/>
+</start>
+<end>
+<singlePosition index="4544"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557906501">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557906501</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="4831"/>
+</start>
+<end>
+<singlePosition index="4837"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557908371">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557908371</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="7267"/>
+</start>
+<end>
+<singlePosition index="7276"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557909522">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557909522</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="7606"/>
+</start>
+<end>
+<singlePosition index="7617"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557911009">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557911009</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="6461"/>
+</start>
+<end>
+<singlePosition index="6469"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557913763">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557913763</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="9888"/>
+</start>
+<end>
+<singlePosition index="9902"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557914641">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557914641</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="10191"/>
+</start>
+<end>
+<singlePosition index="10201"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557916100">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557916100</creation-date>
+</metadata>
+<characterisation>
+<type>Verbe</type>
+<featureSet>
+<feature name="groupe">premier</feature>
+<feature name="temps">present</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="8709"/>
+</start>
+<end>
+<singlePosition index="8727"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557922026">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557922026</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="8619"/>
+</start>
+<end>
+<singlePosition index="8737"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557925098">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557925098</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="9799"/>
+</start>
+<end>
+<singlePosition index="9910"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557928837">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557928837</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="10178"/>
+</start>
+<end>
+<singlePosition index="10337"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557935046">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557935046</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="41"/>
+</start>
+<end>
+<singlePosition index="102"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557938202">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557938202</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="103"/>
+</start>
+<end>
+<singlePosition index="200"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557943443">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557943443</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="423"/>
+</start>
+<end>
+<singlePosition index="649"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557946798">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557946798</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="865"/>
+</start>
+<end>
+<singlePosition index="1279"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557950705">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557950705</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1688"/>
+</start>
+<end>
+<singlePosition index="1910"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557953609">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557953609</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2214"/>
+</start>
+<end>
+<singlePosition index="2358"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557956163">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557956163</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2836"/>
+</start>
+<end>
+<singlePosition index="3088"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557960954">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557960954</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="4438"/>
+</start>
+<end>
+<singlePosition index="4950"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557965878">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557965878</creation-date>
+</metadata>
+<characterisation>
+<type>Phrase</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="7239"/>
+</start>
+<end>
+<singlePosition index="7650"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557977596">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557977596</creation-date>
+</metadata>
+<characterisation>
+<type>Paragraphe</type>
+<featureSet>
+<feature name="taille">moyenne</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="4163"/>
+</start>
+<end>
+<singlePosition index="6213"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557984190">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557984190</creation-date>
+</metadata>
+<characterisation>
+<type>Paragraphe</type>
+<featureSet>
+<feature name="taille">moyenne</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2113"/>
+</start>
+<end>
+<singlePosition index="4163"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246557991290">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246557991290</creation-date>
+</metadata>
+<characterisation>
+<type>Paragraphe</type>
+<featureSet>
+<feature name="taille">moyenne</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="6237"/>
+</start>
+<end>
+<singlePosition index="8286"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246558205675">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558205675</creation-date>
+</metadata>
+<characterisation>
+<type>Nom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1402"/>
+</start>
+<end>
+<singlePosition index="1412"/>
+</end>
+</positioning>
+</unit>
+<unit id="ymathet_1246558206994">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558206994</creation-date>
+</metadata>
+<characterisation>
+<type>Nom</type>
+<featureSet>
+<feature name="nombre">singulier</feature>
+<feature name="genre">masculin</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1508"/>
+</start>
+<end>
+<singlePosition index="1515"/>
+</end>
+</positioning>
+</unit>
+<relation id="ymathet_1246558012878">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558012878</creation-date>
+</metadata>
+<characterisation>
+<type>Anaphore</type>
+<featureSet>
+<feature name="type">demo</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246557407511"/>
+<term id="ymathet_1246557410833"/>
+</positioning>
+</relation>
+<relation id="ymathet_1246558018015">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558018015</creation-date>
+</metadata>
+<characterisation>
+<type>Anaphore</type>
+<featureSet>
+<feature name="type">demo</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246557885835"/>
+<term id="ymathet_1246557883832"/>
+</positioning>
+</relation>
+<relation id="ymathet_1246558027932">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558027932</creation-date>
+</metadata>
+<characterisation>
+<type>Anaphore</type>
+<featureSet>
+<feature name="type">demo</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246557908371"/>
+<term id="ymathet_1246557916100"/>
+</positioning>
+</relation>
+<relation id="ymathet_1246558033952">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558033952</creation-date>
+</metadata>
+<characterisation>
+<type>Anaphore</type>
+<featureSet>
+<feature name="type">demo</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246557913763"/>
+<term id="ymathet_1246557914641"/>
+</positioning>
+</relation>
+<relation id="ymathet_1246558041904">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558041904</creation-date>
+</metadata>
+<characterisation>
+<type>sujet</type>
+<featureSet>
+<feature name="type"/>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246557397128"/>
+<term id="ymathet_1246557406225"/>
+</positioning>
+</relation>
+<relation id="ymathet_1246558047585">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558047585</creation-date>
+</metadata>
+<characterisation>
+<type>sujet</type>
+<featureSet>
+<feature name="type"/>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246557414188"/>
+<term id="ymathet_1246557415724"/>
+</positioning>
+</relation>
+<relation id="ymathet_1246558056371">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558056371</creation-date>
+</metadata>
+<characterisation>
+<type>sujet</type>
+<featureSet>
+<feature name="type"/>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246557905433"/>
+<term id="ymathet_1246557906501"/>
+</positioning>
+</relation>
+<relation id="ymathet_1246558124378">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558124378</creation-date>
+</metadata>
+<characterisation>
+<type>complement</type>
+<featureSet>
+<feature name="type">de temps</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246557903980"/>
+<term id="ymathet_1246557890338"/>
+</positioning>
+</relation>
+<relation id="ymathet_1246558145652">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558145652</creation-date>
+</metadata>
+<characterisation>
+<type>complement</type>
+<featureSet>
+<feature name="type">de temps</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246557909522"/>
+<term id="ymathet_1246557908371"/>
+</positioning>
+</relation>
+<relation id="ymathet_1246558171915">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558171915</creation-date>
+</metadata>
+<characterisation>
+<type>Elaboration</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246557946798"/>
+<term id="ymathet_1246557423303"/>
+</positioning>
+</relation>
+<relation id="ymathet_1246558178043">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558178043</creation-date>
+</metadata>
+<characterisation>
+<type>Elaboration</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246557889191"/>
+<term id="ymathet_1246557950705"/>
+</positioning>
+</relation>
+<relation id="ymathet_1246558398644">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558398644</creation-date>
+</metadata>
+<characterisation>
+<type>Elaboration</type>
+<featureSet>
+<feature name="demo"/>
+</featureSet>
+</characterisation>
+<positioning>
+<term id="ymathet_1246558357351"/>
+<term id="ymathet_1246558330689"/>
+</positioning>
+</relation>
+<schema id="ymathet_1246558217626">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558217626</creation-date>
+</metadata>
+<characterisation>
+<type>Unite-Discontinue</type>
+<featureSet>
+<feature name="type">Nominal</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<embedded-unit id="ymathet_1246558205675"/>
+<embedded-unit id="ymathet_1246558206994"/>
+</positioning>
+</schema>
+<schema id="ymathet_1246558251085">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558251085</creation-date>
+</metadata>
+<characterisation>
+<type>Unite-Discontinue</type>
+<featureSet>
+<feature name="type">Nominal</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<embedded-unit id="ymathet_1246557953609"/>
+<embedded-unit id="ymathet_1246557956163"/>
+<embedded-unit id="ymathet_1246557903980"/>
+</positioning>
+</schema>
+<schema id="ymathet_1246558281839">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558281839</creation-date>
+</metadata>
+<characterisation>
+<type>Schema-Anaphorique</type>
+<featureSet>
+<feature name="type"/>
+</featureSet>
+</characterisation>
+<positioning>
+<embedded-unit id="ymathet_1246557943443"/>
+<embedded-unit id="ymathet_1246557946798"/>
+<embedded-unit id="ymathet_1246557950705"/>
+<embedded-unit id="ymathet_1246557414188"/>
+<embedded-unit id="ymathet_1246557885835"/>
+<embedded-schema id="ymathet_1246558217626"/>
+</positioning>
+</schema>
+<schema id="ymathet_1246558330689">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558330689</creation-date>
+</metadata>
+<characterisation>
+<type>Schema-Elaboratif</type>
+<featureSet>
+<feature name="type"/>
+</featureSet>
+</characterisation>
+<positioning>
+<embedded-unit id="ymathet_1246557965878"/>
+<embedded-unit id="ymathet_1246557991290"/>
+<embedded-unit id="ymathet_1246557922026"/>
+<embedded-unit id="ymathet_1246557911009"/>
+</positioning>
+</schema>
+<schema id="ymathet_1246558357351">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558357351</creation-date>
+</metadata>
+<characterisation>
+<type>Schema-Elaboratif</type>
+<featureSet>
+<feature name="type"/>
+</featureSet>
+</characterisation>
+<positioning>
+<embedded-unit id="ymathet_1246557956163"/>
+<embedded-unit id="ymathet_1246557960954"/>
+</positioning>
+</schema>
+<schema id="ymathet_1246558448052">
+<metadata>
+<author>ymathet</author>
+<creation-date>1246558448052</creation-date>
+</metadata>
+<characterisation>
+<type>Schema-Anaphorique</type>
+<featureSet>
+<feature name="type"/>
+</featureSet>
+</characterisation>
+<positioning>
+<embedded-unit id="ymathet_1246557953609"/>
+<embedded-unit id="ymathet_1246557888089"/>
+<embedded-unit id="ymathet_1246557956163"/>
+</positioning>
+</schema>
+</annotations>

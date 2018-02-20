@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<annotationModel>
+
+	<units>
+		<type name="withColor">
+			<featureSet>
+				<feature name="glozz:color">
+				</feature>
+			</featureSet>
+		</type>
+	</units>
+	
+		
+</annotationModel>

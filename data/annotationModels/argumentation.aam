@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<annotationModel>
+
+	<units>
+		<type name="Introduction">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="Introduction" />
+				</feature>
+				<feature name="scope">
+					<value type="free" default="section" />
+				</feature>
+				<feature name="document-boundary">
+					<value type="free" default="false" />
+				</feature>
+				<feature name="main-topic">
+					<value type="free" default="" />
+				</feature>
+			</featureSet>
+		</type>
+		
+		<type name="Conclusion">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="Conclusion" />
+				</feature>
+				<feature name="scope">
+					<value type="free" default="section" />
+				</feature>
+				<feature name="document-boundary">
+					<value type="free" default="false" />
+				</feature>
+				<feature name="main-topic">
+					<value type="free" default="" />
+				</feature>
+			</featureSet>
+		</type>
+		
+		<type name="Illustration">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="Illustration" />
+				</feature>
+			</featureSet>
+		</type>
+		
+		<type name="Thèse">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="Thèse" />
+				</feature>
+			</featureSet>
+		</type>
+		
+		<type name="Antithèse">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="Antithèse" />
+				</feature>
+				<feature name="connected">
+					<value type="free" default="false" />
+				</feature>
+			</featureSet>
+		</type>
+		
+		<type name="Synthèse">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="Synthèse" />
+				</feature>
+				<feature name="connected">
+					<value type="free" default="false" />
+				</feature>
+			</featureSet>
+		</type>
+		
+		<type name="Connecteur">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="Connecteur" />
+				</feature>
+				<feature name="standard-function">
+					<value type="free" default="" />
+				</feature>
+			</featureSet>
+		</type>
+	</units>
+	
+	
+	<relations>
+		
+		<type name="Elaboration">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="Elaboration" />
+				</feature>
+			</featureSet>
+		</type>
+		
+		<type name="Contraste">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="Contraste" />
+				</feature>
+			</featureSet>
+		</type>
+		
+	</relations>
+	
+	
+	<schemas>
+		
+		<type name="Thèse/Antithèse/Synthèse">
+			<featureSet>
+				<feature name="type">
+					<value type="free" default="Thèse/Antithèse/Synthèse" />
+				</feature>
+				<feature name="consecution">
+					<value type="free" default="stricte" />
+				</feature>
+			</featureSet>
+		</type>
+		
+	</schemas>
+	
+</annotationModel>
