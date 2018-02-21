@@ -309,7 +309,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment1</type>
+<type>Segment1bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -369,7 +369,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment2</type>
+<type>Segment2bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -389,7 +389,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment2</type>
+<type>Segment2bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -449,7 +449,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment2</type>
+<type>Segment2bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -469,7 +469,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment2</type>
+<type>Segment2bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -549,7 +549,7 @@
 <lastModificationDate>1519133875842</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment2bis</type>
+<type>Segment1</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -769,4 +769,46 @@
 <term id="abiver_1519133807415"/>
 </positioning>
 </relation>
+<flag id="abiver_1519134121399">
+<metadata>
+<author>abiver</author>
+<creation-date>1519134121399</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<comment>Activités</comment>
+</characterisation>
+<positioning>
+<singlePosition index="10"/>
+</positioning>
+</flag>
+<flag id="abiver_1519134130632">
+<metadata>
+<author>abiver</author>
+<creation-date>1519134130632</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<comment>Florence M</comment>
+</characterisation>
+<positioning>
+<singlePosition index="123"/>
+</positioning>
+</flag>
+<flag id="abiver_1519134136656">
+<metadata>
+<author>abiver</author>
+<creation-date>1519134136656</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<comment>Florence R</comment>
+</characterisation>
+<positioning>
+<singlePosition index="201"/>
+</positioning>
+</flag>
 </annotations>

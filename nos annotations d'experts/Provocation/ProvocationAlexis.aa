@@ -469,7 +469,7 @@
 <lastModificationDate>1519134922145</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment2bis</type>
+<type>Segment1</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -509,7 +509,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment1</type>
+<type>Segment1bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -529,7 +529,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment1</type>
+<type>Segment1bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -549,7 +549,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment1</type>
+<type>Segment1bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -569,7 +569,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment1</type>
+<type>Segment1bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -609,7 +609,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment1</type>
+<type>Segment1bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -649,7 +649,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment1</type>
+<type>Segment1bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -709,7 +709,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment1</type>
+<type>Segment1bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -749,7 +749,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment1</type>
+<type>Segment1bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -769,7 +769,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Segment1</type>
+<type>Segment1bis</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -1297,6 +1297,20 @@
 </characterisation>
 <positioning>
 <singlePosition index="718"/>
+</positioning>
+</flag>
+<flag id="abiver_1519205654353">
+<metadata>
+<author>abiver</author>
+<creation-date>1519205654353</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<comment>Apocalypse</comment>
+</characterisation>
+<positioning>
+<singlePosition index="12"/>
 </positioning>
 </flag>
 </annotations>
