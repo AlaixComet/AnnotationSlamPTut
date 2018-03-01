@@ -8,25 +8,36 @@ import pandas
 
 
 def annotateur(f):
+    """returns string annotateur name from file name following the nomenclature "annotateur_typetext" """
     # print('ici'+os.path.basename(f).split('_'))
     return os.path.basename(f).split('_')[0]
 
 
 def data(f):
+    """ returns Dataframe from data_retours.csv for the annotator of the selected file """
     d = pandas.DataFrame.from_csv('data_retours.csv', index_col=1)
     return d.loc[annotateur(f)]
 
 
 def type_texte(f):
+    """returns string text name from file name following the nomenclature "annotateur_typetext" """
     return os.path.basename(f).split('_')[1]
 
 
 def print_themes(xml):
+    """
+    input : xml parser
+    prints theme list
+    """
     for theme in xml.xpath('/annotations/flag/characterisation/comment'):
         print("  ->"+theme.text)
 
 
 def theme_list(xml):
+    """
+    input : xml parser
+    output : theme list
+    """
     t = []
     for theme in xml.xpath('/annotations/flag/characterisation/comment'):
         t.append(theme)
@@ -34,6 +45,10 @@ def theme_list(xml):
 
 
 def nb_themes(xml):
+    """
+    input : xml parser
+    prints number of themes
+    """
     nbtheme = 0
     for theme in xml.xpath('/annotations/flag/characterisation/comment'):
         nbtheme = nbtheme+1
@@ -61,17 +76,29 @@ def relations_list(xml):
 
 
 def nb_rel(xml):
+    """
+    input : xml parser
+    output : int len of the relation list in the xml file
+    """
     li = relations_list(xml)
     return len(li)
 
 
 def count_rel(xml):
+    """
+    input : xml parser
+    output : relation list counter
+    """
     li = relations_list(xml)
     c = Counter(li)
     return c
 
 
 def plot_relations(xml):
+    """
+    input : xml parser
+    output : a mathlab pie (onsenfou)
+    """
     counts = count_rel(xml)
     a = plt.pie([float(v) for v in counts.values()],
                 labels=[k for k in counts], autopct=None)
@@ -79,6 +106,10 @@ def plot_relations(xml):
 
 
 def create_dot(dirr, filee):
+    """
+    tous les chemins de fichiers sont en dur, TODO changer tt ça
+    sinon ça a l'air de créer les fameux .dot à partir du script "/script_gen_arbre.sh"
+    """
     launch = "/script_gen_arbre.sh"
 
     # change directory to find script

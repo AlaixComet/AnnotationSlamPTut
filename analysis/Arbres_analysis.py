@@ -6,6 +6,10 @@ import os
 
 
 def dict_unit(txt):
+    """
+    input  : txt String name of the file to read
+    output : Dictionnary {int from 0 to nb line : String txtLine}
+    """
     dic = {}
     i = 0
     with open(txt) as txt:
@@ -20,6 +24,9 @@ def dict_unit(txt):
 # a chaque unite on associe son id debut pour le parcours prefix
 
 def assoc_id(txt):
+    """
+    je sais pas ce qu'ils ouvrent avec
+    """
     nodes = {}
     with open(txt) as txt:
         txt = txt.read()
@@ -32,6 +39,12 @@ def assoc_id(txt):
     return nodes
 
 def read_dot(txt):
+    """
+    surement pour lire les fichier .dot qu'on a pas du coup
+    Mais la regex ressemble à la structure "txt" de Glozz
+    Retroune une liste de strings de la forme (\w\d -> \w\d) soit (unit -> unit)
+    """
+    #unused variable dic /!\
     dic = {}
     rels = []
 
@@ -57,6 +70,12 @@ def read_dot(txt):
 
 
 def to_tree(li, rels):
+    """
+    creation of a "tree" from empty list and relation list
+    to check
+    why isn't imported Arbre Object used ??
+    TODO check and use Arbre ??
+    """
     data = rels.pop(0)
     # dbug: print("\n"+str(data))
     (pere, fils) = (data[:2], data[-2:])
@@ -86,6 +105,11 @@ def to_tree(li, rels):
 
 
 def exists(k, l):
+    """
+    False if l is not a list (tree list of sons)
+    True if k in l (direct son node)
+    Recursivly checks for each sublist of l (each son nodes)
+    """
     if not isinstance(l, list):
         return False
     if k in l:
@@ -96,6 +120,10 @@ def exists(k, l):
 
 # pf est un tuple pere fils
 def check_and_add(pf, li):
+    """
+    tous les return sont Null
+    Sinon ça m'a l'air de prendre un tuple pere fils et de l'ajouter à une liste
+    """
     # cas 1 er tour
     if li == []:
         li.append(pf[0])
@@ -138,6 +166,12 @@ def check_and_add(pf, li):
             return
 
 def sous_arbre(rels):
+    """
+    recherche si l'arbre est composé de plusieur sous arbres ??
+    Si oui il y a rupture.
+    input : rels a list wich is in fact a tree
+    ouptut : Boolean
+    """
     li = []
     nbarbre = 1 # 1 arbre de base
     # print(rels)
@@ -167,9 +201,13 @@ def sous_arbre(rels):
 
 
 def run():
-
+    """
+    reads the dot files and check if for each of them there is sub trees.
+    writes the results in file "sous_arbre.csv"
+    """
     dic = {}
     # directory where your dots files are hidden ;)
+    #mdr non
     cur_dir = 'textes_emilie_laurine/decote_arbres_reference/arbres_nouv/'
     # to get dot files
     dot = '*.dot'

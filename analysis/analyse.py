@@ -8,6 +8,15 @@ import operator
 import glob
 
 class Unit:
+    """
+    Unit Class
+        label : String name of the Unit
+        start : String start position of the selected Unit
+        end : String end position of the selected Unit
+        theme : String theme of the Unit
+
+    has tostring method
+    """
     def __init__(self, label, start, end, theme):
         self.label = label
         self.start = start
@@ -21,6 +30,13 @@ class Unit:
         return("    label:"+str(self.label)+" start:"+str(self.start)+"  end:"+str(self.end)+"   theme: "+str(self.theme))
 
 class Theme:
+    """
+    Theme Class
+        label : String name of the Theme
+        pos : ?? postion of the Theme
+
+    has tostring method
+    """
     def __init__(self, label, pos):
         self.label = label
         self.pos = pos
@@ -32,6 +48,12 @@ class Theme:
 
 
 class Relation:
+    """
+    Relation Class
+        type : String type of the Relation {Narration, Phatique, ...}
+        start : String start of the Relation
+        end : String end of the Relation
+    """
     def __init__(self, label, start, end):
         self.type = label
         self.start = start
@@ -39,203 +61,254 @@ class Relation:
 
 
 class Data:
-        def __init__(self, ffile):
-            self.filename = ffile
-            self.txt = self.totxt()
-            self.xml = self.toxml()
-            self.rels = self.rels_list()
-            self.nbrels = len(self.rels)
-            self.relations_count = self.count_rel()
-            self.relations_freq = self.freq_rel()
-            self.units = self.unit_list()
-            self.themes = self.theme_list()
-            self.units = self.assoc_unit_theme(self.units, self.themes)
-            self.nb_diff_themes = self.diff_themes()
-            self.theme_count = self.count_theme()
-            self.theme_freq = self.freq_theme()
-            self.after_data = data(ffile)
+    """
+    Data Class
+        filename        = String name of the file, taken as an input in Data constructor
+        txt             = readable file lines of filename
+        xml             = xml version of txt file with BeautifulSoup
+        rels            = List of String relations from xml file "relations"
+        nbrels          = Int len(rels)
+        relations_count = dictionnary of different relations in rels
+        relations_freq  = dictionnary with {relation Label : Float frequency} for each different relation
+        units           = List of Unit Objects
+        themes          = List of Theme Objects
+        units           = List of Unit Objects
+        nb_diff_themes  = int nb different themes
+        theme_count     = dictionnary of different themes in rels
+        theme_freq      = dictionnary with {relation Label : Float frequency} for each different relation
+        after_data      = //TODO use of data_analyse.py with panda
+    """
+    def __init__(self, ffile):
+        self.filename = ffile
+        self.txt = self.totxt()
+        self.xml = self.toxml()
+        self.rels = self.rels_list()
+        self.nbrels = len(self.rels)
+        self.relations_count = self.count_rel()
+        self.relations_freq = self.freq_rel()
+        self.units = self.unit_list()
+        self.themes = self.theme_list()
+        self.units = self.assoc_unit_theme(self.units, self.themes)
+        self.nb_diff_themes = self.diff_themes()
+        self.theme_count = self.count_theme() 
+        self.theme_freq = self.freq_theme()
+        self.after_data = data(ffile)
 
 
-        def totxt(self):
-            with open(self.filename) as txt:
-                return txt.read()
+    def totxt(self):
+        with open(self.filename) as txt:
+            return txt.read()
 
-        def toxml(self):
-            xml = BeautifulSoup(self.txt, 'lxml')
-            return xml
+    def toxml(self):
+        xml = BeautifulSoup(self.txt, 'lxml')
+        return xml
 
-        def rels_list(self):
-            return [x.type.text for x in self.xml.findAll('relation')]
+    def rels_list(self):
+        return [x.type.text for x in self.xml.findAll('relation')]
 
-        def count_rel(self):
-            return dict(Counter(self.rels))
+    def count_rel(self):
+        return dict(Counter(self.rels))
 
-        def freq_rel(self):
-            count = self.count_rel()
-            size = len(self.rels)
-            ret = {}
-            for key, value in count.items():
-                ret[key] = (float(value)*100.0)/float(size)
-            return ret
+    def freq_rel(self):
+        count = self.count_rel()
+        size = len(self.rels)
+        ret = {}
+        for key, value in count.items():
+            ret[key] = (float(value)*100.0)/float(size)
+        return ret
 
-        def count_theme(self):
-            themes = [u.theme for u in self.units]
-            return dict(Counter(themes))
+    def count_theme(self):
+        """
+        count the number of occurences of each theme
+        """
+        themes = [u.theme for u in self.units]
+        return dict(Counter(themes))
 
-        def freq_theme(self):
-            count = self.count_theme()
-            size = len(self.units)
-            ret = {}
-            for key, value in count.items():
-                ret[key] = (float(value)*100.0/float(size))
-            return OrderedDict(sorted(ret.items(), key=operator.itemgetter(1)))
+    def freq_theme(self):
+        """
+        count the frequence of apparition of each thme
+        """
+        count = self.count_theme()
+        size = len(self.units)
+        ret = {}
+        for key, value in count.items():
+            ret[key] = (float(value)*100.0/float(size))
+        return OrderedDict(sorted(ret.items(), key=operator.itemgetter(1)))
 
-        def unit_list(self):
-            units = self.xml.findAll('unit')
-            ret = []
+    def unit_list(self):
+        units = self.xml.findAll('unit')
+        ret = []
+        for u in units:
+            if u.author.text[:7] == "vsteyer":
+                start = u.start.singleposition['index']
+                end = u.end.singleposition['index']
+                unit = Unit(None, start, end, None)
+                ret.append(unit)
+        return ret
+
+    def unit_dict(self, themes):
+        """
+        cree un dictionnaires clé : pos, value : theme
+        input : themes List of Strings
+        output : dictionnay {position : label}
+        """
+        dic = {}
+        for t in themes:
+            dic[t.pos] = t.label
+
+        return dic
+
+    def assoc_unit_theme(self, units, themes):
+        """
+        associe à chaque unité son thème 
+        output : list of Units
+        """
+        themes_dic = self.unit_dict(themes)
+        ret = []
+        for key, value in themes_dic.items():
             for u in units:
-                if u.author.text[:7] == "vsteyer":
-                    start = u.start.singleposition['index']
-                    end = u.end.singleposition['index']
-                    unit = Unit(None, start, end, None)
-                    ret.append(unit)
-            return ret
+                if key <= u.end:
+                    label = u.label
+                    start = u.start
+                    end = u.end
+                    newu = Unit(label, start, end, value)
+                    ret.append(newu)
+        return(ret)
 
-        def unit_dict(self, themes):
-            """ cree un dictionnaires clé : pos, value : theme """
-            dic = {}
-            for t in themes:
-                dic[t.pos] = t.label
+    def tout_reliee(self):
+        """
+        Je crois qu'à un moment elles appellent ça pour définir le nb de relation prédéfini
+        en fonction du nom du fichier parcouru
 
-            return dic
+        pas d'output, pas d'input, juste une lecture console et une initialisation de nbrels
+        """
+        nb_unit = {'pro': 23.0,
+                    'nord': 13.0,
+                    'flo': 14.0,
+                    'bas': 8.0}
 
-        def assoc_unit_theme(self, units, themes):
-            """ associe à chaque unité son thème """
-            themes_dic = self.unit_dict(themes)
-            ret = []
-            for key, value in themes_dic.items():
-                for u in units:
-                    if key <= u.end:
-                        label = u.label
-                        start = u.start
-                        end = u.end
-                        newu = Unit(label, start, end, value)
-                        ret.append(newu)
-            return(ret)
-
-        def tout_reliee(self):
-            nb_unit = {'pro': 23.0,
-                       'nord': 13.0,
-                       'flo': 14.0,
-                       'bas': 8.0}
-
-            if "bas" in os.path.basename(self.filename):
-                return nb_unit['bas']-1 == self.nbrels
-            if "nord" in os.path.basename(self.filename):
-                return nb_unit['nord']-1 == self.nbrels
-            if "pro" in os.path.basename(self.filename):
-                return nb_unit['pro']-1 == self.nbrels
-            if "flo" in os.path.basename(self.filename):
-                return nb_unit['flo']-1 == self.nbrels
+        if "bas" in os.path.basename(self.filename):
+            return nb_unit['bas']-1 == self.nbrels
+        if "nord" in os.path.basename(self.filename):
+            return nb_unit['nord']-1 == self.nbrels
+        if "pro" in os.path.basename(self.filename):
+            return nb_unit['pro']-1 == self.nbrels
+        if "flo" in os.path.basename(self.filename):
+            return nb_unit['flo']-1 == self.nbrels
 
 
-        def theme_list(self):
-            themes = self.xml.findAll('flag')
-            ret = []
-            for t in themes:
-                label = t.comment.text.replace(',', '')
-                start = t.singleposition['index']
-                theme = Theme(label, start)
-                ret.append(theme)
-            return ret
+    def theme_list(self):
+        """
+        generates a List of Theme Object from xml file
+        """
+        themes = self.xml.findAll('flag')
+        ret = []
+        for t in themes:
+            label = t.comment.text.replace(',', '')
+            start = t.singleposition['index']
+            theme = Theme(label, start)
+            ret.append(theme)
+        return ret
 
-        def diff_themes(self):
-            count = dict(Counter(self.themes))
-            if len(count) != 0:
-                return ((len(count)*100.0)/len(self.units))
+    def diff_themes(self):
+        """
+        output : Float frequency of each different themes
+        """
+        count = dict(Counter(self.themes))
+        if len(count) != 0:
+            return ((len(count)*100.0)/len(self.units))
+        else:
+            return (len(count))
+
+    def retour_arriere(self):
+        """
+        ??? Elle s'en servent dans leurs tests
+        Je crois que ça montre si on retrouve un theme dejà utilisé, donc un retour arrière
+        dans la conversation
+        output : Int le nombre de retours arrière. 
+        """
+        ret = 0
+        li = []
+        for t in self.themes:
+            if t.label not in li:
+                li.append(t.label)
+            elif t.label != li[-1]:
+                ret += 1
+        return ret
+
+    def create_line(self):
+        """
+        ouah je comprends paaaaas
+        Elles créent une énorme string, sorte de résumé avec leurs données venues de Data.
+        """
+        # nom du fichier
+        string = ""
+        string += os.path.basename(self.filename)
+        string += ","
+
+        # nombre de themes différents
+        string += str(self.nb_diff_themes)
+        string += ","
+
+        # ajout de la frequence d'apparition des relations
+        relations = ['Méta-question', 'Phatique',
+                        'Elaboration evaluative', 'Contre-élaboration',
+                        'Narration', 'Elaboration descriptive',
+                        'Conduite', 'Elaboration evaluative',
+                        'Question', 'Réponse',
+                        'Elaboration prescriptive']
+        for rel in relations:
+            if rel in self.relations_freq.keys():
+                string += str(self.relations_freq[rel])
+                string += ","
             else:
-                return (len(count))
+                string += '0'
+                string += ","
 
-        def retour_arriere(self):
-            ret = 0
-            li = []
-            for t in self.themes:
-                if t.label not in li:
-                    li.append(t.label)
-                elif t.label != li[-1]:
-                    ret += 1
-            return ret
+        # 0 theme
+        if len(list(self.theme_freq)) == 0:
+            string += "None,None,None,None,None,None,"
 
-        def create_line(self):
+        # 1 seul theme
+        if len(list(self.theme_freq)) == 1:
+            for items in list(self.theme_freq)[:3]:
+                string += items
+                string += ","
+                string += str(self.theme_freq[items])
+                string += ","
+            string += "None,None,None,None,"
 
-            # nom du fichier
-            string = ""
-            string += os.path.basename(self.filename)
-            string += ","
-
-            # nombre de themes différents
-            string += str(self.nb_diff_themes)
-            string += ","
-
-            # ajout de la frequence d'apparition des relations
-            relations = ['Méta-question', 'Phatique',
-                         'Elaboration evaluative', 'Contre-élaboration',
-                         'Narration', 'Elaboration descriptive',
-                         'Conduite', 'Elaboration evaluative',
-                         'Question', 'Réponse',
-                         'Elaboration prescriptive']
-            for rel in relations:
-                if rel in self.relations_freq.keys():
-                    string += str(self.relations_freq[rel])
-                    string += ","
-                else:
-                    string += '0'
-                    string += ","
-
-            # 0 theme
-            if len(list(self.theme_freq)) == 0:
-                string += "None,None,None,None,None,None,"
-
-            # 1 seul theme
-            if len(list(self.theme_freq)) == 1:
-                for items in list(self.theme_freq)[:3]:
-                    string += items
-                    string += ","
-                    string += str(self.theme_freq[items])
-                    string += ","
-                string += "None,None,None,None,"
-
-            # 2 themes
-            if len(list(self.theme_freq)) == 2:
-                for items in list(self.theme_freq)[:3]:
-                    string += items
-                    string += ","
-                    string += str(self.theme_freq[items])
-                    string += ","
-                string += "None,None,"
+        # 2 themes
+        if len(list(self.theme_freq)) == 2:
+            for items in list(self.theme_freq)[:3]:
+                string += items
+                string += ","
+                string += str(self.theme_freq[items])
+                string += ","
+            string += "None,None,"
 
 
-            # 3 themes les + fréquents ainsi que leur fréquence
-            if len(self.theme_freq) >= 3:
-                for items in list(self.theme_freq)[:3]:
-                    string += items
-                    string += ","
-                    string += str(self.theme_freq[items])
-                    string += ","
+        # 3 themes les + fréquents ainsi que leur fréquence
+        if len(self.theme_freq) >= 3:
+            for items in list(self.theme_freq)[:3]:
+                string += items
+                string += ","
+                string += str(self.theme_freq[items])
+                string += ","
 
-            # age annotateur
-            string += self.after_data['age']
-            string += ","
-            # comprehension de la mission
-            string += re.sub(r'\(.*\)', '', self.after_data['comp_mission']).replace(' ','')
-            string += ","
-            # comprehension de la plate forme
-            string += re.sub(r'\(.*\)', '', self.after_data['comp_glozz']).replace(' ','')
-            string += ","
-            # avis sur la duree
-            string += re.sub(r'\(.*\)', '', self.after_data['duree']).replace(' ','')
-            string += "\n"
-            return string
+        # age annotateur
+        string += self.after_data['age']
+        string += ","
+        # comprehension de la mission
+        string += re.sub(r'\(.*\)', '', self.after_data['comp_mission']).replace(' ','')
+        string += ","
+        # comprehension de la plate forme
+        string += re.sub(r'\(.*\)', '', self.after_data['comp_glozz']).replace(' ','')
+        string += ","
+        # avis sur la duree
+        string += re.sub(r'\(.*\)', '', self.after_data['duree']).replace(' ','')
+        string += "\n"
+        return string
 
 
 
@@ -275,6 +348,8 @@ if __name__ == "__main__":
     files += glob.glob('B*/*.aa')
     d = Datas(files)
     l = d.prepare_lines()
+
+    #suite de print tests
 
     # with open("retours_arriere.csv", "w") as f:
     #     f.write('file, retour\n')
