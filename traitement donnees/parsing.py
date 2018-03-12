@@ -17,7 +17,7 @@ Lecture des fichiers
 ============================================================================"""
 #Pour l'instant il faut saisir le chemin à la main (oui c'est dégueu)
 #Je considère que dans le dossier Bac_a_sable il y a un fichier texte.ac, un fichier unites.aa et ensuite les sous-dossiers avec les fichiers .aa des gens
-directory = "F:\\Documents\\GitHub\\AnnotationSlamPTut\\traitement donnees\\textes\\Bac_a_sable"
+directory = "F:\\Documents\\GitHub\\AnnotationSlamPTut\\traitement donnees\\textes\\Florence"
 
 ac_file = path.join(directory, "texte.ac")
 aa_file = path.join(directory, "unites.aa")
@@ -126,8 +126,20 @@ for a in annotations.values():
     #Les Panels c'est des matrices 3D. L'avantage c'est qu'on peut nommer les colonnes ! 
     panel = pandas.Panel(tab, types_relations, units_names, units_names) 
     for rel in a:
-        panel[rel.type][rel.origine.name][rel.dest.name] = 1
+        panel[rel.type][rel.dest.name][rel.origine.name] = 1
     annotations_panels.append(panel)
     
 print(annotations_panels[0]["Narration"])
 
+total = annotations_panels[1].copy()
+
+for pan in annotations_panels[1:]:
+    total = total.add(pan)
+
+print(total.sum(0)) #on affiche le total toutes relations confondues
+
+
+#On explore ceux qui ont beaucoup de croix
+#total.major_xs("A1").loc["Début"] #Le détail des relations de A1 vers Début
+
+#total.major_xs("A2").loc[["A1","B1"]].transpose()

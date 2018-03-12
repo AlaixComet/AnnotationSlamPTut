@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<annotations>
+<metadata corpusHashcode="507-16098390"/>
+<unit id="TXT_IMPORTER_1493047726582">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726582</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="0"/>
+</start>
+<end>
+<singlePosition index="5"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726583">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726583</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="5"/>
+</start>
+<end>
+<singlePosition index="74"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726584">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726584</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="74"/>
+</start>
+<end>
+<singlePosition index="118"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726585">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726585</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="118"/>
+</start>
+<end>
+<singlePosition index="160"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726586">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726586</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="160"/>
+</start>
+<end>
+<singlePosition index="179"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726587">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726587</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="179"/>
+</start>
+<end>
+<singlePosition index="201"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726588">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726588</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="201"/>
+</start>
+<end>
+<singlePosition index="235"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726589">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726589</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="235"/>
+</start>
+<end>
+<singlePosition index="291"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726590">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726590</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="291"/>
+</start>
+<end>
+<singlePosition index="304"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726591">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726591</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="304"/>
+</start>
+<end>
+<singlePosition index="320"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726592">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726592</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="320"/>
+</start>
+<end>
+<singlePosition index="350"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726593">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726593</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="350"/>
+</start>
+<end>
+<singlePosition index="389"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726594">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726594</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="389"/>
+</start>
+<end>
+<singlePosition index="455"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047726595">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047726595</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="455"/>
+</start>
+<end>
+<singlePosition index="491"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739498">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739498</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="0"/>
+</start>
+<end>
+<singlePosition index="5"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739499">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739499</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="5"/>
+</start>
+<end>
+<singlePosition index="74"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739500">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739500</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="74"/>
+</start>
+<end>
+<singlePosition index="118"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739501">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739501</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="118"/>
+</start>
+<end>
+<singlePosition index="160"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739502">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739502</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="160"/>
+</start>
+<end>
+<singlePosition index="179"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739503">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739503</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="179"/>
+</start>
+<end>
+<singlePosition index="201"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739504">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739504</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="201"/>
+</start>
+<end>
+<singlePosition index="235"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739505">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739505</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="235"/>
+</start>
+<end>
+<singlePosition index="291"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739506">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739506</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="291"/>
+</start>
+<end>
+<singlePosition index="304"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739507">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739507</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="304"/>
+</start>
+<end>
+<singlePosition index="320"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739508">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739508</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="320"/>
+</start>
+<end>
+<singlePosition index="350"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739509">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739509</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="350"/>
+</start>
+<end>
+<singlePosition index="389"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739510">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739510</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="389"/>
+</start>
+<end>
+<singlePosition index="455"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1493047739511">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1493047739511</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="455"/>
+</start>
+<end>
+<singlePosition index="491"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739512">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739512</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>default</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="0"/>
+</start>
+<end>
+<singlePosition index="5"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739513">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739513</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="9"/>
+</start>
+<end>
+<singlePosition index="74"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739514">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739514</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="123"/>
+</start>
+<end>
+<singlePosition index="160"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739515">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739515</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="74"/>
+</start>
+<end>
+<singlePosition index="118"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739516">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739516</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="184"/>
+</start>
+<end>
+<singlePosition index="201"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739517">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739517</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="201"/>
+</start>
+<end>
+<singlePosition index="235"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739518">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739518</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="235"/>
+</start>
+<end>
+<singlePosition index="291"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739519">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739519</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="309"/>
+</start>
+<end>
+<singlePosition index="320"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739520">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739520</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="355"/>
+</start>
+<end>
+<singlePosition index="389"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739521">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739521</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="389"/>
+</start>
+<end>
+<singlePosition index="455"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739522">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739522</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="455"/>
+</start>
+<end>
+<singlePosition index="491"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739523">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739523</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="165"/>
+</start>
+<end>
+<singlePosition index="179"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739524">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739524</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="296"/>
+</start>
+<end>
+<singlePosition index="304"/>
+</end>
+</positioning>
+</unit>
+<unit id="vsteyer_1493047739525">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047739525</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="325"/>
+</start>
+<end>
+<singlePosition index="350"/>
+</end>
+</positioning>
+</unit>
+<relation id="vsteyer_1493047787672">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047787672</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739515"/>
+<term id="vsteyer_1493047739513"/>
+</positioning>
+</relation>
+<relation id="vsteyer_1493047841726">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047841726</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Réponse</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739519"/>
+<term id="vsteyer_1493047739524"/>
+</positioning>
+</relation>
+<relation id="vsteyer_1493047848502">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047848502</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Question</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739524"/>
+<term id="vsteyer_1493047739518"/>
+</positioning>
+</relation>
+<relation id="vsteyer_1493047856110">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047856110</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Question</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739525"/>
+<term id="vsteyer_1493047739519"/>
+</positioning>
+</relation>
+<relation id="vsteyer_1493047866437">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047866437</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Réponse</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739520"/>
+<term id="vsteyer_1493047739525"/>
+</positioning>
+</relation>
+<relation id="vsteyer_1493047923731">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047923731</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Conduite</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739523"/>
+<term id="vsteyer_1493047739514"/>
+</positioning>
+</relation>
+<relation id="vsteyer_1493047952848">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047952848</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739514"/>
+<term id="vsteyer_1493047739515"/>
+</positioning>
+</relation>
+<relation id="vsteyer_1493047971183">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047971183</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration evaluative</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739516"/>
+<term id="vsteyer_1493047739523"/>
+</positioning>
+</relation>
+<relation id="vsteyer_1493047981233">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047981233</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739517"/>
+<term id="vsteyer_1493047739516"/>
+</positioning>
+</relation>
+<relation id="vsteyer_1493047987137">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493047987137</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739518"/>
+<term id="vsteyer_1493047739517"/>
+</positioning>
+</relation>
+<relation id="vsteyer_1493048017672">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493048017672</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Narration</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739521"/>
+<term id="vsteyer_1493047739520"/>
+</positioning>
+</relation>
+<relation id="vsteyer_1493048019328">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493048019328</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Narration</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="vsteyer_1493047739522"/>
+<term id="vsteyer_1493047739521"/>
+</positioning>
+</relation>
+<flag id="vsteyer_1493048171927">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493048171927</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<comment>Meurtrière</comment>
+</characterisation>
+<positioning>
+<singlePosition index="235"/>
+</positioning>
+</flag>
+<flag id="vsteyer_1493048195881">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493048195881</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<comment>Quotidien patients</comment>
+</characterisation>
+<positioning>
+<singlePosition index="9"/>
+</positioning>
+</flag>
+<flag id="vsteyer_1493048208248">
+<metadata>
+<author>vsteyer</author>
+<creation-date>1493048208248</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<comment>Amour</comment>
+</characterisation>
+<positioning>
+<singlePosition index="123"/>
+</positioning>
+</flag>
+</annotations>
