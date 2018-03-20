@@ -1,0 +1,83 @@
+digraph totalNord {
+	"Début" [label="Début : Début"]
+	B20 [label="B20 : c'était quand même assez stressant euh la / la prépa..."]
+	A21 [label="A21 : Mmh mmh."]
+	B23_1 [label="B23_1 : donc euh... donc du coup ouais euh et bon pour euh... en ce qui concerne les études"]
+	B23_2 [label="B23_2 : donc du coup après j'ai / j'ai arrêté le / le / le / le / l'école d'ingénieur enfin la prépa..."]
+	B23_3 [label="B23_3 : je suis revenue à Ville1.. ."]
+	A24 [label="A24 : Mmh mmh."]
+	B25 [label="B25 : j'ai fait euh une / une / une fac de / de maths... je suis allé en fac de maths."]
+	A26 [label="A26 : Ouais."]
+	B27_1 [label="B27_1 : Euhh et là pareil je / j'étais pas j'avais un / un appart en colocation euh avec deux amis..."]
+	B27_2 [label="B27_2 : euh et / et donc euh j'ai / j'ai échoué en fait"]
+	B27_3 [label="B27_3 : euh... j'ai pas tout échoué j'ai validé certaines matières"]
+	B27_4 [label="B27_4 : mais euh... j'étais pas en forme..."]
+	B20 -> A21 [label="Conduite
+3" color=1 colorscheme=paired11 dir=back penwidth=1.11111111111]
+	B23_3 -> A24 [label="Conduite
+3" color=1 colorscheme=paired11 dir=back penwidth=1.11111111111]
+	B20 -> B23_1 [label="Elaboration descriptive
+8" color=3 colorscheme=paired11 dir=back penwidth=2.96296296296]
+	B20 -> B23_2 [label="Elaboration descriptive
+5" color=3 colorscheme=paired11 dir=back penwidth=1.85185185185]
+	B23_1 -> B23_2 [label="Elaboration descriptive
+13" color=3 colorscheme=paired11 dir=back penwidth=4.81481481481]
+	B23_2 -> B23_3 [label="Elaboration descriptive
+15" color=3 colorscheme=paired11 dir=back penwidth=5.55555555556]
+	B23_2 -> B25 [label="Elaboration descriptive
+5" color=3 colorscheme=paired11 dir=back penwidth=1.85185185185]
+	B23_3 -> B25 [label="Elaboration descriptive
+7" color=3 colorscheme=paired11 dir=back penwidth=2.59259259259]
+	B23_3 -> B27_1 [label="Elaboration descriptive
+5" color=3 colorscheme=paired11 dir=back penwidth=1.85185185185]
+	B25 -> A26 [label="Elaboration descriptive
+3" color=3 colorscheme=paired11 dir=back penwidth=1.11111111111]
+	B25 -> B27_1 [label="Elaboration descriptive
+10" color=3 colorscheme=paired11 dir=back penwidth=3.7037037037]
+	B25 -> B27_2 [label="Elaboration descriptive
+6" color=3 colorscheme=paired11 dir=back penwidth=2.22222222222]
+	B25 -> B27_3 [label="Elaboration descriptive
+3" color=3 colorscheme=paired11 dir=back penwidth=1.11111111111]
+	B27_1 -> B27_2 [label="Elaboration descriptive
+6" color=3 colorscheme=paired11 dir=back penwidth=2.22222222222]
+	B27_2 -> B27_3 [label="Elaboration descriptive
+13" color=3 colorscheme=paired11 dir=back penwidth=4.81481481481]
+	B27_3 -> B27_4 [label="Elaboration descriptive
+12" color=3 colorscheme=paired11 dir=back penwidth=4.44444444444]
+	B27_3 -> B27_4 [label="Elaboration evaluative
+4" color=4 colorscheme=paired11 dir=back penwidth=1.48148148148]
+	"Début" -> B20 [label="Narration
+22" color=7 colorscheme=paired11 dir=back penwidth=8.14814814815]
+	B20 -> B23_1 [label="Narration
+8" color=7 colorscheme=paired11 dir=back penwidth=2.96296296296]
+	B20 -> B23_2 [label="Narration
+3" color=7 colorscheme=paired11 dir=back penwidth=1.11111111111]
+	A21 -> B23_1 [label="Narration
+4" color=7 colorscheme=paired11 dir=back penwidth=1.48148148148]
+	B23_1 -> B23_2 [label="Narration
+3" color=7 colorscheme=paired11 dir=back penwidth=1.11111111111]
+	B23_2 -> B23_3 [label="Narration
+7" color=7 colorscheme=paired11 dir=back penwidth=2.59259259259]
+	B23_3 -> B25 [label="Narration
+6" color=7 colorscheme=paired11 dir=back penwidth=2.22222222222]
+	A24 -> B25 [label="Narration
+4" color=7 colorscheme=paired11 dir=back penwidth=1.48148148148]
+	B25 -> B27_1 [label="Narration
+6" color=7 colorscheme=paired11 dir=back penwidth=2.22222222222]
+	B25 -> B27_2 [label="Narration
+3" color=7 colorscheme=paired11 dir=back penwidth=1.11111111111]
+	A26 -> B27_1 [label="Narration
+3" color=7 colorscheme=paired11 dir=back penwidth=1.11111111111]
+	B27_1 -> B27_2 [label="Narration
+6" color=7 colorscheme=paired11 dir=back penwidth=2.22222222222]
+	B27_2 -> B27_3 [label="Narration
+3" color=7 colorscheme=paired11 dir=back penwidth=1.11111111111]
+	B27_3 -> B27_4 [label="Narration
+3" color=7 colorscheme=paired11 dir=back penwidth=1.11111111111]
+	B20 -> A21 [label="Phatique
+20" color=8 colorscheme=paired11 dir=back penwidth=7.40740740741]
+	B23_3 -> A24 [label="Phatique
+19" color=8 colorscheme=paired11 dir=back penwidth=7.03703703704]
+	B25 -> A26 [label="Phatique
+19" color=8 colorscheme=paired11 dir=back penwidth=7.03703703704]
+}

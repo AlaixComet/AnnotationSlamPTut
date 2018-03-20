@@ -1,0 +1,34 @@
+digraph totalBAS {
+	"Début" [label="Début : Debut"]
+	A1 [label="A1 : J’étais au restaurant."]
+	B1 [label="B1 : Ah oui?"]
+	A2 [label="A2 :  Oui j’ai même mangé des pâtes au saumon!"]
+	B2_1 [label="B2_1 : Oh,"]
+	B2_2 [label="B2_2 : et c’était où ?"]
+	A3_1 [label="A3_1 : C’était à la Villa Romana,"]
+	A3_2 [label="A3_2 : c’était vraiment super bon."]
+	A1 -> B1 [label="Conduite
+16" color=1 colorscheme=paired11 dir=back penwidth=5.92592592593]
+	A1 -> A2 [label="Elaboration descriptive
+16" color=3 colorscheme=paired11 dir=back penwidth=5.92592592593]
+	B1 -> A2 [label="Elaboration descriptive
+6" color=3 colorscheme=paired11 dir=back penwidth=2.22222222222]
+	A2 -> A3_2 [label="Elaboration descriptive
+5" color=3 colorscheme=paired11 dir=back penwidth=1.85185185185]
+	A2 -> A3_2 [label="Elaboration evaluative
+9" color=4 colorscheme=paired11 dir=back penwidth=3.33333333333]
+	A3_1 -> A3_2 [label="Elaboration evaluative
+5" color=4 colorscheme=paired11 dir=back penwidth=1.85185185185]
+	"Début" -> A1 [label="Narration
+22" color=7 colorscheme=paired11 dir=back penwidth=8.14814814815]
+	A1 -> B1 [label="Phatique
+6" color=8 colorscheme=paired11 dir=back penwidth=2.22222222222]
+	A2 -> B2_1 [label="Phatique
+21" color=8 colorscheme=paired11 dir=back penwidth=7.77777777778]
+	A1 -> B2_2 [label="Question
+12" color=9 colorscheme=paired11 dir=back penwidth=4.44444444444]
+	A2 -> B2_2 [label="Question
+9" color=9 colorscheme=paired11 dir=back penwidth=3.33333333333]
+	B2_2 -> A3_1 [label="Réponse
+21" color=10 colorscheme=paired11 dir=back penwidth=7.77777777778]
+}

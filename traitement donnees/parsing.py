@@ -17,7 +17,7 @@ Lecture des fichiers
 ============================================================================"""
 #Pour l'instant il faut saisir le chemin à la main (oui c'est dégueu)
 #Je considère que dans le dossier Bac_a_sable il y a un fichier texte.ac, un fichier unites.aa et ensuite les sous-dossiers avec les fichiers .aa des gens
-directory = "F:\\Documents\\GitHub\\AnnotationSlamPTut\\traitement donnees\\textes\\Florence"
+directory = "F:\\Documents\\GitHub\\AnnotationSlamPTut\\traitement donnees\\textes\\Provocation"
 
 ac_file = path.join(directory, "texte.ac")
 aa_file = path.join(directory, "unites.aa")
@@ -126,7 +126,8 @@ for a in annotations.values():
     #Les Panels c'est des matrices 3D. L'avantage c'est qu'on peut nommer les colonnes ! 
     panel = pandas.Panel(tab, types_relations, units_names, units_names) 
     for rel in a:
-        panel[rel.type][rel.dest.name][rel.origine.name] = 1
+        if rel.type is not None and rel.dest.name is not None and rel.origine.name is not None:
+            panel[rel.type][rel.dest.name][rel.origine.name] = 1
     annotations_panels.append(panel)
     
 print(annotations_panels[0]["Narration"])
@@ -143,3 +144,26 @@ print(total.sum(0)) #on affiche le total toutes relations confondues
 #total.major_xs("A1").loc["Début"] #Le détail des relations de A1 vers Début
 
 #total.major_xs("A2").loc[["A1","B1"]].transpose()
+
+
+
+from graphviz import Digraph
+def draw_global_tree(matrice, nom, nbAnnotations, minOccurrences=1):
+    dot = Digraph(name=nom, format="png")
+    units_names = list()
+    for u in units_list:
+        dot.node(u.name, u.name + " : " + u.txt)
+        units_names.append(u.name)
+    i = 0
+    for rel in types_relations:
+        i += 1
+        for dest in units_names:
+            for origine in units_names:
+                val = matrice[rel][dest][origine]
+                if val >= minOccurrences:
+                    label = rel+"\n"+str(val)
+                    poids = (val / nbAnnotations) * 10
+                    dot.edge(dest, origine, label=label, penwidth=str(poids), color=str(i), colorscheme="paired11", dir="back")
+    return dot
+
+#draw_global_tree(total, "test", 27, 4)
