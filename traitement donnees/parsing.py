@@ -17,7 +17,7 @@ Lecture des fichiers
 ============================================================================"""
 #Pour l'instant il faut saisir le chemin à la main (oui c'est dégueu)
 #Je considère que dans le dossier Bac_a_sable il y a un fichier texte.ac, un fichier unites.aa et ensuite les sous-dossiers avec les fichiers .aa des gens
-directory = "F:\\Documents\\GitHub\\AnnotationSlamPTut\\traitement donnees\\textes\\Provocation"
+directory = "./textes/Provocation"
 
 ac_file = path.join(directory, "texte.ac")
 aa_file = path.join(directory, "unites.aa")
