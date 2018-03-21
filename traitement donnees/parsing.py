@@ -17,7 +17,12 @@ Lecture des fichiers
 ============================================================================"""
 #Pour l'instant il faut saisir le chemin à la main (oui c'est dégueu)
 #Je considère que dans le dossier Bac_a_sable il y a un fichier texte.ac, un fichier unites.aa et ensuite les sous-dossiers avec les fichiers .aa des gens
-directory = "./textes/Provocation"
+
+directory = path.dirname(path.realpath(__file__))
+textsNames = ["Bac_a_sable","Florence","Provocation"]
+directories = [directory+"\\textes\\"+t for t in textsNames]
+
+directory = directories[0]
 
 ac_file = path.join(directory, "texte.ac")
 aa_file = path.join(directory, "unites.aa")
@@ -48,6 +53,7 @@ for unit in units:
             nom = nom.string
         if fin > debut:
             u = Unit(unit['id'], debut, fin, text[debut:fin], nom)
+            print(u)
             units_list.append(u)
 
 #Vu que pour l'instant dans leurs fichiers c'est le cirque on est obligés de passer par la position des unités dans le texte, 
