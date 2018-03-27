@@ -6,6 +6,7 @@ Created on Sun Mar 25 11:19:05 2018
 """
 import numpy as np
 import pandas
+from graphviz import Digraph
 
 
 class Campagne():
@@ -17,11 +18,11 @@ class Campagne():
         infosAnnotateurs : pandas.DataFrame le tableau csv des ages, CSP etc
     """
     def __init__(self):
-        self.textes
-        self.typesRelations
-        self.annotateurs
-        self.infosAnnotateurs
-
+        self.textes = dict()
+        self.typesRelations = dict()
+        self.annotateurs = dict()
+        self.infosAnnotateurs = None
+    
 
 class Texte():
     """
@@ -31,11 +32,11 @@ class Texte():
         unites : list des unites du texte (dans l'ordre du texte)
         annotationExpert : Annotation une anontation d'expert de référence
     """
-    def __init__(self):
-        self.nom
-        self.texte
-        self.unites
-        self.annotationExpert #?
+    def __init__(self, nom, texte, unites):
+        self.nom = nom
+        self.texte = texte
+        self.unites = unites
+        self.annotationExpert = None#?
         
 
 class Annotateur():
@@ -176,7 +177,21 @@ class Annotation():
         return Arbre(debut, noeudsFilsHoriz, noeudsFilsVert)
     
     def dessinerArbre(self):
-        pass
+        dot = Digraph()
+        units_names = list()
+        for u in self.texte.unites:
+            dot.node(u.name, u.name + " : " + u.txt)
+            units_names.append(u.name)
+        typesRel = self.campagne.typesRelations
+        for rel in self.relations:
+            if typesRel[rel.type] == "horizontale":
+                with dot.subgraph() as sub:
+                    sub.attr(rank="same")
+                    sub.node(rel.dest.name)
+                    sub.node(rel.origine.name)
+                    sub.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none")
+            else:
+                dot.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none")
 
 
 class Arbre():
