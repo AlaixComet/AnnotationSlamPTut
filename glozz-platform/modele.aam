@@ -8,21 +8,7 @@
 				</feature>
 			</featureSet>
 		</type>
-		<type name="Segment1bis">
-			<featureSet>
-				<feature name="Nom">
-					<value type="free" default=""></value>
-				</feature>
-			</featureSet>
-		</type>
 		<type name="Segment2">
-			<featureSet>
-				<feature name="Nom">
-					<value type="free" default=""></value>
-				</feature>
-			</featureSet>
-		</type>
-		<type name="Segment2bis">
 			<featureSet>
 				<feature name="Nom">
 					<value type="free" default=""></value>
