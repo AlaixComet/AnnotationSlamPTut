@@ -1,2 +1,4 @@
-*.pyc
-*.aa.autosav
+#IGNORE python cache files
+.pyc
+#IGNORE the glozz autosaves
+.autosav
