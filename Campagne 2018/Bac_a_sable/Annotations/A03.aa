@@ -337,10 +337,10 @@
 </end>
 </positioning>
 </unit>
-<relation id="abiver_1523970041486">
+<relation id="abiver_1524165971232">
 <metadata>
 <author>abiver</author>
-<creation-date>1523970041486</creation-date>
+<creation-date>1524165971232</creation-date>
 <lastModifier>n/a</lastModifier>
 <lastModificationDate>0</lastModificationDate>
 </metadata>
@@ -353,15 +353,15 @@
 <term id="clefebvre_1523109222509"/>
 </positioning>
 </relation>
-<relation id="abiver_1523970058597">
+<relation id="abiver_1524166002255">
 <metadata>
 <author>abiver</author>
-<creation-date>1523970058597</creation-date>
+<creation-date>1524166002255</creation-date>
 <lastModifier>n/a</lastModifier>
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Conduite</type>
+<type>Question</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -369,10 +369,10 @@
 <term id="clefebvre_1523109242383"/>
 </positioning>
 </relation>
-<relation id="abiver_1523970188608">
+<relation id="abiver_1524166042537">
 <metadata>
 <author>abiver</author>
-<creation-date>1523970188608</creation-date>
+<creation-date>1524166042537</creation-date>
 <lastModifier>n/a</lastModifier>
 <lastModificationDate>0</lastModificationDate>
 </metadata>
@@ -385,15 +385,15 @@
 <term id="clefebvre_1523109242383"/>
 </positioning>
 </relation>
-<relation id="abiver_1523970234068">
+<relation id="abiver_1524166051402">
 <metadata>
 <author>abiver</author>
-<creation-date>1523970234068</creation-date>
+<creation-date>1524166051402</creation-date>
 <lastModifier>n/a</lastModifier>
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<type>Phatique</type>
+<type>Elaboration descriptive</type>
 <featureSet/>
 </characterisation>
 <positioning>
@@ -401,10 +401,10 @@
 <term id="clefebvre_1523109261199"/>
 </positioning>
 </relation>
-<relation id="abiver_1523970249891">
+<relation id="abiver_1524166066224">
 <metadata>
 <author>abiver</author>
-<creation-date>1523970249891</creation-date>
+<creation-date>1524166066224</creation-date>
 <lastModifier>n/a</lastModifier>
 <lastModificationDate>0</lastModificationDate>
 </metadata>
@@ -417,10 +417,10 @@
 <term id="clefebvre_1523109261199"/>
 </positioning>
 </relation>
-<relation id="abiver_1523970266200">
+<relation id="abiver_1524166078848">
 <metadata>
 <author>abiver</author>
-<creation-date>1523970266200</creation-date>
+<creation-date>1524166078848</creation-date>
 <lastModifier>n/a</lastModifier>
 <lastModificationDate>0</lastModificationDate>
 </metadata>
@@ -433,10 +433,10 @@
 <term id="clefebvre_1523109361591"/>
 </positioning>
 </relation>
-<relation id="abiver_1523970284611">
+<relation id="abiver_1524166100445">
 <metadata>
 <author>abiver</author>
-<creation-date>1523970284611</creation-date>
+<creation-date>1524166100445</creation-date>
 <lastModifier>n/a</lastModifier>
 <lastModificationDate>0</lastModificationDate>
 </metadata>
@@ -446,35 +446,49 @@
 </characterisation>
 <positioning>
 <term id="clefebvre_1523109377123"/>
-<term id="clefebvre_1523109371251"/>
+<term id="clefebvre_1523109261199"/>
 </positioning>
 </relation>
-<flag id="abiver_1523970427429">
+<flag id="abiver_1524166331200">
 <metadata>
 <author>abiver</author>
-<creation-date>1523970427429</creation-date>
+<creation-date>1524166331200</creation-date>
 <lastModifier>n/a</lastModifier>
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<comment>lieux</comment>
+<comment>RESTAURANT</comment>
 </characterisation>
 <positioning>
-<singlePosition index="95"/>
+<singlePosition index="10"/>
 </positioning>
 </flag>
-<flag id="abiver_1523970552643">
+<flag id="abiver_1524166335798">
 <metadata>
 <author>abiver</author>
-<creation-date>1523970552643</creation-date>
+<creation-date>1524166335798</creation-date>
 <lastModifier>n/a</lastModifier>
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<comment>manger</comment>
+<comment>RESTAURANT</comment>
 </characterisation>
 <positioning>
-<singlePosition index="11"/>
+<singlePosition index="113"/>
+</positioning>
+</flag>
+<flag id="abiver_1524166343883">
+<metadata>
+<author>abiver</author>
+<creation-date>1524166343883</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<comment>pâtes</comment>
+</characterisation>
+<positioning>
+<singlePosition index="46"/>
 </positioning>
 </flag>
 </annotations>

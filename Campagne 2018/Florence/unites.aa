@@ -281,4 +281,312 @@
 </end>
 </positioning>
 </unit>
+<unit id="abiver_1524138569849">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138569849</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138794957</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">début</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1"/>
+</start>
+<end>
+<singlePosition index="5"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138585193">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138585193</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138693898</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">A2</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="123"/>
+</start>
+<end>
+<singlePosition index="160"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138588199">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138588199</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138704286</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">A4_1</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="184"/>
+</start>
+<end>
+<singlePosition index="201"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138590046">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138590046</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138710986</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">A4_2</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="201"/>
+</start>
+<end>
+<singlePosition index="235"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138592486">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138592486</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138717593</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">A4_3</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="235"/>
+</start>
+<end>
+<singlePosition index="291"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138595551">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138595551</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138727515</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">A6</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="309"/>
+</start>
+<end>
+<singlePosition index="320"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138598533">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138598533</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138740570</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">A8_1</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="355"/>
+</start>
+<end>
+<singlePosition index="389"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138602206">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138602206</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138746128</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">A8_2</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="389"/>
+</start>
+<end>
+<singlePosition index="455"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138604243">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138604243</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138752741</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">A8_3</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="455"/>
+</start>
+<end>
+<singlePosition index="491"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138609969">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138609969</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138685347</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">B1_1</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="10"/>
+</start>
+<end>
+<singlePosition index="74"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138611857">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138611857</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138689951</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">B1_2</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="74"/>
+</start>
+<end>
+<singlePosition index="118"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138613977">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138613977</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138698849</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">B3</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="165"/>
+</start>
+<end>
+<singlePosition index="179"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138616305">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138616305</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138722601</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">B5</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="296"/>
+</start>
+<end>
+<singlePosition index="304"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1524138618626">
+<metadata>
+<author>abiver</author>
+<creation-date>1524138618626</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138734188</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">B7</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="325"/>
+</start>
+<end>
+<singlePosition index="350"/>
+</end>
+</positioning>
+</unit>
 </annotations>
