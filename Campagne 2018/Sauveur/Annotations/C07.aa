@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<annotations>
+<metadata corpusHashcode="1244-91970802"/>
+<unit id="TXT_IMPORTER_1525352649500">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649500</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="0"/>
+</start>
+<end>
+<singlePosition index="6"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649501">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649501</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="6"/>
+</start>
+<end>
+<singlePosition index="91"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649502">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649502</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="91"/>
+</start>
+<end>
+<singlePosition index="119"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649503">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649503</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="119"/>
+</start>
+<end>
+<singlePosition index="165"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649504">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649504</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="165"/>
+</start>
+<end>
+<singlePosition index="275"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649505">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649505</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="275"/>
+</start>
+<end>
+<singlePosition index="332"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649506">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649506</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="332"/>
+</start>
+<end>
+<singlePosition index="414"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649507">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649507</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="414"/>
+</start>
+<end>
+<singlePosition index="437"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649508">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649508</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="437"/>
+</start>
+<end>
+<singlePosition index="476"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649509">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649509</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="476"/>
+</start>
+<end>
+<singlePosition index="497"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649510">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649510</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="497"/>
+</start>
+<end>
+<singlePosition index="545"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649511">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649511</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="545"/>
+</start>
+<end>
+<singlePosition index="608"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649512">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649512</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="608"/>
+</start>
+<end>
+<singlePosition index="656"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649513">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649513</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="656"/>
+</start>
+<end>
+<singlePosition index="687"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649514">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649514</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="687"/>
+</start>
+<end>
+<singlePosition index="719"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649515">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649515</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="719"/>
+</start>
+<end>
+<singlePosition index="732"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649516">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649516</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="732"/>
+</start>
+<end>
+<singlePosition index="764"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649517">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649517</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="764"/>
+</start>
+<end>
+<singlePosition index="869"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649518">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649518</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="869"/>
+</start>
+<end>
+<singlePosition index="933"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649519">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649519</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="933"/>
+</start>
+<end>
+<singlePosition index="991"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649520">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649520</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="991"/>
+</start>
+<end>
+<singlePosition index="1124"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649521">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649521</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1124"/>
+</start>
+<end>
+<singlePosition index="1176"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525352649522">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525352649522</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1176"/>
+</start>
+<end>
+<singlePosition index="1185"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963013292">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963013292</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138895734</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">début</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1"/>
+</start>
+<end>
+<singlePosition index="6"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963014996">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963014996</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138905910</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">B2</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="95"/>
+</start>
+<end>
+<singlePosition index="119"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963017610">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963017610</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138939114</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">B4</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="418"/>
+</start>
+<end>
+<singlePosition index="437"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963020846">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963020846</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138988307</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">B6</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="691"/>
+</start>
+<end>
+<singlePosition index="719"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963025097">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963025097</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138997931</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">B8</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="736"/>
+</start>
+<end>
+<singlePosition index="764"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963028364">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963028364</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524139026176</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">B10</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1129"/>
+</start>
+<end>
+<singlePosition index="1176"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963034382">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963034382</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138900200</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A1</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="10"/>
+</start>
+<end>
+<singlePosition index="91"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963036992">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963036992</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138914630</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A3_1</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="123"/>
+</start>
+<end>
+<singlePosition index="165"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963039533">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963039533</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138923282</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A3_2</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="165"/>
+</start>
+<end>
+<singlePosition index="275"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963048508">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963048508</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138928609</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A3_3</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="275"/>
+</start>
+<end>
+<singlePosition index="332"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963050380">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963050380</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138933860</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A3_4</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="332"/>
+</start>
+<end>
+<singlePosition index="414"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963052606">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963052606</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138957404</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A5_1</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="441"/>
+</start>
+<end>
+<singlePosition index="476"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963054396">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963054396</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138964742</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A5_2</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="476"/>
+</start>
+<end>
+<singlePosition index="497"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963055856">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963055856</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138969078</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A5_3</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="497"/>
+</start>
+<end>
+<singlePosition index="545"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963058364">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963058364</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138974924</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A5_4</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="545"/>
+</start>
+<end>
+<singlePosition index="608"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963060644">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963060644</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138979142</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A5_5</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="608"/>
+</start>
+<end>
+<singlePosition index="656"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963063418">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963063418</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138984076</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A5_6</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="656"/>
+</start>
+<end>
+<singlePosition index="687"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963065706">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963065706</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524138993003</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A7</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="723"/>
+</start>
+<end>
+<singlePosition index="732"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963067726">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963067726</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524139005546</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A9_1</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="768"/>
+</start>
+<end>
+<singlePosition index="869"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963069958">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963069958</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524139010685</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A9_2</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="869"/>
+</start>
+<end>
+<singlePosition index="933"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963072258">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963072258</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524139015853</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A9_3</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="933"/>
+</start>
+<end>
+<singlePosition index="991"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963074464">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963074464</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524139020500</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A9_4</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="991"/>
+</start>
+<end>
+<singlePosition index="1124"/>
+</end>
+</positioning>
+</unit>
+<unit id="abiver_1523963077952">
+<metadata>
+<author>abiver</author>
+<creation-date>1523963077952</creation-date>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1524139032497</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A11</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="1181"/>
+</start>
+<end>
+<singlePosition index="1185"/>
+</end>
+</positioning>
+</unit>
+<relation id="clefebvre_1525352765241">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525352765241</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Narration</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963034382"/>
+<term id="abiver_1523963013292"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525352865521">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525352865521</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Question</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963014996"/>
+<term id="abiver_1523963034382"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525352881625">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525352881625</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Réponse</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963036992"/>
+<term id="abiver_1523963014996"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525352923969">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525352923969</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963039533"/>
+<term id="abiver_1523963036992"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353097081">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353097081</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963048508"/>
+<term id="abiver_1523963039533"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353116641">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353116641</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963050380"/>
+<term id="abiver_1523963048508"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353148601">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353148601</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Question</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963017610"/>
+<term id="abiver_1523963050380"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353230465">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353230465</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963052606"/>
+<term id="abiver_1523963039533"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353240289">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353240289</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963054396"/>
+<term id="abiver_1523963052606"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353251897">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353251897</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963055856"/>
+<term id="abiver_1523963054396"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353301304">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353301304</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963058364"/>
+<term id="abiver_1523963054396"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353331264">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353331264</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Narration</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963060644"/>
+<term id="abiver_1523963013292"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353349992">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353349992</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Narration</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963063418"/>
+<term id="abiver_1523963060644"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353356376">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353356376</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Question</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963020846"/>
+<term id="abiver_1523963063418"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353498968">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353498968</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Méta-question</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963065706"/>
+<term id="abiver_1523963020846"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353516536">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353516536</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Méta-question</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963025097"/>
+<term id="abiver_1523963065706"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353533728">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353533728</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Réponse</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963067726"/>
+<term id="abiver_1523963025097"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353775096">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353775096</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Narration</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963069958"/>
+<term id="abiver_1523963067726"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353858264">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353858264</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Narration</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963072258"/>
+<term id="abiver_1523963013292"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353947008">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353947008</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963074464"/>
+<term id="abiver_1523963072258"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353980016">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353980016</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Phatique</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963028364"/>
+<term id="abiver_1523963074464"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525353990600">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525353990600</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Réponse</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="abiver_1523963077952"/>
+<term id="abiver_1523963028364"/>
+</positioning>
+</relation>
+<flag id="clefebvre_1525354057347">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525354057347</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<comment>égarement</comment>
+</characterisation>
+<positioning>
+<singlePosition index="0"/>
+</positioning>
+</flag>
+<flag id="clefebvre_1525354059836">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525354059836</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<comment>égarement</comment>
+</characterisation>
+<positioning>
+<singlePosition index="0"/>
+</positioning>
+</flag>
+</annotations>

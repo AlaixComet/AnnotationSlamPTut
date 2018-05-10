@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<annotations>
+<metadata corpusHashcode="189-42355764"/>
+<unit id="TXT_IMPORTER_1525263244542">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525263244542</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="0"/>
+</start>
+<end>
+<singlePosition index="7"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525263244543">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525263244543</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="7"/>
+</start>
+<end>
+<singlePosition index="33"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525263244544">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525263244544</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="33"/>
+</start>
+<end>
+<singlePosition index="44"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525263244545">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525263244545</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="44"/>
+</start>
+<end>
+<singlePosition index="88"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525263244546">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525263244546</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="88"/>
+</start>
+<end>
+<singlePosition index="95"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525263244547">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525263244547</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="95"/>
+</start>
+<end>
+<singlePosition index="110"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525263244548">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525263244548</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="110"/>
+</start>
+<end>
+<singlePosition index="140"/>
+</end>
+</positioning>
+</unit>
+<unit id="TXT_IMPORTER_1525263244549">
+<metadata>
+<author>TXT_IMPORTER</author>
+<creation-date>1525263244549</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>paragraph</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="140"/>
+</start>
+<end>
+<singlePosition index="167"/>
+</end>
+</positioning>
+</unit>
+<unit id="clefebvre_1523109222509">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1523109222509</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">Début</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="2"/>
+</start>
+<end>
+<singlePosition index="7"/>
+</end>
+</positioning>
+</unit>
+<unit id="clefebvre_1523109242383">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1523109242383</creation-date>
+<lastModifier>clefebvre</lastModifier>
+<lastModificationDate>1523109246342</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A1</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="11"/>
+</start>
+<end>
+<singlePosition index="33"/>
+</end>
+</positioning>
+</unit>
+<unit id="clefebvre_1523109251430">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1523109251430</creation-date>
+<lastModifier>clefebvre</lastModifier>
+<lastModificationDate>1523109258220</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">B1</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="37"/>
+</start>
+<end>
+<singlePosition index="44"/>
+</end>
+</positioning>
+</unit>
+<unit id="clefebvre_1523109261199">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1523109261199</creation-date>
+<lastModifier>clefebvre</lastModifier>
+<lastModificationDate>1523109337623</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A2</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="48"/>
+</start>
+<end>
+<singlePosition index="88"/>
+</end>
+</positioning>
+</unit>
+<unit id="clefebvre_1523109340624">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1523109340624</creation-date>
+<lastModifier>clefebvre</lastModifier>
+<lastModificationDate>1523109357780</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">B2_1</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="92"/>
+</start>
+<end>
+<singlePosition index="95"/>
+</end>
+</positioning>
+</unit>
+<unit id="clefebvre_1523109361591">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1523109361591</creation-date>
+<lastModifier>clefebvre</lastModifier>
+<lastModificationDate>1523109365967</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment1</type>
+<featureSet>
+<feature name="Nom">B2_2</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="95"/>
+</start>
+<end>
+<singlePosition index="110"/>
+</end>
+</positioning>
+</unit>
+<unit id="clefebvre_1523109371251">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1523109371251</creation-date>
+<lastModifier>clefebvre</lastModifier>
+<lastModificationDate>1523109374966</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A3_1</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="114"/>
+</start>
+<end>
+<singlePosition index="140"/>
+</end>
+</positioning>
+</unit>
+<unit id="clefebvre_1523109377123">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1523109377123</creation-date>
+<lastModifier>clefebvre</lastModifier>
+<lastModificationDate>1523109381138</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Segment2</type>
+<featureSet>
+<feature name="Nom">A3_2</feature>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="140"/>
+</start>
+<end>
+<singlePosition index="167"/>
+</end>
+</positioning>
+</unit>
+<relation id="clefebvre_1525263483537">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525263483537</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Narration</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="clefebvre_1523109242383"/>
+<term id="clefebvre_1523109222509"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525263612761">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525263612761</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Conduite</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="clefebvre_1523109251430"/>
+<term id="clefebvre_1523109242383"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525263638816">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525263638816</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration descriptive</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="clefebvre_1523109261199"/>
+<term id="clefebvre_1523109242383"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525263656801">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525263656801</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Conduite</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="clefebvre_1523109340624"/>
+<term id="clefebvre_1523109261199"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525263676537">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525263676537</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Question</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="clefebvre_1523109361591"/>
+<term id="clefebvre_1523109242383"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525263681840">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525263681840</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Réponse</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="clefebvre_1523109371251"/>
+<term id="clefebvre_1523109361591"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1525263689424">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525263689424</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Elaboration evaluative</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="clefebvre_1523109377123"/>
+<term id="clefebvre_1523109371251"/>
+</positioning>
+</relation>
+<flag id="clefebvre_1525263858572">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1525263858572</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<comment>Sortie au restaurant</comment>
+</characterisation>
+<positioning>
+<singlePosition index="11"/>
+</positioning>
+</flag>
+</annotations>
