@@ -36,7 +36,6 @@ class Texte():
         self.nom = nom
         self.texte = texte
         self.unites = unites
-        self.annotationExpert = None#?
         
 
 class Annotateur():
@@ -46,10 +45,10 @@ class Annotateur():
         annotations : dict qui à chaque nom de texte associe les annotations
         campagne : Campagne référence vers la campagne où participe l'annotateur
     """
-    def __init__(self):
-        self.id
-        self.annotations
-        self.campagne
+    def __init__(self, id, campagne):
+        self.id = id
+        self.annotations = dict()
+        self.campagne = campagne
     
     def getInfos(self):
         """
