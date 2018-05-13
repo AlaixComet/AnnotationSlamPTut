@@ -10,19 +10,16 @@ from os import path
 from bs4 import BeautifulSoup
 import numpy as np
 import pandas
-from data import Unit, Texte, Campagne
+from data import Unit, Texte, Campagne, Annotateur
 
-
+AnnotationDirectory = "Campagne 2018"
 projectDirectory = path.dirname(path.realpath(__file__))
+projectDirectory = path.join(path.split(projectDirectory)[0])
 textsNames = ["Bac_a_sable","Florence","Provocation"]
-directories = [projectDirectory+"\\textes\\"+t for t in textsNames]
+textDirectories = [path.join(projectDirectory,AnnotationDirectory,t) for t in textsNames]
 
 
-def parsing(directory, textsNames, id_unites_constants = False):
-    directories = [path.join(directory, t) for t in textsNames]
-
-
-
+def parsing(directories, id_unites_constants = False):
     camp = Campagne()
     annotateurs = dict()
 
@@ -33,13 +30,11 @@ def parsing(directory, textsNames, id_unites_constants = False):
         ac_file = path.join(directory, "texte.ac")
         aa_file = path.join(directory, "unites.aa")
         
-        f = open(aa_file, "r", encoding="utf_8")
-        unites = f.read()
-        f.close()
+        with open(aa_file, "r", encoding="utf_8") as f :
+            unites = f.read()
         
-        f = open(ac_file, "r", encoding="utf_8")
-        text = f.read()
-        f.close()
+        with  open(ac_file, "r", encoding="utf_8") as f :
+            text = f.read()
         
         soup = BeautifulSoup(unites, "lxml")
         
@@ -64,20 +59,18 @@ def parsing(directory, textsNames, id_unites_constants = False):
 
     ##### Parsing des annotations
         fichiers_annotations = glob.glob(path.join(directory, "Annotations\*.aa"))
-
         for f_annot in fichiers_annotations:
             nom_annotateur = path.basename(f_annot).rstrip(".aa")
             if not nom_annotateur in annotateurs:
                 annotateurs[nom_annotateur] = Annotateur(nom_annotateur, camp)
             
-            f = open(f_annot, 'r', encoding="utf-8")
-            annotation = f.read()
-            f.close()
+            with open(f_annot, 'r', encoding="utf-8") as f :
+                annotation = f.read()
 
             soup = BeautifulSoup(annotation, "lxml")
 
-            if not id_unites_constants:
+            #if not id_unites_constants:
                 
             
 
-            
+parsing(textDirectories)
