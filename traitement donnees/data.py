@@ -109,29 +109,27 @@ class Theme():
     Thème associé à une partie d'un texte
         label : String nom du thème
         debut : int indice du début du thème
-        fin : int indice de la fin du thème
     """
-    def __init__(self):
-        self.label
-        self.debut
-        self.fin
+    def __init__(self, label, debut):
+        self.label = label
+        self.debut = debut
 
 
 class Annotation():
     """
     Annotation d'un texte par un annotateur (expert ou non)
-        annotateur : String id de l'annotateur ayant produit cette annotation
+        annotateur : Annotateur ayant produit cette annotation
         campagne : Campagne
         texte : Texte texte sur lequel porte l'annotation
         themes : list de Theme
         relations : list de Relation
     """
-    def __init__(self):
-        self.annotateur
-        self.campagne
-        self.texte
-        self.themes
-        self.relations
+    def __init__(self, annotateur, campagne, texte, themes, relations):
+        self.annotateur = annotateur
+        self.campagne = campagne
+        self.texte = texte
+        self.themes = themes
+        self.relations = relations
     
     def matrice(self):
         """

@@ -57,6 +57,10 @@ def parsing(directories, id_unites_constants = False):
         t = Texte(nom_texte, text, units_list)
         camp.textes[nom_texte] = t
 
+        id2units = dict()
+        for u in units_list:
+            id2units[u.id] = u
+        
     ##### Parsing des annotations
         fichiers_annotations = glob.glob(path.join(directory, "Annotations\*.aa"))
         for f_annot in fichiers_annotations:
@@ -64,13 +68,57 @@ def parsing(directories, id_unites_constants = False):
             if not nom_annotateur in annotateurs:
                 annotateurs[nom_annotateur] = Annotateur(nom_annotateur, camp)
             
-            with open(f_annot, 'r', encoding="utf-8") as f :
-                annotation = f.read()
+            f = open(f_annot, 'r', encoding="utf-8")
+            annotation = f.read()
+            f.close()
 
             soup = BeautifulSoup(annotation, "lxml")
 
-            #if not id_unites_constants:
-                
+            if not id_unites_constants:
+                units_nulles = list()
+                units = soup.findAll("unit")
+                for unit in units:
+                    if unit['id'][:12] != 'TXT_IMPORTER':
+                        debut = int(unit.start.singleposition['index'])
+                        fin = int(unit.end.singleposition['index'])
+                        if fin > debut:
+                            units_nulles.append((debut, unit['id']))
+
+                units_nulles = sorted(units_nulles, key=lambda x:x[0])
+                #Dans ce dict, on fait correspondre les ids (tous différents selon les fichiers) des unités aux Units qu'on a créé précédemment
+                id2units = dict()
+                i = 0
+                for u in units_nulles:
+                    id2units[u[1]] = units_list[i]
+                    i+=1
+            
+            #On peut enfin récupérer les relations à proprement parler
+            rel_list = list()
+            relations = soup.findAll("relation")
+            for relation in relations:
+                extremites = relation.findAll("term")
+                rel = Relation(relation["id"], id2units[extremites[0]["id"]], id2units[extremites[1]["id"]], relation.type.string)
+                rel_list.append(rel)
+            name = path.basename(file).split(".")[0]
+            annotateurs[nom_annotateur].annotations[nom_texte] = rel_list
+
+
+            ### Récupération des thèmes
+            themes_list = list()
+            themes = soup.findAll("flag")
+            for theme in themes:
+                position = int(theme.positioning.singlePosition["index"])
+                label = theme.characterisation.comment.string
+                th = Theme(label, position)
+                themes_list.append(t)
+            
+
+            annot = Annotation(annotateurs[nom_annotateur], camp, t, themes_list, rel_list)
+
+            annotateurs[nom_annotateur].annotations[nom_texte] = annot
+    
+    campagne.annotateurs = annotateurs
+    return campagne
             
 
 parsing(textDirectories)
