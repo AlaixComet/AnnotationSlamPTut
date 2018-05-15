@@ -53,7 +53,6 @@ for unit in units:
             nom = nom.string
         if fin > debut:
             u = Unit(unit['id'], debut, fin, text[debut:fin], nom)
-            print(u)
             units_list.append(u)
 
 #Vu que pour l'instant dans leurs fichiers c'est le cirque on est obligés de passer par la position des unités dans le texte, 
@@ -69,7 +68,6 @@ annotations = {}
 
 files = glob.glob(path.join(directory, "*\*.aa")) #liste de tous les fichiers .aa
 for file in files:
-    print(path.basename(file))
     f = open(file, "r", encoding="utf-8")
     annotation = f.read()
     f.close()
@@ -136,7 +134,6 @@ for a in annotations.values():
             panel[rel.type][rel.dest.name][rel.origine.name] = 1
     annotations_panels.append(panel)
     
-print(annotations_panels[0]["Narration"])
 
 total = annotations_panels[1].copy()
 
@@ -144,6 +141,7 @@ for pan in annotations_panels[1:]:
     total = total.add(pan)
 
 print(total.sum(0)) #on affiche le total toutes relations confondues
+print(total.sum(2)) #on affiche le total toutes relations confondues
 
 
 #On explore ceux qui ont beaucoup de croix
@@ -169,7 +167,7 @@ def draw_global_tree(matrice, nom, nbAnnotations, minOccurrences=1):
                 if val >= minOccurrences:
                     label = rel+"\n"+str(val)
                     poids = (val / nbAnnotations) * 10
-                    dot.edge(dest, origine, label=label, penwidth=str(poids), color=str(i), colorscheme="paired11", dir="back")
+                    dot.edge(dest, origine, label=label, penwidth=str(poids), color=str(i), colorscheme="paired11", dir="back") #dir back car no fait pas un arbre à proprement parler
     return dot
 
 #draw_global_tree(total, "test", 27, 4)

@@ -6,7 +6,7 @@ Created on Mon Mar 26 19:16:56 2018
 """
 import numpy as np
 import scipy
-import random.sample
+from data import Annotation, Annotateur, Campagne, Theme
 
 def distance(mat1, mat2):
     mat1 = mat1.sum(0) #on fait abstraction du type de relation pour l'instant
@@ -19,5 +19,33 @@ def distance(mat1, mat2):
     return scipy.spatial.distance.hamming(mat1,mat2)
 
         
-        
-    
+def sommeMatricesCampagne(campagne, l = []):
+    """
+
+    """
+    #TODO
+
+def detectionChangementTheme(annotation):
+    """
+    arg     : Annotation 
+    return  : list d'Unit
+    """
+    #TODO
+
+def ruptureDeLaFrontiereDroite(annotation):
+    """
+    parcours postfixe
+    """
+    #TODO
+
+def dessinerGraphThemes():
+    """
+
+    """
+    #TODO
+
+def calculKappa():
+    """
+
+    """
+    #TODO

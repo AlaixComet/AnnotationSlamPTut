@@ -108,10 +108,16 @@ class Theme():
     Thème associé à une partie d'un texte
         label : String nom du thème
         debut : int indice du début du thème
+        unite : Unit auquel est attaché le thème
     """
     def __init__(self, label, debut):
         self.label = label
         self.debut = debut
+        self.unites = None
+    
+    def linkToUnit(self):
+        #TODO
+        lol = "lol"
 
 
 class Annotation():
