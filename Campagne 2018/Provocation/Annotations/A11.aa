@@ -1479,8 +1479,8 @@
 <metadata>
 <author>abiver</author>
 <creation-date>1525017029933</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1526382458839</lastModificationDate>
 </metadata>
 <characterisation>
 <type>Elaboration descriptive</type>
@@ -1488,7 +1488,7 @@
 </characterisation>
 <positioning>
 <term id="clefebvre_1521572026922"/>
-<term id="abiver_1525016959706"/>
+<term id="clefebvre_1521572010441"/>
 </positioning>
 </relation>
 <relation id="abiver_1525017048153">
@@ -1719,8 +1719,8 @@
 <metadata>
 <author>abiver</author>
 <creation-date>1525017392784</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1526382434440</lastModificationDate>
 </metadata>
 <characterisation>
 <type>Elaboration descriptive</type>
@@ -1728,7 +1728,7 @@
 </characterisation>
 <positioning>
 <term id="clefebvre_1521572096417"/>
-<term id="abiver_1525017378668"/>
+<term id="clefebvre_1521572080046"/>
 </positioning>
 </relation>
 <relation id="abiver_1525017420309">

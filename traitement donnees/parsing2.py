@@ -10,7 +10,7 @@ from os import path
 from bs4 import BeautifulSoup
 import numpy as np
 import pandas
-from data import Unit, Texte, Campagne, Annotateur
+from data import Unit, Texte, Campagne, Annotateur, Relation, Annotation, Theme
 
 AnnotationDirectory = "Campagne 2018"
 projectDirectory = path.dirname(path.realpath(__file__))
@@ -71,7 +71,7 @@ def parsing(directories, id_unites_constants = False):
             f = open(f_annot, 'r', encoding="utf-8")
             annotation = f.read()
             f.close()
-
+            print(f_annot)
             soup = BeautifulSoup(annotation, "lxml")
 
             if not id_unites_constants:
@@ -99,7 +99,7 @@ def parsing(directories, id_unites_constants = False):
                 extremites = relation.findAll("term")
                 rel = Relation(relation["id"], id2units[extremites[0]["id"]], id2units[extremites[1]["id"]], relation.type.string)
                 rel_list.append(rel)
-            name = path.basename(file).split(".")[0]
+            name = path.basename(f_annot).split(".")[0]
             annotateurs[nom_annotateur].annotations[nom_texte] = rel_list
 
 
@@ -107,7 +107,7 @@ def parsing(directories, id_unites_constants = False):
             themes_list = list()
             themes = soup.findAll("flag")
             for theme in themes:
-                position = int(theme.positioning.singlePosition["index"])
+                position = int(theme.positioning.singleposition["index"])
                 label = theme.characterisation.comment.string
                 th = Theme(label, position)
                 themes_list.append(t)
@@ -117,8 +117,7 @@ def parsing(directories, id_unites_constants = False):
 
             annotateurs[nom_annotateur].annotations[nom_texte] = annot
     
-    campagne.annotateurs = annotateurs
-    return campagne
+    camp.annotateurs = annotateurs
+    return camp
             
-
-parsing(textDirectories)
+print(parsing(textDirectories))

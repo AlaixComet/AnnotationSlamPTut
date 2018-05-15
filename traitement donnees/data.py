@@ -30,7 +30,6 @@ class Texte():
         nom : String le nom du texte
         texte : String le contenu du texte (comme formaté dans le fichier .ac)
         unites : list des unites du texte (dans l'ordre du texte)
-        annotationExpert : Annotation une anontation d'expert de référence
     """
     def __init__(self, nom, texte, unites):
         self.nom = nom
@@ -61,7 +60,7 @@ class Unit():
     """
     Représente une unité d'un texte
         id : String identifiant Glozz de l'unité
-        sebut : int indice de début
+        debut : int indice de début
         fin : int indice de fin
         txt : String contenu de l'unité
         name : nom court de l'unité (de la forme A1, B2_1, B2_2 etc.)
@@ -126,7 +125,6 @@ class Annotation():
     """
     def __init__(self, annotateur, campagne, texte, themes, relations):
         self.annotateur = annotateur
-        self.campagne = campagne
         self.texte = texte
         self.themes = themes
         self.relations = relations
@@ -137,10 +135,10 @@ class Annotation():
         binaire. La première dimension correspond au type de relation, la deuxième
         à l'origine de la relation et la troisième à sa destination.
         """
-        tab = np.zeros((len(self.campagne.typesRelations), len(self.texte.unites), len(self.texte.unites)),  dtype="int")
+        tab = np.zeros((len(self.annotateur.campagne.typesRelations), len(self.texte.unites), len(self.texte.unites)),  dtype="int")
         nomsUnites = [u.name for u in self.texte.unites]
         #Les Panels c'est des matrices 3D. L'avantage c'est qu'on peut nommer les colonnes ! 
-        panel = pandas.Panel(tab, self.campagne.typesRelations.keys(), nomsUnites, nomsUnites) 
+        panel = pandas.Panel(tab, self.annotateur.campagne.typesRelations.keys(), nomsUnites, nomsUnites) 
         for rel in self.relations:
             if rel.type is not None and rel.dest.name is not None and rel.origine.name is not None:
                 panel.loc[rel.type, rel.dest.name, rel.origine.name] = 1
@@ -162,7 +160,7 @@ class Annotation():
         filsVert = list() # liste d'Units
         for r in self.relations:
             if r.dest == debut:
-                if self.campagne.typesRelations[r.type] == "horizontale":
+                if self.annotateur.campagne.typesRelations[r.type] == "horizontale":
                     filsHoriz.append((r.origine, r.type))
                 else:
                     filsVert.append((r.origine, r.type))
@@ -179,7 +177,7 @@ class Annotation():
         for u in self.texte.unites:
             dot.node(u.name, u.name + " : " + u.txt)
             units_names.append(u.name)
-        typesRel = self.campagne.typesRelations
+        typesRel = self.annotateur.campagne.typesRelations
         for rel in self.relations:
             if typesRel[rel.type] == "horizontale":
                 with dot.subgraph() as sub:
