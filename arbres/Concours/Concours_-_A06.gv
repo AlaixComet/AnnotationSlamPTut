@@ -1,0 +1,89 @@
+digraph A06 {
+	node [shape=box style=filled]
+	"début" [label="début : Début"]
+	A1 [label="A1 : Et euh donc là vous avez passé le concours c'est..." fillcolor=wheat]
+	B2 [label="B2 : Ouais j'attends les résultats." fillcolor=skyblue]
+	A3 [label="A3 : C’est quand les résultats?" fillcolor=wheat]
+	B4 [label="B4 : Juin." fillcolor=skyblue]
+	A5 [label="A5 : Juin?" fillcolor=wheat]
+	B6 [label="B6 : Mmh." fillcolor=skyblue]
+	A7_1 [label="A7_1 : Parce que je sais qu’en début d'année y en a qui attendent encore les résultats" fillcolor=wheat]
+	A7_2 [label="A7_2 : mais euh y a deux sessions de d'exams ou euh." fillcolor=wheat]
+	B8_1 [label="B8_1 : Euhh éduc spé les... en début d'année c'est la passation de l'écrit." fillcolor=skyblue]
+	B8_2 [label="B8_2 : On passe l'écrit au mois de janvier." fillcolor=skyblue]
+	A9 [label="A9 : Ouais." fillcolor=wheat]
+	B10 [label="B10 : Euh si on est reçu parce que cette année ils étaient vachement en retard." fillcolor=skyblue]
+	A11 [label="A11 : D'accord." fillcolor=wheat]
+	B12 [label="B12 : Si on est reçu à l'écrit on passe un oral." fillcolor=skyblue]
+	A13 [label="A13 : Mmh mmh." fillcolor=wheat]
+	B14 [label="B14 : Et si on est reçu à l'oral on rentre dans l'école." fillcolor=skyblue]
+	A15_1 [label="A15_1 : D'accord." fillcolor=wheat]
+	A15_2 [label="A15_2 : Et y a beaucoup de places?" fillcolor=wheat]
+	B16 [label="B16 : 90." fillcolor=skyblue]
+	A17_1 [label="A17_1 : D'accord." fillcolor=wheat]
+	A17_2 [label="A17_2 : Vous étiez beaucoup à..." fillcolor=wheat]
+	B18 [label="B18 : Ben cette année on était pas beaucoup." fillcolor=skyblue]
+	{
+		rank=same
+		"début"
+		A1
+		"début" -> A1 [label=Narration dir=none]
+	}
+	A1 -> B2 [label=Question dir=none]
+	{
+		rank=same
+		B2
+		A3
+		B2 -> A3 [label="Réponse" dir=none]
+	}
+	A3 -> B4 [label=Question dir=none]
+	{
+		rank=same
+		B4
+		A5
+		B4 -> A5 [label="Réponse" dir=none]
+	}
+	A5 -> B6 [label=Conduite dir=none]
+	B6 -> A7_1 [label=Phatique dir=none]
+	A3 -> A7_1 [label="Elaboration descriptive" dir=none]
+	A3 -> A7_2 [label="Elaboration descriptive" dir=none]
+	A3 -> B8_1 [label="Elaboration descriptive" dir=none]
+	A3 -> B8_2 [label="Elaboration descriptive" dir=none]
+	B8_2 -> A9 [label=Phatique dir=none]
+	B10 -> A11 [label=Phatique dir=none]
+	{
+		rank=same
+		A9
+		B10
+		A9 -> B10 [label=Narration dir=none]
+	}
+	{
+		rank=same
+		A11
+		B12
+		A11 -> B12 [label=Narration dir=none]
+	}
+	{
+		rank=same
+		A13
+		B14
+		A13 -> B14 [label=Narration dir=none]
+	}
+	B12 -> A13 [label=Phatique dir=none]
+	B14 -> A15_1 [label=Phatique dir=none]
+	B14 -> A15_2 [label=Question dir=none]
+	{
+		rank=same
+		A15_2
+		B16
+		A15_2 -> B16 [label="Réponse" dir=none]
+	}
+	B16 -> A17_1 [label=Phatique dir=none]
+	B16 -> A17_2 [label=Question dir=none]
+	{
+		rank=same
+		A17_2
+		B18
+		A17_2 -> B18 [label="Réponse" dir=none]
+	}
+}

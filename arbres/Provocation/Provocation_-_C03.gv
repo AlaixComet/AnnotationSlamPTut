@@ -1,0 +1,73 @@
+digraph C03 {
+	node [shape=box style=filled]
+	"Début" [label="Début : Début"]
+	A150_1 [label="A150_1 : Alors finalement bon j’ai vécu l’apocalypse à cette époque-là" fillcolor=wheat]
+	A150_2 [label="A150_2 : parce que à f… au fur et à mesure que je remontais la pente..." fillcolor=wheat]
+	A150_3 [label="A150_3 : parce que après ça s’est joué en psychiatrie j’avais une injection retard" fillcolor=wheat]
+	A150_4 [label="A150_4 : j’ai tout arrêté" fillcolor=wheat]
+	A150_5 [label="A150_5 : et... et je me suis reconstitué bribes par bribes je me suis découvert poète euh sculpteur peintre..." fillcolor=wheat]
+	B151 [label="B151 : D’une certaine façon" fillcolor=skyblue]
+	A152_1 [label="A152_1 : J’ai découvert l’art j’ai découvert l’art proprement dit" fillcolor=wheat]
+	A152_2 [label="A152_2 : avec des morceaux de bois et sans clous j’arrive à faire une porte" fillcolor=wheat]
+	B153 [label="B153 : D’accord" fillcolor=skyblue]
+	A154_1 [label="A154_1 : En entrelaçant les branches." fillcolor=wheat]
+	A154_2 [label="A154_2 : j’étais j’… j’… j’étais doué enfin..." fillcolor=wheat]
+	B155 [label="B155 : Vous avez découvert que vous étiez doué en fait?" fillcolor=skyblue]
+	A156 [label="A156 : Enfin j’ai découvert que j’avais... que j’étais... PRO par vocation" fillcolor=wheat]
+	B157 [label="B157 : Hum hum" fillcolor=skyblue]
+	A158_1 [label="A158_1 : Provocation" fillcolor=wheat]
+	A158_2 [label="A158_2 : c’est incroyable ce que je pouvais provoquer" fillcolor=wheat]
+	B159 [label="B159 : Ouais ouais" fillcolor=skyblue]
+	A160_1 [label="A160_1 : Je savais titiller les mecs dans la provocation" fillcolor=wheat]
+	A160_2 [label="A160_2 : et d… des mecs balèzes et que moi j’avais aucune hostilité" fillcolor=wheat]
+	A160_3 [label="A160_3 : mais avec les paroles l’autre il s’en prenait plein la gueule" fillcolor=wheat]
+	B161 [label="B161 : Oui vous étiez de fait le plus fort à ce niveau là" fillcolor=skyblue]
+	A162 [label="A162 : J’étais un pro par vocation j’étais devenu un génie j’étais devenu un génie" fillcolor=wheat]
+	{
+		rank=same
+		"Début"
+		A150_1
+		"Début" -> A150_1 [label=Narration dir=none]
+	}
+	A150_1 -> A150_2 [label="Elaboration descriptive" dir=none]
+	A150_1 -> A150_3 [label="Elaboration prescriptive" dir=none]
+	A150_3 -> A150_4 [label="Contre-élaboration" dir=none]
+	A150_2 -> A150_5 [label="Elaboration evaluative" dir=none]
+	A150_5 -> B151 [label="Contre-élaboration" dir=none]
+	{
+		rank=same
+		A150_5
+		A152_1
+		A150_5 -> A152_1 [label=Narration dir=none]
+	}
+	A152_1 -> A152_2 [label="Elaboration descriptive" dir=none]
+	A152_1 -> B153 [label=Phatique dir=none]
+	A152_2 -> A154_1 [label="Elaboration descriptive" dir=none]
+	A150_5 -> A154_2 [label="Elaboration evaluative" dir=none]
+	A152_1 -> B155 [label=Conduite dir=none]
+	B155 -> A156 [label="Elaboration evaluative" dir=none]
+	A156 -> B157 [label=Phatique dir=none]
+	B155 -> A158_1 [label="Contre-élaboration" dir=none]
+	{
+		rank=same
+		A158_1
+		A158_2
+		A158_1 -> A158_2 [label=Narration dir=none]
+	}
+	A158_2 -> B159 [label=Conduite dir=none]
+	{
+		rank=same
+		A158_2
+		A160_1
+		A158_2 -> A160_1 [label=Narration dir=none]
+	}
+	A160_1 -> A160_2 [label="Elaboration descriptive" dir=none]
+	{
+		rank=same
+		A160_2
+		A160_3
+		A160_2 -> A160_3 [label=Narration dir=none]
+	}
+	A160_1 -> B161 [label="Elaboration evaluative" dir=none]
+	B161 -> A162 [label="Elaboration evaluative" dir=none]
+}
