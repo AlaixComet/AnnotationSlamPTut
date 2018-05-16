@@ -168,6 +168,7 @@ def draw_global_tree(matrice, nom, nbAnnotations, minOccurrences=1):
                     label = rel+"\n"+str(val)
                     poids = (val / nbAnnotations) * 10
                     dot.edge(dest, origine, label=label, penwidth=str(poids), color=str(i), colorscheme="paired11", dir="back") #dir back car no fait pas un arbre à proprement parler
+    
     return dot
 
 #draw_global_tree(total, "test", 27, 4)

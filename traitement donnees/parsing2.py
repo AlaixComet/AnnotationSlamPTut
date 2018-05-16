@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 import numpy as np
 import pandas
 from data import Unit, Texte, Campagne, Annotateur, Relation, Annotation, Theme
+from analyse import *
 
 AnnotationDirectory = "Campagne 2018"
 projectDirectory = path.dirname(path.realpath(__file__))
@@ -71,7 +72,6 @@ def parsing(directories, id_unites_constants = False):
             f = open(f_annot, 'r', encoding="utf-8")
             annotation = f.read()
             f.close()
-            print(f_annot)
             soup = BeautifulSoup(annotation, "lxml")
 
             if not id_unites_constants:
@@ -99,18 +99,20 @@ def parsing(directories, id_unites_constants = False):
                 extremites = relation.findAll("term")
                 rel = Relation(relation["id"], id2units[extremites[0]["id"]], id2units[extremites[1]["id"]], relation.type.string)
                 rel_list.append(rel)
-            name = path.basename(f_annot).split(".")[0]
-            annotateurs[nom_annotateur].annotations[nom_texte] = rel_list
+            # name = path.basename(f_annot).split(".")[0]
+            # annotateurs[nom_annotateur].annotations[nom_texte] = rel_list
 
 
             ### Récupération des thèmes
             themes_list = list()
             themes = soup.findAll("flag")
+            previousLabel = ""
             for theme in themes:
                 position = int(theme.positioning.singleposition["index"])
                 label = theme.characterisation.comment.string
                 th = Theme(label, position)
-                themes_list.append(t)
+                if label != previousLabel : themes_list.append(th)
+                previousLabel = label
             
 
             annot = Annotation(annotateurs[nom_annotateur], camp, t, themes_list, rel_list)
@@ -119,5 +121,16 @@ def parsing(directories, id_unites_constants = False):
     
     camp.annotateurs = annotateurs
     return camp
-            
-print(parsing(textDirectories))
+
+# camp = parsing(textDirectories)
+# themeChangeUnitList = dict()
+# for annotateurName, annotateur in camp.annotateurs.items() :
+#     print("\nAnnotateur "+ annotateurName)
+#     for annotationTexte, annotation in annotateur.annotations.items() :
+#         print("Texte " + annotationTexte)
+#         themeChangeUnitList[annotateurName + "-" + annotationTexte] = detectionChangementTheme(annotation)
+
+# for id,unitList in themeChangeUnitList.items() :
+#     print(id)
+#     print(unitList)
+

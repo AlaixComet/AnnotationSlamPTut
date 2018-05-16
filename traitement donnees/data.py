@@ -23,6 +23,15 @@ class Campagne():
         self.annotateurs = dict()
         self.infosAnnotateurs = None
     
+    # def getAnnotationListFromText(self, text) :
+    #     annoList = list()
+    #     for annotateurName, annotateur in self.annotateurs :
+    #         for annotation in annotateur[text] :
+    #             annoList.append(annotation)
+    #     return annoList
+
+
+    
 
 class Texte():
     """
@@ -113,11 +122,21 @@ class Theme():
     def __init__(self, label, debut):
         self.label = label
         self.debut = debut
-        self.unites = None
+        self.unite = None
     
-    def linkToUnit(self):
-        #TODO
-        lol = "lol"
+    def linkToUnit(self,unitList):
+        """
+        links the theme to the corresponding unit
+        """
+        for u in unitList :
+            # jamais None si pas de theme au pire "début"
+            if self.unite == None :
+                self.unite = u
+            #puis on cherche
+            if u.debut <= self.debut and u.fin >= self.debut : 
+                self.unite = u
+                break
+        return self
 
 
 class Annotation():
