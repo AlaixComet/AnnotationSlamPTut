@@ -120,4 +120,4 @@ def parsing(directories, id_unites_constants = False):
     camp.annotateurs = annotateurs
     return camp
             
-print(parsing(textDirectories))
+#print(parsing(textDirectories))

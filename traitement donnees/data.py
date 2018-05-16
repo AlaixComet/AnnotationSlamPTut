@@ -22,6 +22,13 @@ class Campagne():
         self.typesRelations = dict()
         self.annotateurs = dict()
         self.infosAnnotateurs = None
+
+    def getAnnotations(self, nomTexte):
+        annotations = list()
+        for annotateur in self.annotateurs.values():
+            if nomTexte in annotateur.annotations:
+                annotations.append(annotateur.annotations[nomTexte])
+        return annotations
     
 
 class Texte():
@@ -178,11 +185,14 @@ class Annotation():
         return Arbre(debut, noeudsFilsHoriz, noeudsFilsVert)
     
     def dessinerArbre(self):
-        dot = Digraph()
-        units_names = list()
+        dot = Digraph(node_attr={'shape':'box','style':'filled'})
         for u in self.texte.unites:
-            dot.node(u.name, u.name + " : " + u.txt)
-            units_names.append(u.name)
+            if u.name[0] == "A":
+                dot.node(u.name, u.name + " : " + u.txt, fillcolor='wheat')
+            elif u.name[0] == "B":
+                dot.node(u.name, u.name + " : " + u.txt, fillcolor='skyblue')
+            else:
+                dot.node(u.name, u.name + " : " + u.txt)
         typesRel = self.annotateur.campagne.typesRelations
         for rel in self.relations:
             if typesRel[rel.type] == "horizontale":
@@ -193,6 +203,7 @@ class Annotation():
                     sub.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none")
             else:
                 dot.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none")
+        return dot
 
 
 class Arbre():
