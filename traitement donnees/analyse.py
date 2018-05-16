@@ -21,11 +21,30 @@ def distance(mat1, mat2):
     return scipy.spatial.distance.hamming(mat1,mat2)
 
         
-def sommeMatricesCampagne(campagne, l = []):
+def matriceSansType(matrice3d):
     """
+    Aplatit la matrice 3d de relations d'une anotation en une matrice 2d où on ne tient plus compte du type des relations mais seulement des unités qu'elles relient
+    matrice3d : pandas.Panel
+    return : pandas.Dataframe
+    """
+    return matrice3d.sum(0)
 
+def matriceAvecCategories(matrice3d, categories):
     """
-    #TODO
+    Transforme la matrice 3d des relations en une liste de matrices 2d par catégorie
+    matrice3d : pandas.Panel
+    categories : list 2d de strings : [["Question","Méta-question"],["Elaboration descriptive"]]...
+    return : list de pandas.Dataframe
+    """
+    res = list()
+    for categ in categories:
+        matrice = matrice3d[categ[0]].copy()
+        for typeRel in categ[1:]:
+            print(matrice3d[typeRel])
+            matrice = matrice.add(matrice3d[typeRel])
+        res.append(matrice)
+    return res
+
 
 def detectionChangementTheme(annotation = Annotation):
     """
