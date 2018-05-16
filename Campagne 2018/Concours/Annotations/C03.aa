@@ -1099,8 +1099,8 @@
 <metadata>
 <author>clefebvre</author>
 <creation-date>1524748271227</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
+<lastModifier>clefebvre</lastModifier>
+<lastModificationDate>1526470984921</lastModificationDate>
 </metadata>
 <characterisation>
 <type>Elaboration descriptive</type>
@@ -1156,22 +1156,6 @@
 </characterisation>
 <positioning>
 <term id="abiver_1523962841482"/>
-<term id="abiver_1523962839369"/>
-</positioning>
-</relation>
-<relation id="clefebvre_1524748543146">
-<metadata>
-<author>clefebvre</author>
-<creation-date>1524748543146</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
-</metadata>
-<characterisation>
-<type>Elaboration descriptive</type>
-<featureSet/>
-</characterisation>
-<positioning>
-<term id="clefebvre_1524748518531"/>
 <term id="abiver_1523962839369"/>
 </positioning>
 </relation>

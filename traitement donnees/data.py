@@ -185,7 +185,8 @@ class Annotation():
         return Arbre(debut, noeudsFilsHoriz, noeudsFilsVert)
     
     def dessinerArbre(self):
-        dot = Digraph(node_attr={'shape':'box','style':'filled'})
+        nom = self.texte.nom+'_-_'+self.annotateur.id
+        dot = Digraph(name=nom, node_attr={'shape':'box','style':'filled'})
         for u in self.texte.unites:
             if u.name[0] == "A":
                 dot.node(u.name, u.name + " : " + u.txt, fillcolor='wheat')
