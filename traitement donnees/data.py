@@ -167,7 +167,7 @@ class Annotation():
         binaire. La première dimension correspond au type de relation, la deuxième
         à l'origine de la relation et la troisième à sa destination.
         """
-        tab = np.zeros((len(self.annotateur.campagne.typesRelations), len(self.texte.unites), len(self.texte.unites)),  dtype="int")
+        tab = np.zeros((len(self.annotateur.campagne.typesRelations.keys()), len(self.texte.unites), len(self.texte.unites)),  dtype="int")
         nomsUnites = [u.name for u in self.texte.unites]
         #Les Panels c'est des matrices 3D. L'avantage c'est qu'on peut nommer les colonnes ! 
         panel = pandas.Panel(tab, self.annotateur.campagne.typesRelations.keys(), nomsUnites, nomsUnites) 
