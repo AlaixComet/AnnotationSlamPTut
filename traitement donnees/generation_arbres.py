@@ -1,12 +1,5 @@
 from parsing2 import parsing
 from os import path
-import numpy as np
-import pandas
-from data import Unit, Texte, Campagne, Annotateur, Relation, Annotation, Theme
-import scipy
-from scipy.cluster.hierarchy import dendrogram, linkage
-
-from matplotlib import pyplot as plt
 
 AnnotationDirectory = "Campagne 2018"
 projectDirectory = path.dirname(path.realpath(__file__))

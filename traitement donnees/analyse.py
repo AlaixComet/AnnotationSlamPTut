@@ -40,7 +40,6 @@ def matriceAvecCategories(matrice3d, categories):
     for categ in categories:
         matrice = matrice3d[categ[0]].copy()
         for typeRel in categ[1:]:
-            print(matrice3d[typeRel])
             matrice = matrice.add(matrice3d[typeRel])
         res.append(matrice)
     return res
