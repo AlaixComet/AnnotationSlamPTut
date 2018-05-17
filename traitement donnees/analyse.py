@@ -46,21 +46,6 @@ def matriceAvecCategories(matrice3d, categories):
     return res
 
 
-def detectionChangementTheme(annotation = Annotation):
-    """
-    args    : Annotation
-    return  : list d'Unit
-    """
-    unitList = annotation.texte.unites
-    previousT = Theme("null",1)
-    unitsThemeChanges = list()
-    for key, t in enumerate(annotation.themes) :
-        if previousT.label != t.label :
-            annotation.themes[key] = t.linkToUnit(unitList)
-            unitsThemeChanges.append(annotation.themes[key].unite)
-        previousT = t
-    return(unitsThemeChanges)
-
 def ruptureDeLaFrontiereDroite(annotation):
     """
     parcours postfixe

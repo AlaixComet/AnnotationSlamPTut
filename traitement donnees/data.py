@@ -206,9 +206,14 @@ class Annotation():
     def dessinerArbre(self):
         nom = self.texte.nom+'_-_'+self.annotateur.id
         dot = Digraph(name=nom, node_attr={'shape':'box','style':'filled'})
+        themesChanges = self.detectionChangementTheme()
         for u in self.texte.unites:
+            tChange = False
+            if u in themesChanges :
+                tchange = True
+                theme = self.getThemeByUnit(u)
             if u.name[0] == "A":
-                dot.node(u.name, u.name + " : " + u.txt, fillcolor='wheat')
+                dot.node(u.name, u.name + " : " + u.txt, fillcolor='wheat', xlabel = theme.label if tchange else 0 )
             elif u.name[0] == "B":
                 dot.node(u.name, u.name + " : " + u.txt, fillcolor='skyblue')
             else:
@@ -225,6 +230,26 @@ class Annotation():
                 dot.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none")
         return dot
 
+    def detectionChangementTheme(self):
+        """
+        return  : list d'Unit
+        """
+        unitList = self.texte.unites
+        previousT = Theme("null",1)
+        unitsThemeChanges = list()
+        for key, t in enumerate(self.themes) :
+            if previousT.label != t.label :
+                self.themes[key] = t.linkToUnit(unitList)
+                unitsThemeChanges.append(self.themes[key].unite)
+            previousT = t
+        return(unitsThemeChanges)
+
+    def getThemeByUnit(self, unite):
+        """
+        """
+        for t in self.themes :
+            if t.unite == unite :
+                return t
 
 class Arbre():
     """

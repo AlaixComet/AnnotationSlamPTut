@@ -114,7 +114,6 @@ def parsing(directories, id_unites_constants = False):
                 if label != previousLabel : themes_list.append(th)
                 previousLabel = label
             
-
             annot = Annotation(annotateurs[nom_annotateur], camp, t, themes_list, rel_list)
 
             annotateurs[nom_annotateur].annotations[nom_texte] = annot
