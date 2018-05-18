@@ -807,38 +807,6 @@
 </end>
 </positioning>
 </unit>
-<relation id="ecolin_1526230828277">
-<metadata>
-<author>ecolin</author>
-<creation-date>1526230828277</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
-</metadata>
-<characterisation>
-<type>Narration</type>
-<featureSet/>
-</characterisation>
-<positioning>
-<term id="clefebvre_1521548341281"/>
-<term id="clefebvre_1521548294428"/>
-</positioning>
-</relation>
-<relation id="ecolin_1526230834675">
-<metadata>
-<author>ecolin</author>
-<creation-date>1526230834675</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
-</metadata>
-<characterisation>
-<type>Narration</type>
-<featureSet/>
-</characterisation>
-<positioning>
-<term id="ecolin_1526230828277"/>
-<term id="clefebvre_1521548294428"/>
-</positioning>
-</relation>
 <relation id="ecolin_1526230905049">
 <metadata>
 <author>ecolin</author>
@@ -859,8 +827,8 @@
 <metadata>
 <author>ecolin</author>
 <creation-date>1526231059640</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1526634087865</lastModificationDate>
 </metadata>
 <characterisation>
 <type>Narration</type>
@@ -875,8 +843,8 @@
 <metadata>
 <author>ecolin</author>
 <creation-date>1526231208531</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1526634082655</lastModificationDate>
 </metadata>
 <characterisation>
 <type>Narration</type>
@@ -923,8 +891,8 @@
 <metadata>
 <author>ecolin</author>
 <creation-date>1526231360037</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1526634057642</lastModificationDate>
 </metadata>
 <characterisation>
 <type>Elaboration descriptive</type>
@@ -955,8 +923,8 @@
 <metadata>
 <author>ecolin</author>
 <creation-date>1526231459958</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1526634078984</lastModificationDate>
 </metadata>
 <characterisation>
 <type>Narration</type>
@@ -987,8 +955,8 @@
 <metadata>
 <author>ecolin</author>
 <creation-date>1526231545989</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1526634071455</lastModificationDate>
 </metadata>
 <characterisation>
 <type>Elaboration descriptive</type>
@@ -1003,8 +971,8 @@
 <metadata>
 <author>ecolin</author>
 <creation-date>1526231599225</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1526634067453</lastModificationDate>
 </metadata>
 <characterisation>
 <type>Elaboration evaluative</type>
@@ -1013,6 +981,22 @@
 <positioning>
 <term id="clefebvre_1521548407576"/>
 <term id="clefebvre_1521548393652"/>
+</positioning>
+</relation>
+<relation id="abiver_1526634194307">
+<metadata>
+<author>abiver</author>
+<creation-date>1526634194307</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Narration</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="clefebvre_1521548341281"/>
+<term id="clefebvre_1521548294428"/>
 </positioning>
 </relation>
 <flag id="ecolin_1526231711832">

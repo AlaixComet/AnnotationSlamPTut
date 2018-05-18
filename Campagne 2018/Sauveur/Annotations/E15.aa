@@ -1259,8 +1259,8 @@
 <metadata>
 <author>ecolin</author>
 <creation-date>1526234099260</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
+<lastModifier>abiver</lastModifier>
+<lastModificationDate>1526634388079</lastModificationDate>
 </metadata>
 <characterisation>
 <type>Narration</type>
@@ -1268,7 +1268,7 @@
 </characterisation>
 <positioning>
 <term id="abiver_1523963060644"/>
-<term id="ecolin_1526234023903"/>
+<term id="abiver_1523963013292"/>
 </positioning>
 </relation>
 <relation id="ecolin_1526234121829">
@@ -1355,7 +1355,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<comment>A parle de Franck </comment>
+<comment>A parle de Franck</comment>
 </characterisation>
 <positioning>
 <singlePosition index="608"/>
@@ -1383,7 +1383,7 @@
 <lastModificationDate>0</lastModificationDate>
 </metadata>
 <characterisation>
-<comment>B est interloqué car A pense qu'il peut disparaitre </comment>
+<comment>B est interloqué car A pense qu'il peut disparaitre</comment>
 </characterisation>
 <positioning>
 <singlePosition index="1124"/>
