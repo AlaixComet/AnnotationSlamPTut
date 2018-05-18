@@ -126,10 +126,11 @@ class Theme():
         debut : int indice du début du thème
         unite : Unit auquel est attaché le thème
     """
-    def __init__(self, label, debut):
+    def __init__(self, label, debut, texte):
         self.label = label
         self.debut = debut
         self.unite = None
+        self.linkToUnit(texte.unites)
     
     def linkToUnit(self,unitList):
         """
@@ -140,7 +141,7 @@ class Theme():
             if self.unite == None :
                 self.unite = u
             #puis on cherche
-            if u.debut <= self.debut and u.fin >= self.debut : 
+            if u.fin >= self.debut : 
                 self.unite = u
                 break
         return self
