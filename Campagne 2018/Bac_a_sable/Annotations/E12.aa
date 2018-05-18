@@ -433,22 +433,6 @@
 <term id="clefebvre_1523109361591"/>
 </positioning>
 </relation>
-<relation id="ecolin_1525377761121">
-<metadata>
-<author>ecolin</author>
-<creation-date>1525377761121</creation-date>
-<lastModifier>ecolin</lastModifier>
-<lastModificationDate>1525378553440</lastModificationDate>
-</metadata>
-<characterisation>
-<type>Elaboration evaluative</type>
-<featureSet/>
-</characterisation>
-<positioning>
-<term id="clefebvre_1523109371251"/>
-<term id="ecolin_1525377761121"/>
-</positioning>
-</relation>
 <relation id="ecolin_1525378577583">
 <metadata>
 <author>ecolin</author>
