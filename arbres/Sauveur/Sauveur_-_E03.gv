@@ -1,0 +1,88 @@
+digraph E03 {
+	node [shape=box style=filled]
+	"début" [label="début : Début" xlabel=""]
+	A1 [label="A1 : enfin moi où j'ai quand même souffert c'est quand j'ai eu mon traumatisme crânien" fillcolor=wheat xlabel=<<B>Traumatsime crânien</B>>]
+	B2 [label="B2 : C'est dû à un accident ?" fillcolor=skyblue xlabel=""]
+	A3_1 [label="A3_1 : Oui enfin on m’avait pratiquement culbuté." fillcolor=wheat xlabel=""]
+	A3_2 [label="A3_2 : C’est quand même bien un...  ç'en est un qui m'a balancé... qu'était devant et puis moi derrière et qui m’a..." fillcolor=wheat xlabel=""]
+	A3_3 [label="A3_3 : mais enfin je m’en fous parce que... enfin j'étais chargé" fillcolor=wheat xlabel=<<B>Alcool</B>>]
+	A3_4 [label="A3_4 : J'avais quand même 5 litres de vin de... de  pineau 5 litres de bière plus 1 ou 2." fillcolor=wheat xlabel=""]
+	B4 [label="B4 : Que vous aviez bu ?" fillcolor=skyblue xlabel=""]
+	A5_1 [label="A5_1 : On allait dans la ferme à S. (lieu)" fillcolor=wheat xlabel=<<B>La ferme de Henry</B>>]
+	A5_2 [label="A5_2 : une ferme abandonnée." fillcolor=wheat xlabel=""]
+	A5_3 [label="A5_3 : Qu’habite qu’est... qu’appartient à Henry euh..." fillcolor=wheat xlabel=""]
+	A5_4 [label="A5_4 : une maison qu’est qu'on a fait qu'on a fait... qu’on a touchée." fillcolor=wheat xlabel=<<B>Frank L</B>>]
+	A5_5 [label="A5_5 : Moi j'aimais j’aime bien Franck. Franck L (nom)." fillcolor=wheat xlabel=""]
+	A5_6 [label="A5_6 : il m'a sauvé... avec son frère." fillcolor=wheat xlabel=""]
+	B6 [label="B6 : Il vous a sauvé comment ça ?" fillcolor=skyblue xlabel=""]
+	A7 [label="A7 : Comment ?" fillcolor=wheat xlabel=""]
+	B8 [label="B8 : Comment ça il vous a sauvé ?" fillcolor=skyblue xlabel=""]
+	A9_1 [label="A9_1 : Ah mais euh... qui euh... ben il m'a sauvé euh parce que j'étais avec lui parce qu'il... buvait quoi." fillcolor=wheat xlabel=""]
+	A9_2 [label="A9_2 : Il voulait me taper dessus et en plus son frangin il m'a enlevé." fillcolor=wheat xlabel=""]
+	A9_3 [label="A9_3 : Ben ce qui m'aide là c'est quelqu'un de bien c'est Damien." fillcolor=wheat xlabel=""]
+	A9_4 [label="A9_4 : Ben heureusement qu'il m'a fait ça parce que... il il faisait comme ça il se faisait disparaître et je peux le faire moi disparaître." fillcolor=wheat xlabel=""]
+	B10 [label="B10 : Donc vous pouviez disparaître et réapparaître ?" fillcolor=skyblue xlabel=""]
+	A11 [label="A11 : Oui." fillcolor=wheat xlabel=""]
+	{
+		rank=same
+		"début"
+		A1
+		"début" -> A1 [label=Narration dir=none]
+	}
+	{
+		rank=same
+		A1
+		B2
+		A1 -> B2 [label=Narration dir=none]
+	}
+	{
+		rank=same
+		B2
+		A3_1
+		B2 -> A3_1 [label="Réponse" dir=none]
+	}
+	A3_1 -> A3_2 [label="Elaboration descriptive" dir=none]
+	A3_2 -> A3_3 [label="Elaboration descriptive" dir=none]
+	{
+		rank=same
+		"début"
+		A3_4
+		"début" -> A3_4 [label=Narration dir=none]
+	}
+	A3_4 -> B4 [label=Question dir=none]
+	{
+		rank=same
+		"début"
+		A5_1
+		"début" -> A5_1 [label=Narration dir=none]
+	}
+	A5_1 -> A5_2 [label="Elaboration descriptive" dir=none]
+	A5_2 -> A5_3 [label="Elaboration descriptive" dir=none]
+	A5_3 -> A5_4 [label="Elaboration descriptive" dir=none]
+	{
+		rank=same
+		"début"
+		A5_5
+		"début" -> A5_5 [label=Narration dir=none]
+	}
+	A5_5 -> A5_6 [label="Elaboration descriptive" dir=none]
+	A5_6 -> B6 [label=Question dir=none]
+	B6 -> A7 [label="Méta-question" dir=none]
+	A5_6 -> B8 [label=Question dir=none]
+	{
+		rank=same
+		B8
+		A9_1
+		B8 -> A9_1 [label="Réponse" dir=none]
+	}
+	A9_1 -> A9_2 [label="Elaboration descriptive" dir=none]
+	A9_2 -> A9_3 [label="Elaboration descriptive" dir=none]
+	A9_3 -> A9_4 [label="Elaboration descriptive" dir=none]
+	A9_4 -> B10 [label=Question dir=none]
+	{
+		rank=same
+		B10
+		A11
+		B10 -> A11 [label="Réponse" dir=none]
+	}
+}

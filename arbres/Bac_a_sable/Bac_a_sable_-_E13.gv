@@ -1,0 +1,28 @@
+digraph E13 {
+	node [shape=box style=filled]
+	"Début" [label="Début : Début" xlabel=""]
+	A1 [label="A1 : J’étais au restaurant." fillcolor=wheat xlabel=<<B>Mon repas au restaurant</B>>]
+	B1 [label="B1 : Ah oui?" fillcolor=skyblue xlabel=""]
+	A2 [label="A2 : Oui j’ai même mangé des pâtes au saumon!" fillcolor=wheat xlabel=""]
+	B2_1 [label="B2_1 : Oh," fillcolor=skyblue xlabel=""]
+	B2_2 [label="B2_2 : et c’était où ?" fillcolor=skyblue xlabel=""]
+	A3_1 [label="A3_1 : C’était à la Villa Romana," fillcolor=wheat xlabel=""]
+	A3_2 [label="A3_2 : c’était vraiment super bon." fillcolor=wheat xlabel=""]
+	{
+		rank=same
+		"Début"
+		A1
+		"Début" -> A1 [label=Narration dir=none]
+	}
+	A1 -> B1 [label=Phatique dir=none]
+	A1 -> A2 [label="Elaboration descriptive" dir=none]
+	A2 -> B2_1 [label=Phatique dir=none]
+	A2 -> B2_2 [label=Question dir=none]
+	{
+		rank=same
+		B2_2
+		A3_1
+		B2_2 -> A3_1 [label="Réponse" dir=none]
+	}
+	A2 -> A3_2 [label="Elaboration descriptive" dir=none]
+}

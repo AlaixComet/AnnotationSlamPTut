@@ -1,0 +1,60 @@
+digraph E10 {
+	node [shape=box style=filled]
+	"début" [label="début : ébut" xlabel=""]
+	B1_1 [label="B1_1 : J'aimerais savoir ce que font les personnes qui sont à l'hôpital" fillcolor=skyblue xlabel=<<B>occupations d'un hospitalisé</B>>]
+	B1_2 [label="B1_2 : ce que vous faites la journée par exemple..." fillcolor=skyblue xlabel=""]
+	A2 [label="A2 : Je suis très amoureuse de Florence M." fillcolor=wheat xlabel=<<B>Florence</B>>]
+	B3 [label="B3 : De Florence M." fillcolor=skyblue xlabel=""]
+	A4_1 [label="A4_1 : Oui superbe la..." fillcolor=wheat xlabel=""]
+	A4_2 [label="A4_2 : comment elle s'appelle Florence R." fillcolor=wheat xlabel=""]
+	A4_3 [label="A4_3 : elle a tué quand même plus de un million de de personnes" fillcolor=wheat xlabel=""]
+	B5 [label="B5 : Qui ça ?" fillcolor=skyblue xlabel=""]
+	A6 [label="A6 : Florence R." fillcolor=wheat xlabel=""]
+	B7 [label="B7 : C'est qui cette dame là ?" fillcolor=skyblue xlabel=""]
+	A8_1 [label="A8_1 : Elle était psychiatre 40 rue de N." fillcolor=wheat xlabel=""]
+	A8_2 [label="A8_2 : j'y allais une fois par semaine ou deux fois tous les quinze jours" fillcolor=wheat xlabel=""]
+	A8_3 [label="A8_3 : elle aurait pu me tuer mais enfin..." fillcolor=wheat xlabel=""]
+	{
+		rank=same
+		"début"
+		B1_1
+		"début" -> B1_1 [label=Narration dir=none]
+	}
+	B1_1 -> B1_2 [label=Question dir=none]
+	{
+		rank=same
+		"début"
+		A2
+		"début" -> A2 [label=Narration dir=none]
+	}
+	A2 -> B3 [label=Conduite dir=none]
+	B3 -> A4_1 [label=Phatique dir=none]
+	{
+		rank=same
+		A4_1
+		A4_2
+		A4_1 -> A4_2 [label=Narration dir=none]
+	}
+	A4_2 -> A4_3 [label="Elaboration descriptive" dir=none]
+	A4_3 -> B5 [label=Question dir=none]
+	{
+		rank=same
+		B5
+		A6
+		B5 -> A6 [label="Réponse" dir=none]
+	}
+	A6 -> B7 [label=Question dir=none]
+	{
+		rank=same
+		B7
+		A8_1
+		B7 -> A8_1 [label="Réponse" dir=none]
+	}
+	A8_1 -> A8_2 [label="Elaboration descriptive" dir=none]
+	{
+		rank=same
+		A8_2
+		A8_3
+		A8_2 -> A8_3 [label=Narration dir=none]
+	}
+}
