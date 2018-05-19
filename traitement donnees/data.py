@@ -208,17 +208,20 @@ class Annotation():
         nom = self.texte.nom+'_-_'+self.annotateur.id
         dot = Digraph(name=nom, node_attr={'shape':'box','style':'filled'})
         themesChanges = self.detectionChangementTheme()
+        # Ajout des unités
         for u in self.texte.unites:
-            tChange = False
+            xlabel=""
             if u in themesChanges :
-                tchange = True
                 theme = self.getThemeByUnit(u)
+                xlabel="<<B>"+theme.label+"</B>>"
             if u.name[0] == "A":
-                dot.node(u.name, u.name + " : " + u.txt, fillcolor='wheat', xlabel = theme.label if tchange else 0 )
+                dot.node(u.name, u.name + " : " + u.txt, fillcolor='wheat', xlabel=xlabel)
             elif u.name[0] == "B":
-                dot.node(u.name, u.name + " : " + u.txt, fillcolor='skyblue')
+                dot.node(u.name, u.name + " : " + u.txt, fillcolor='skyblue', xlabel=xlabel)
             else:
-                dot.node(u.name, u.name + " : " + u.txt)
+                dot.node(u.name, u.name + " : " + u.txt, xlabel=xlabel)
+
+        # Ajout des relations
         typesRel = self.annotateur.campagne.typesRelations
         for rel in self.relations:
             if typesRel[rel.type] == "horizontale":
@@ -229,18 +232,26 @@ class Annotation():
                     sub.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none")
             else:
                 dot.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none")
+                
+        # Ajout des thèmes --> ça ne fonctionne pas car on ne peut pas faire des clusters qui chevauchent des sous-graphes (utilisés pour relations horizontales)
+        #i = 1
+        #for theme, unites in self.getThemesUnitsList():
+        #    with dot.subgraph(name="cluster_"+str(i)) as c:
+        #        c.attr(label="<<B>"+theme+"</B>>")
+        #        for u in unites:
+        #            c.node(u.name)
+        #    i += 1 
+       
         return dot
 
     def detectionChangementTheme(self):
         """
         return  : list d'Unit
         """
-        unitList = self.texte.unites
-        previousT = Theme("null",1)
+        previousT = Theme("null",1, self.texte)
         unitsThemeChanges = list()
         for key, t in enumerate(self.themes) :
             if previousT.label != t.label :
-                self.themes[key] = t.linkToUnit(unitList)
                 unitsThemeChanges.append(self.themes[key].unite)
             previousT = t
         return(unitsThemeChanges)
@@ -251,6 +262,22 @@ class Annotation():
         for t in self.themes :
             if t.unite == unite :
                 return t
+    
+    def getThemesUnitsList(self):
+        """
+        Retourne la liste de tous les thèmes de l'annotation avec les unités correspondantes
+        return: list de tuples (labelTheme, list d'Units)
+        """
+        unitsThemeChanges = self.detectionChangementTheme()
+        themesUnits = [(self.getThemeByUnit(u).label, [u]) for u in unitsThemeChanges]
+        i = -1
+        for u in self.texte.unites:
+            if u in unitsThemeChanges:
+                i += 1
+            elif i >= 0:
+                themesUnits[i][1].append(u)
+        return(themesUnits)
+
 
 class Arbre():
     """

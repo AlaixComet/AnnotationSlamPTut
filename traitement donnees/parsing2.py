@@ -110,7 +110,7 @@ def parsing(directories, id_unites_constants = False):
             for theme in themes:
                 position = int(theme.positioning.singleposition["index"])
                 label = theme.characterisation.comment.string
-                th = Theme(label, position)
+                th = Theme(label, position, t)
                 if label != previousLabel : themes_list.append(th)
                 previousLabel = label
             
