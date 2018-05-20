@@ -14,10 +14,14 @@ camp.typesRelations = typesRel
 
 for t in textsNames:
     annotations = camp.getAnnotations(t)
-    dossier = path.join(projectDirectory,"arbres",t)
+    dossierThemes = path.join(projectDirectory,"arbres",t, "themes")
+    dossierRelations = path.join(projectDirectory,"arbres",t, "relations")
     for a in annotations:
         print(t, a.annotateur.id)
-        dot = a.dessinerArbre(montrerThemes=True)
-        dot.format = 'png'
-        dot.name=a.annotateur.id
-        dot.render(directory=dossier)
+        gThemes = a.dessinerArbre(montrerThemes=True)
+        gThemes.format = 'png'
+        gThemes.render(directory=dossierThemes)
+
+        gRelations = a.dessinerArbre(montrerThemes=False)
+        gRelations.format = 'png'
+        gRelations.render(directory=dossierRelations)

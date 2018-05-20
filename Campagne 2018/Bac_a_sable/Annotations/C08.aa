@@ -417,22 +417,6 @@
 <term id="clefebvre_1523109242383"/>
 </positioning>
 </relation>
-<relation id="clefebvre_1525349767730">
-<metadata>
-<author>clefebvre</author>
-<creation-date>1525349767730</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
-</metadata>
-<characterisation>
-<type>Question</type>
-<featureSet/>
-</characterisation>
-<positioning>
-<term id="clefebvre_1523109361591"/>
-<term id="clefebvre_1523109340624"/>
-</positioning>
-</relation>
 <relation id="clefebvre_1525349782171">
 <metadata>
 <author>clefebvre</author>
