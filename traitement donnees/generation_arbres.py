@@ -16,7 +16,8 @@ for t in textsNames:
     annotations = camp.getAnnotations(t)
     dossier = path.join(projectDirectory,"arbres",t)
     for a in annotations:
-        dot = a.dessinerArbre()
+        print(t, a.annotateur.id)
+        dot = a.dessinerArbre(montrerThemes=True)
         dot.format = 'png'
         dot.name=a.annotateur.id
         dot.render(directory=dossier)
