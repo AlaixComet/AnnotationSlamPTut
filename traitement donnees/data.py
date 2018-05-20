@@ -130,22 +130,24 @@ class Theme():
         self.label = label
         self.debut = debut
         self.unite = None
-        self.linkToUnit(texte.unites)
+        self.__linkToUnit(texte.unites)
     
-    def linkToUnit(self,unitList):
+    def __linkToUnit(self,unitList):
         """
         links the theme to the corresponding unit
         """
-        for u in unitList :
-            # jamais None si pas de theme au pire "début"
+        for u in unitList[1:] :
+            # Par défaut on dit que le thème est rattaché à la première unité (sauf début)
             if self.unite == None :
                 self.unite = u
-            #puis on cherche
+            #puis on cherche quelle est la vraie unité (éventuellement la première aussi !)
             if u.fin >= self.debut : 
                 self.unite = u
                 break
         return self
 
+    def __repr__(self):
+        return self.label
 
 class Annotation():
     """
@@ -160,6 +162,7 @@ class Annotation():
         self.annotateur = annotateur
         self.texte = texte
         self.themes = sorted(themes, key=lambda x:x.debut)
+        self.__nettoyerThemes()
         self.relations = relations
     
     def matrice(self):
@@ -273,14 +276,14 @@ class Annotation():
         # Ajout des thèmes
         if montrerThemes:
             colorsThemes = dict()
-            i = 1
+            i = 0
+            colors=["violetred", "olivedrab", "red", "burlywood4", "blue", "peru", "seagreen4", "mediumorchid", "royalblue", "darkorange"]
             for theme, unites in self.getThemesUnitsList():
                 if theme not in colorsThemes:
-                    colorsThemes[theme] = i
+                    colorsThemes[theme] = colors[i]
                 with dot.subgraph(name="cluster_"+str(i)) as c:
                     c.attr(label="<<B>"+theme+"</B>>")
-                    c.attr(colorscheme="set19")
-                    c.attr(color=str(colorsThemes[theme]))
+                    c.attr(color=colorsThemes[theme])
                     c.attr(fontcolor=str(colorsThemes[theme]))
                     for u in unites:
                         c.node(u.name)
@@ -288,17 +291,34 @@ class Annotation():
 
         return dot
 
-    def detectionChangementTheme(self):
+    def __nettoyerThemes(self):
         """
-        return  : list d'Unit
+        Nettoie la liste des thèmes en faisant en sorte de n'en garder qu'un seul par unité et de fusionner les thèmes qui se suivent mais portent le même label.
         """
-        previousT = Theme("null",1, self.texte)
-        unitsThemeChanges = list()
-        for key, t in enumerate(self.themes) :
-            if previousT.label != t.label :
-                unitsThemeChanges.append(self.themes[key].unite)
-            previousT = t
-        return(unitsThemeChanges)
+        themesPropres = list()
+        if(len(self.themes) > 0):
+            #On ajoute le premier thème s'il n'est pas nul
+            previousT = self.themes[0]
+            if(previousT.label.strip() != ""):
+                themesPropres.append(previousT)
+            #Puis on parcourt tous les autres en n'ajoutant que ceux qui sont différents du précédent à chaque fois
+            for t in self.themes[1:]:
+                if previousT.label != t.label and previousT.unite != t.unite and t.label.strip() != "":
+                    themesPropres.append(t)
+                previousT = t
+        self.themes = themesPropres
+
+    # def detectionChangementTheme(self):
+    #     """
+    #     return  : list d'Unit
+    #     """
+    #     previousT = Theme("null",1, self.texte)
+    #     unitsThemeChanges = list()
+    #     for key, t in enumerate(self.themes) :
+    #         if previousT.label != t.label :
+    #             unitsThemeChanges.append(self.themes[key].unite)
+    #         previousT = t
+    #     return(unitsThemeChanges)
 
     def getThemeByUnit(self, unite):
         """
@@ -312,8 +332,8 @@ class Annotation():
         Retourne la liste de tous les thèmes de l'annotation avec les unités correspondantes
         return: list de tuples (labelTheme, list d'Units)
         """
-        unitsThemeChanges = self.detectionChangementTheme()
-        themesUnits = [(self.getThemeByUnit(u).label, [u]) for u in unitsThemeChanges]
+        unitsThemeChanges = [t.unite for t in self.themes]
+        themesUnits = [(t.label, [t.unite]) for t in self.themes]
         i = -1
         for u in self.texte.unites:
             if u in unitsThemeChanges:
