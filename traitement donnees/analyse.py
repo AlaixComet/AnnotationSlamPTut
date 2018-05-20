@@ -100,6 +100,11 @@ def save(matrice, nom, nbAnnotations, minOccurrences=1):
 
 def calculKappa():
     """
-
+    http://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html
+    https://stackoverflow.com/questions/43676905/how-to-calculate-cohens-kappa-coefficient-that-measures-inter-rater-agreement?rq=1&utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+    
+    Aux vues de tout ça je dirais qu'il nous faudrait pour chaque annotation transformer la matrice 3 en array ou chaque case correspond à genre "A1 vers A1 : 0", "A2 vers A1 : Question", "A3 vers A1 : 0", "A4 vers A1 : Narration" ......
+    On compare deux matrices entre elles, avec comme label la liste des relations + le 0 ???
+    J'ai peu qu'ils compte tous nos 0 comme des ressemblances, ne pas le mettre palierai à ça peut être ?
     """
     #TODO
