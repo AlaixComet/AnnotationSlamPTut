@@ -121,7 +121,12 @@ def parsing(directories, id_unites_constants = False):
     camp.annotateurs = annotateurs
     return camp
 
-# camp = parsing(textDirectories)
+camp = parsing(textDirectories)
+for textename,t in camp.textes.items():
+    print(textename)
+    annotationList = camp.getAnnotations(textename)
+    print(annotationList[0].annotateur.id+" --> "+annotationList[1].annotateur.id)
+    print(calculKappa(annotationList[0],annotationList[1]))
 # themeChangeUnitList = dict()
 # for annotateurName, annotateur in camp.annotateurs.items() :
 #     print("\nAnnotateur "+ annotateurName)

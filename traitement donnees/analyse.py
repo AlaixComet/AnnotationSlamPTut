@@ -98,13 +98,18 @@ def save(matrice, nom, nbAnnotations, minOccurrences=1):
     
     return dot
 
-def calculKappa():
+from sklearn.metrics import cohen_kappa_score
+def calculKappa(annotation1, annotation2):
     """
     http://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html
     https://stackoverflow.com/questions/43676905/how-to-calculate-cohens-kappa-coefficient-that-measures-inter-rater-agreement?rq=1&utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-    
-    Aux vues de tout ça je dirais qu'il nous faudrait pour chaque annotation transformer la matrice 3 en array ou chaque case correspond à genre "A1 vers A1 : 0", "A2 vers A1 : Question", "A3 vers A1 : 0", "A4 vers A1 : Narration" ......
-    On compare deux matrices entre elles, avec comme label la liste des relations + le 0 ???
-    J'ai peu qu'ils compte tous nos 0 comme des ressemblances, ne pas le mettre palierai à ça peut être ?
+    on calcule 3 kappa à partir des 3 représentations sous forme de liste de deux annotations d'un même texte
+    args : 2 Annotations
+    returns : list of 3 float, result of 3 cohen_kappa_score
     """
-    #TODO
+    listA1 = annotation1.getArrayRepresentationForKappa()
+    listA2 = annotation2.getArrayRepresentationForKappa()
+    ListKappa = []
+    for i in range(0,len(listA1)):
+        ListKappa.append(cohen_kappa_score(listA1[i],listA2[i]))
+    return ListKappa
