@@ -1,77 +1,84 @@
 digraph C10 {
 	node [shape=box style=filled]
-	"début" [label="début : Début" xlabel=""]
-	A1 [label="A1 : Et euh donc là vous avez passé le concours c'est..." fillcolor=wheat xlabel=<<B>Resultats concours</B>>]
-	B2 [label="B2 : Ouais j'attends les résultats." fillcolor=skyblue xlabel=""]
-	A3 [label="A3 : C’est quand les résultats?" fillcolor=wheat xlabel=""]
-	B4 [label="B4 : Juin." fillcolor=skyblue xlabel=""]
-	A5 [label="A5 : Juin?" fillcolor=wheat xlabel=""]
-	B6 [label="B6 : Mmh." fillcolor=skyblue xlabel=""]
-	A7_1 [label="A7_1 : Parce que je sais qu’en début d'année y en a qui attendent encore les résultats" fillcolor=wheat xlabel=""]
-	A7_2 [label="A7_2 : mais euh y a deux sessions de d'exams ou euh." fillcolor=wheat xlabel=""]
-	B8_1 [label="B8_1 : Euhh éduc spé les... en début d'année c'est la passation de l'écrit." fillcolor=skyblue xlabel=""]
-	B8_2 [label="B8_2 : On passe l'écrit au mois de janvier." fillcolor=skyblue xlabel=""]
-	A9 [label="A9 : Ouais." fillcolor=wheat xlabel=""]
-	B10 [label="B10 : Euh si on est reçu parce que cette année ils étaient vachement en retard." fillcolor=skyblue xlabel=""]
-	A11 [label="A11 : D'accord." fillcolor=wheat xlabel=""]
-	B12 [label="B12 : Si on est reçu à l'écrit on passe un oral." fillcolor=skyblue xlabel=""]
-	A13 [label="A13 : Mmh mmh." fillcolor=wheat xlabel=""]
-	B14 [label="B14 : Et si on est reçu à l'oral on rentre dans l'école." fillcolor=skyblue xlabel=""]
-	A15_1 [label="A15_1 : D'accord." fillcolor=wheat xlabel=""]
-	A15_2 [label="A15_2 : Et y a beaucoup de places?" fillcolor=wheat xlabel=""]
-	B16 [label="B16 : 90." fillcolor=skyblue xlabel=""]
-	A17_1 [label="A17_1 : D'accord." fillcolor=wheat xlabel=""]
-	A17_2 [label="A17_2 : Vous étiez beaucoup à..." fillcolor=wheat xlabel=""]
-	B18 [label="B18 : Ben cette année on était pas beaucoup." fillcolor=skyblue xlabel=""]
-	{
-		rank=same
-		"début"
+	newrank=true
+	zero [style=invis]
+	"début" [label="début : Début"]
+	A1 [label="A1 : Et euh donc là vous avez passé le concours c'est..." fillcolor=wheat]
+	B2 [label="B2 : Ouais j'attends les résultats." fillcolor=skyblue]
+	A3 [label="A3 : C’est quand les résultats?" fillcolor=wheat]
+	B4 [label="B4 : Juin." fillcolor=skyblue]
+	A5 [label="A5 : Juin?" fillcolor=wheat]
+	B6 [label="B6 : Mmh." fillcolor=skyblue]
+	A7_1 [label="A7_1 : Parce que je sais qu’en début d'année y en a qui attendent encore les résultats" fillcolor=wheat]
+	A7_2 [label="A7_2 : mais euh y a deux sessions de d'exams ou euh." fillcolor=wheat]
+	B8_1 [label="B8_1 : Euhh éduc spé les... en début d'année c'est la passation de l'écrit." fillcolor=skyblue]
+	B8_2 [label="B8_2 : On passe l'écrit au mois de janvier." fillcolor=skyblue]
+	A9 [label="A9 : Ouais." fillcolor=wheat]
+	B10 [label="B10 : Euh si on est reçu parce que cette année ils étaient vachement en retard." fillcolor=skyblue]
+	A11 [label="A11 : D'accord." fillcolor=wheat]
+	B12 [label="B12 : Si on est reçu à l'écrit on passe un oral." fillcolor=skyblue]
+	A13 [label="A13 : Mmh mmh." fillcolor=wheat]
+	B14 [label="B14 : Et si on est reçu à l'oral on rentre dans l'école." fillcolor=skyblue]
+	A15_1 [label="A15_1 : D'accord." fillcolor=wheat]
+	A15_2 [label="A15_2 : Et y a beaucoup de places?" fillcolor=wheat]
+	B16 [label="B16 : 90." fillcolor=skyblue]
+	A17_1 [label="A17_1 : D'accord." fillcolor=wheat]
+	A17_2 [label="A17_2 : Vous étiez beaucoup à..." fillcolor=wheat]
+	B18 [label="B18 : Ben cette année on était pas beaucoup." fillcolor=skyblue]
+	zero -> "début" [label="" style=invis]
+	zero -> A1 [style=invis weight=1]
+	"début" -> A1 [label=Narration constraint=false dir=none]
+	A1 -> B2 [label="Elaboration descriptive" dir=none weight=2]
+	B2 -> A3 [label=Question dir=none weight=2]
+	B2 -> B4 [style=invis weight=1]
+	A3 -> B4 [label="Réponse" constraint=false dir=none]
+	B4 -> A5 [label=Conduite dir=none weight=2]
+	B4 -> B6 [style=invis weight=1]
+	A5 -> B6 [label="Réponse" constraint=false dir=none]
+	B6 -> A7_1 [label=Conduite dir=none weight=2]
+	A1 -> A7_2 [label=Question dir=none weight=2]
+	A1 -> B8_1 [style=invis weight=1]
+	A7_2 -> B8_1 [label="Réponse" constraint=false dir=none]
+	A7_2 -> B8_2 [label="Elaboration descriptive" dir=none weight=2]
+	B8_2 -> A9 [label=Conduite dir=none weight=2]
+	A1 -> B10 [style=invis weight=1]
+	A7_2 -> B10 [label="Réponse" constraint=false dir=none]
+	B10 -> A11 [label=Conduite dir=none weight=2]
+	B12 -> A13 [label=Phatique dir=none weight=2]
+	A7_2 -> B12 [label="Elaboration descriptive" dir=none weight=2]
+	B14 -> A15_1 [label="Elaboration descriptive" dir=none weight=2]
+	B14 -> A15_2 [label=Question dir=none weight=2]
+	B14 -> B16 [style=invis weight=1]
+	A15_2 -> B16 [label="Réponse" constraint=false dir=none]
+	B16 -> A17_1 [label=Conduite dir=none weight=2]
+	B14 -> A17_2 [label=Question dir=none weight=2]
+	A17_2 -> B18 [label=Question dir=none weight=2]
+	subgraph cluster_1 {
+		label=<<B>Resultats concours</B>>
+		colorscheme=set19
+		color=1
+		fontcolor=1
 		A1
-		"début" -> A1 [label=Narration dir=none]
-	}
-	A1 -> B2 [label="Elaboration descriptive" dir=none]
-	B2 -> A3 [label=Question dir=none]
-	{
-		rank=same
+		B2
 		A3
 		B4
-		A3 -> B4 [label="Réponse" dir=none]
-	}
-	B4 -> A5 [label=Conduite dir=none]
-	{
-		rank=same
 		A5
 		B6
-		A5 -> B6 [label="Réponse" dir=none]
-	}
-	B6 -> A7_1 [label=Conduite dir=none]
-	A1 -> A7_2 [label=Question dir=none]
-	{
-		rank=same
+		A7_1
 		A7_2
 		B8_1
-		A7_2 -> B8_1 [label="Réponse" dir=none]
-	}
-	A7_2 -> B8_2 [label="Elaboration descriptive" dir=none]
-	B8_2 -> A9 [label=Conduite dir=none]
-	{
-		rank=same
-		A7_2
+		B8_2
+		A9
 		B10
-		A7_2 -> B10 [label="Réponse" dir=none]
-	}
-	B10 -> A11 [label=Conduite dir=none]
-	B12 -> A13 [label=Phatique dir=none]
-	A7_2 -> B12 [label="Elaboration descriptive" dir=none]
-	B14 -> A15_1 [label="Elaboration descriptive" dir=none]
-	B14 -> A15_2 [label=Question dir=none]
-	{
-		rank=same
+		A11
+		B12
+		A13
+		B14
+		A15_1
 		A15_2
 		B16
-		A15_2 -> B16 [label="Réponse" dir=none]
+		A17_1
+		A17_2
+		B18
 	}
-	B16 -> A17_1 [label=Conduite dir=none]
-	B14 -> A17_2 [label=Question dir=none]
-	A17_2 -> B18 [label=Question dir=none]
 }

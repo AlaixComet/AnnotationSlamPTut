@@ -1,79 +1,92 @@
 digraph E09 {
 	node [shape=box style=filled]
-	"Début" [label="Début : Début" xlabel=""]
-	A150_1 [label="A150_1 : Alors finalement bon j’ai vécu l’apocalypse à cette époque-là" fillcolor=wheat xlabel=<<B>Mauvaise epoque</B>>]
-	A150_2 [label="A150_2 : parce que à f… au fur et à mesure que je remontais la pente..." fillcolor=wheat xlabel=""]
-	A150_3 [label="A150_3 : parce que après ça s’est joué en psychiatrie j’avais une injection retard" fillcolor=wheat xlabel=""]
-	A150_4 [label="A150_4 : j’ai tout arrêté" fillcolor=wheat xlabel=<<B>Remontée de la pente</B>>]
-	A150_5 [label="A150_5 : et... et je me suis reconstitué bribes par bribes je me suis découvert poète euh sculpteur peintre..." fillcolor=wheat xlabel=""]
-	B151 [label="B151 : D’une certaine façon" fillcolor=skyblue xlabel=""]
-	A152_1 [label="A152_1 : J’ai découvert l’art j’ai découvert l’art proprement dit" fillcolor=wheat xlabel=""]
-	A152_2 [label="A152_2 : avec des morceaux de bois et sans clous j’arrive à faire une porte" fillcolor=wheat xlabel=""]
-	B153 [label="B153 : D’accord" fillcolor=skyblue xlabel=""]
-	A154_1 [label="A154_1 : En entrelaçant les branches." fillcolor=wheat xlabel=""]
-	A154_2 [label="A154_2 : j’étais j’… j’… j’étais doué enfin..." fillcolor=wheat xlabel=""]
-	B155 [label="B155 : Vous avez découvert que vous étiez doué en fait?" fillcolor=skyblue xlabel=""]
-	A156 [label="A156 : Enfin j’ai découvert que j’avais... que j’étais... PRO par vocation" fillcolor=wheat xlabel=""]
-	B157 [label="B157 : Hum hum" fillcolor=skyblue xlabel=""]
-	A158_1 [label="A158_1 : Provocation" fillcolor=wheat xlabel=""]
-	A158_2 [label="A158_2 : c’est incroyable ce que je pouvais provoquer" fillcolor=wheat xlabel=""]
-	B159 [label="B159 : Ouais ouais" fillcolor=skyblue xlabel=""]
-	A160_1 [label="A160_1 : Je savais titiller les mecs dans la provocation" fillcolor=wheat xlabel=""]
-	A160_2 [label="A160_2 : et d… des mecs balèzes et que moi j’avais aucune hostilité" fillcolor=wheat xlabel=""]
-	A160_3 [label="A160_3 : mais avec les paroles l’autre il s’en prenait plein la gueule" fillcolor=wheat xlabel=""]
-	B161 [label="B161 : Oui vous étiez de fait le plus fort à ce niveau là" fillcolor=skyblue xlabel=""]
-	A162 [label="A162 : J’étais un pro par vocation j’étais devenu un génie j’étais devenu un génie" fillcolor=wheat xlabel=""]
-	{
-		rank=same
-		"Début"
+	newrank=true
+	zero [style=invis]
+	"Début" [label="Début : Début"]
+	A150_1 [label="A150_1 : Alors finalement bon j’ai vécu l’apocalypse à cette époque-là" fillcolor=wheat]
+	A150_2 [label="A150_2 : parce que à f… au fur et à mesure que je remontais la pente..." fillcolor=wheat]
+	A150_3 [label="A150_3 : parce que après ça s’est joué en psychiatrie j’avais une injection retard" fillcolor=wheat]
+	A150_4 [label="A150_4 : j’ai tout arrêté" fillcolor=wheat]
+	A150_5 [label="A150_5 : et... et je me suis reconstitué bribes par bribes je me suis découvert poète euh sculpteur peintre..." fillcolor=wheat]
+	B151 [label="B151 : D’une certaine façon" fillcolor=skyblue]
+	A152_1 [label="A152_1 : J’ai découvert l’art j’ai découvert l’art proprement dit" fillcolor=wheat]
+	A152_2 [label="A152_2 : avec des morceaux de bois et sans clous j’arrive à faire une porte" fillcolor=wheat]
+	B153 [label="B153 : D’accord" fillcolor=skyblue]
+	A154_1 [label="A154_1 : En entrelaçant les branches." fillcolor=wheat]
+	A154_2 [label="A154_2 : j’étais j’… j’… j’étais doué enfin..." fillcolor=wheat]
+	B155 [label="B155 : Vous avez découvert que vous étiez doué en fait?" fillcolor=skyblue]
+	A156 [label="A156 : Enfin j’ai découvert que j’avais... que j’étais... PRO par vocation" fillcolor=wheat]
+	B157 [label="B157 : Hum hum" fillcolor=skyblue]
+	A158_1 [label="A158_1 : Provocation" fillcolor=wheat]
+	A158_2 [label="A158_2 : c’est incroyable ce que je pouvais provoquer" fillcolor=wheat]
+	B159 [label="B159 : Ouais ouais" fillcolor=skyblue]
+	A160_1 [label="A160_1 : Je savais titiller les mecs dans la provocation" fillcolor=wheat]
+	A160_2 [label="A160_2 : et d… des mecs balèzes et que moi j’avais aucune hostilité" fillcolor=wheat]
+	A160_3 [label="A160_3 : mais avec les paroles l’autre il s’en prenait plein la gueule" fillcolor=wheat]
+	B161 [label="B161 : Oui vous étiez de fait le plus fort à ce niveau là" fillcolor=skyblue]
+	A162 [label="A162 : J’étais un pro par vocation j’étais devenu un génie j’étais devenu un génie" fillcolor=wheat]
+	zero -> "Début" [label="" style=invis]
+	zero -> A150_1 [style=invis weight=1]
+	"Début" -> A150_1 [label=Narration constraint=false dir=none]
+	zero -> A150_1 [style=invis weight=1]
+	"Début" -> A150_1 [label=Narration constraint=false dir=none]
+	A150_1 -> A150_2 [label="Elaboration descriptive" dir=none weight=2]
+	A150_2 -> A150_3 [label="Elaboration descriptive" dir=none weight=2]
+	A150_3 -> A150_4 [label="Elaboration descriptive" dir=none weight=2]
+	A150_4 -> A150_5 [label="Elaboration descriptive" dir=none weight=2]
+	A150_5 -> A152_1 [label="Elaboration descriptive" dir=none weight=2]
+	A152_1 -> A152_2 [label="Elaboration descriptive" dir=none weight=2]
+	A152_2 -> A154_1 [label="Elaboration descriptive" dir=none weight=2]
+	A154_1 -> A154_2 [label="Elaboration evaluative" dir=none weight=2]
+	A154_2 -> B155 [label=Question dir=none weight=2]
+	A154_2 -> A156 [style=invis weight=1]
+	B155 -> A156 [label="Réponse" constraint=false dir=none]
+	A156 -> B157 [label=Phatique dir=none weight=2]
+	A158_2 -> B159 [label=Phatique dir=none weight=2]
+	A154_2 -> A158_1 [style=invis weight=1]
+	A156 -> A158_1 [label=Narration constraint=false dir=none]
+	A154_2 -> A158_2 [style=invis weight=1]
+	A158_1 -> A158_2 [label=Narration constraint=false dir=none]
+	A158_2 -> A160_1 [label="Elaboration descriptive" dir=none weight=2]
+	A158_2 -> A160_2 [style=invis weight=1]
+	A160_1 -> A160_2 [label=Narration constraint=false dir=none]
+	A160_2 -> A160_3 [label="Elaboration descriptive" dir=none weight=2]
+	A160_3 -> B161 [label="Elaboration evaluative" dir=none weight=2]
+	A160_3 -> A162 [label="Elaboration evaluative" dir=none weight=2]
+	A152_2 -> B153 [label=Phatique dir=none weight=2]
+	A150_5 -> B151 [label=Phatique dir=none weight=2]
+	subgraph cluster_1 {
+		label=<<B>Mauvaise epoque</B>>
+		colorscheme=set19
+		color=1
+		fontcolor=1
 		A150_1
-		"Début" -> A150_1 [label=Narration dir=none]
+		A150_2
+		A150_3
 	}
-	{
-		rank=same
-		"Début"
-		A150_1
-		"Début" -> A150_1 [label=Narration dir=none]
-	}
-	A150_1 -> A150_2 [label="Elaboration descriptive" dir=none]
-	A150_2 -> A150_3 [label="Elaboration descriptive" dir=none]
-	A150_3 -> A150_4 [label="Elaboration descriptive" dir=none]
-	A150_4 -> A150_5 [label="Elaboration descriptive" dir=none]
-	A150_5 -> A152_1 [label="Elaboration descriptive" dir=none]
-	A152_1 -> A152_2 [label="Elaboration descriptive" dir=none]
-	A152_2 -> A154_1 [label="Elaboration descriptive" dir=none]
-	A154_1 -> A154_2 [label="Elaboration evaluative" dir=none]
-	A154_2 -> B155 [label=Question dir=none]
-	{
-		rank=same
+	subgraph cluster_2 {
+		label=<<B>Remontée de la pente</B>>
+		colorscheme=set19
+		color=2
+		fontcolor=2
+		A150_4
+		A150_5
+		B151
+		A152_1
+		A152_2
+		B153
+		A154_1
+		A154_2
 		B155
 		A156
-		B155 -> A156 [label="Réponse" dir=none]
-	}
-	A156 -> B157 [label=Phatique dir=none]
-	A158_2 -> B159 [label=Phatique dir=none]
-	{
-		rank=same
-		A156
-		A158_1
-		A156 -> A158_1 [label=Narration dir=none]
-	}
-	{
-		rank=same
+		B157
 		A158_1
 		A158_2
-		A158_1 -> A158_2 [label=Narration dir=none]
-	}
-	A158_2 -> A160_1 [label="Elaboration descriptive" dir=none]
-	{
-		rank=same
+		B159
 		A160_1
 		A160_2
-		A160_1 -> A160_2 [label=Narration dir=none]
+		A160_3
+		B161
+		A162
 	}
-	A160_2 -> A160_3 [label="Elaboration descriptive" dir=none]
-	A160_3 -> B161 [label="Elaboration evaluative" dir=none]
-	A160_3 -> A162 [label="Elaboration evaluative" dir=none]
-	A152_2 -> B153 [label=Phatique dir=none]
-	A150_5 -> B151 [label=Phatique dir=none]
 }

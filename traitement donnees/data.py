@@ -159,7 +159,7 @@ class Annotation():
     def __init__(self, annotateur, campagne, texte, themes, relations):
         self.annotateur = annotateur
         self.texte = texte
-        self.themes = themes
+        self.themes = sorted(themes, key=lambda x:x.debut)
         self.relations = relations
     
     def matrice(self):
@@ -204,44 +204,88 @@ class Annotation():
         
         return Arbre(debut, noeudsFilsHoriz, noeudsFilsVert)
     
-    def dessinerArbre(self):
+    def dessinerArbre(self, montrerThemes=False):
+        """
+        Permet de dessiner l'arbre d'annotations d'une personne, à l'aide de Graphviz. 
+        L'objet retourné est un Digraph Graphviz. Il peut être enregistré comme suit :
+        dot = annot.dessinerArbre()
+        dot.format = 'png' # si on veut changer le format d'enregistrement
+        dot.render()
+
+        montrerThemes: boolean qui indique si on doit afficher les boîtes thématiques ou pas
+        return: graphviz.Digraph
+        """
         nom = self.texte.nom+'_-_'+self.annotateur.id
         dot = Digraph(name=nom, node_attr={'shape':'box','style':'filled'})
-        themesChanges = self.detectionChangementTheme()
+        dot.attr(newrank="true") # pour que ça affiche les clusters au bon endroit
+
+        dot.node("zero", style="invis") # Le noeud d'origine du dessin
         # Ajout des unités
         for u in self.texte.unites:
-            xlabel=""
-            if u in themesChanges :
-                theme = self.getThemeByUnit(u)
-                xlabel="<<B>"+theme.label+"</B>>"
             if u.name[0] == "A":
-                dot.node(u.name, u.name + " : " + u.txt, fillcolor='wheat', xlabel=xlabel)
+                dot.node(u.name, u.name + " : " + u.txt, fillcolor='wheat')
             elif u.name[0] == "B":
-                dot.node(u.name, u.name + " : " + u.txt, fillcolor='skyblue', xlabel=xlabel)
+                dot.node(u.name, u.name + " : " + u.txt, fillcolor='skyblue')
             else:
-                dot.node(u.name, u.name + " : " + u.txt, xlabel=xlabel)
+                dot.node(u.name, u.name + " : " + u.txt)       
 
         # Ajout des relations
         typesRel = self.annotateur.campagne.typesRelations
+        debut = self.texte.unites[0].name
+        dot.edge("zero", debut, label="", style="invis") #On relie le début à l'origine
         for rel in self.relations:
             if typesRel[rel.type] == "horizontale":
-                with dot.subgraph() as sub:
-                    sub.attr(rank="same")
-                    sub.node(rel.dest.name)
-                    sub.node(rel.origine.name)
-                    sub.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none")
-            else:
-                dot.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none")
+                ## On n'utilise au final pas les sous-graphes car ils ne permettent pas d'afficher aussi les thèmes (on ne peut pas faire des clusters et sous-graphes qui se chevauchent)
+                # with dot.subgraph() as sub:
+                #     sub.attr(rank="same")
+                #     sub.node(rel.dest.name)
+                #     sub.node(rel.origine.name)
+                #     sub.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none")
                 
-        # Ajout des thèmes --> ça ne fonctionne pas car on ne peut pas faire des clusters qui chevauchent des sous-graphes (utilisés pour relations horizontales)
-        #i = 1
-        #for theme, unites in self.getThemesUnitsList():
-        #    with dot.subgraph(name="cluster_"+str(i)) as c:
-        #        c.attr(label="<<B>"+theme+"</B>>")
-        #        for u in unites:
-        #            c.node(u.name)
-        #    i += 1 
-       
+
+                ## A la place on va relier les membres d'une relation horizontale au noeud situé au-dessus, de manière invisible
+                # Pour ça il faut donc chercher le parent qui est situé au dessus : ce n'est pas forcément le parent immédiat car on peut avoir un enchainement de relations horizontales
+                relParent = rel.type
+                noeudParent = rel.dest.name
+                while typesRel[relParent] == "horizontale" and noeudParent != debut: #on cherche jusqu'à arriver à une relation verticale, ou au début
+                    mat = self.matrice()[:,:,noeudParent] # matrice (destination, typeRel) binaire présentant toutes les relations qui partent du parent
+                    ligne = ""
+                    colonne = ""
+                    where = np.argwhere(mat.as_matrix()) # On cherche l'index de la case où il y a un 1, c'est à dire celle qui correspond à la relation qui part de cette unité
+                    if(len(where)>0): # Si on a bien trouvé une case (normalement il n'y en a qu'une)
+                        ligne, colonne = where[0] 
+                        # On transforme cet index numérique en le nom de l'unité et le type de relation
+                        noeudParent = mat.index[ligne]
+                        relParent = mat.columns[colonne]
+                    else: # Sinon c'est qu'on est arrivé au début (il n'a pas de parent) ou que l'annotateur a oublié de relier cette unité
+                        noeudParent = debut
+                #Si on est arrivé au début il faut se raccrocher à l'origine invisible comme parent vertical
+                if noeudParent == debut:
+                    noeudParent = "zero"
+                #On ajoute ensuite une relation verticale invisible vers le noeud au-dessus, afin de contraindre notre noeud dans la hiérarchie du graphe : il doit forcément être placé sous noeudParent
+                dot.edge(noeudParent, rel.origine.name, style="invis", weight="1") # On met un poids de 1 (faible) car cette relation n'est pas importante et peut-être penchée. Les vraies relations verticales en revanche auront un poids plus élevées pour être dessinées le plus verticalement possible
+                # On dessine enfin la relation horizontale. constraint=false permet d'indiquer que cette relation n'intervient pas dans la hiérarchie du graphe : les deux noeuds doivent être dessinés au même niveau.
+                dot.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none", constraint="false")
+            else:
+                dot.edge(rel.dest.name, rel.origine.name, label=rel.type, dir="none", weight="2") # On met un poids de 2 pour que cette relation soit prioritaire sur les relations invisibles : elle doit être dessinée le plus verticalement possible.
+
+
+        # Ajout des thèmes
+        if montrerThemes:
+            colorsThemes = dict()
+            i = 1
+            for theme, unites in self.getThemesUnitsList():
+                if theme not in colorsThemes:
+                    colorsThemes[theme] = i
+                with dot.subgraph(name="cluster_"+str(i)) as c:
+                    c.attr(label="<<B>"+theme+"</B>>")
+                    c.attr(colorscheme="set19")
+                    c.attr(color=str(colorsThemes[theme]))
+                    c.attr(fontcolor=str(colorsThemes[theme]))
+                    for u in unites:
+                        c.node(u.name)
+                i += 1 
+
         return dot
 
     def detectionChangementTheme(self):
