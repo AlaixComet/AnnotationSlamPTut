@@ -175,9 +175,12 @@ class Annotation():
         nomsUnites = [u.name for u in self.texte.unites]
         #Les Panels c'est des matrices 3D. L'avantage c'est qu'on peut nommer les colonnes ! 
         panel = pandas.Panel(tab, self.annotateur.campagne.typesRelations.keys(), nomsUnites, nomsUnites) 
-        for rel in self.relations:
+        for rel in self.relations[:]: #on parcourt une copie de la liste pour pouvoir supprimer les relations en trop dans la vrai
             if rel.type is not None and rel.dest.name is not None and rel.origine.name is not None:
-                panel.loc[rel.type, rel.dest.name, rel.origine.name] = 1
+                if panel.loc[rel.type, rel.origine.name, rel.dest.name] == 1: #S'il y a 2 relations identiques on en supprime une
+                    self.relations.remove(rel)
+                else:
+                    panel.loc[rel.type, rel.origine.name, rel.dest.name] = 1
         return panel
     
     def arbre(self):
@@ -251,7 +254,7 @@ class Annotation():
                 relParent = rel.type
                 noeudParent = rel.dest.name
                 while typesRel[relParent] == "horizontale" and noeudParent != debut: #on cherche jusqu'à arriver à une relation verticale, ou au début
-                    mat = self.matrice()[:,:,noeudParent] # matrice (destination, typeRel) binaire présentant toutes les relations qui partent du parent
+                    mat = self.matrice()[:,noeudParent,:] # matrice (destination, typeRel) binaire présentant toutes les relations qui partent du parent
                     ligne = ""
                     colonne = ""
                     where = np.argwhere(mat.as_matrix()) # On cherche l'index de la case où il y a un 1, c'est à dire celle qui correspond à la relation qui part de cette unité

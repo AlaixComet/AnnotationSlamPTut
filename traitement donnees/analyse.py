@@ -6,8 +6,10 @@ Created on Mon Mar 26 19:16:56 2018
 """
 import numpy as np
 import scipy
+from scipy import stats
 from data import Annotation, Annotateur, Campagne, Theme
 from graphviz import Digraph
+import pandas
 
 
 def distance(mat1, mat2):
@@ -23,57 +25,111 @@ def distance(mat1, mat2):
         
 def matriceSansType(matrice3d):
     """
-    Aplatit la matrice 3d de relations d'une anotation en une matrice 2d où on ne tient plus compte du type des relations mais seulement des unités qu'elles relient
+    Aplatit la matrice 3d de relations d'une anotation en une matrice 2d où on ne tient plus compte du type des relations mais seulement des unités qu'elles relient.
+    Cette matrice 2d est encapsulée dans une matrice 3d (avec une seule couche en profondeur) pour la compatibilité avec d'autres fonctions.
     matrice3d : pandas.Panel
-    return : pandas.Dataframe
+    return : pandas.Panel
     """
-    return matrice3d.sum(0)
+    matrice = matrice3d.sum(0).as_matrix()
+    matrice = np.expand_dims(matrice, 0) #On rajoute une dimension en première position
+    return pandas.Panel(matrice, [0], matrice3d.major_axis, matrice3d.minor_axis)
 
 def matriceAvecCategories(matrice3d, categories):
     """
-    Transforme la matrice 3d des relations en une liste de matrices 2d par catégorie
+    Transforme la matrice 3d des relations en une matrice 3d par catégorie
     matrice3d : pandas.Panel
-    categories : list 2d de strings : [["Question","Méta-question"],["Elaboration descriptive"]]...
-    return : list de pandas.Dataframe
+    categories : dict String : list de String
+    return : pandas.Panel
     """
-    res = list()
-    for categ in categories:
-        matrice = matrice3d[categ[0]].copy()
-        for typeRel in categ[1:]:
-            matrice = matrice.add(matrice3d[typeRel])
-        res.append(matrice)
-    return res
+    matrices = list()
+    nomsCateg = list()
+    for nom, rels in categories.items():
+        nomsCateg.append(nom)
+        matrice = matrice3d[rels[0]].as_matrix()
+        for typeRel in rels[1:]:
+            matrice = matrice + matrice3d[typeRel].as_matrix()
+        matrices.append(matrice)
+    matrice = np.stack(matrices, axis=0)
+    return pandas.Panel(matrice, nomsCateg, matrice3d.major_axis, matrice3d.minor_axis)
 
 
 def ruptureDeLaFrontiereDroite(annotation):
     """
     parcours postfixe
     """
+    pass
     #TODO
 
-def draw_global_tree(campagne, text, minOccurrences=1):
+def draw_global_tree(campagne, nomTexte, regroupement="aucun", seuilAffichage=0.05, montrerThemes=True):
     """
+    campagne : Campagne
+    nomTexte : String
+    type : String dans ['aucun', 'catégorie', 'emplacement']
+    """
+    categories = categories = {"Narration":["Narration"], "Elaborations":["Elaboration descriptive", "Elaboration evaluative", "Elaboration prescriptive", "Contre-élaboration", "Réponse"], "Méta": ["Conduite","Phatique", "Méta-question"], "Question":["Question"]}
+    dot = Digraph(name=nomTexte, format="png", node_attr={'shape':'box','style':'filled'})
+    
+    annotations = campagne.getAnnotations(nomTexte)
+    texte = campagne.textes[nomTexte]
 
-    """
-    dot = Digraph(name=text.nom, format="png")
-    units_names = list()
-    matrice = sommeMatrices(campagne,text)
-    annotationList = campagne.getAnnotationListFromText(text)
-    nbAnnotations = len(annotationList)
-    for u in text.unites:
-        dot.node(u.name, u.name + " : " + u.txt)
-        units_names.append(u.name)
+    units_names = [u.name for u in texte.unites]
+
+    for u in texte.unites:
+        if u.name[0] == "A":
+            dot.node(u.name, u.name + " : " + u.txt, fillcolor='wheat')
+        elif u.name[0] == "B":
+            dot.node(u.name, u.name + " : " + u.txt, fillcolor='skyblue')
+        else:
+            dot.node(u.name, u.name + " : " + u.txt) 
+
+
+    matrices = [a.matrice() for a in annotations]
+
+    if regroupement == "emplacement":
+        matrices = [matriceSansType(m) for m in matrices]
+    elif regroupement == "catégorie":
+        matrices = [matriceAvecCategories(m, categories) for m in matrices]
+
+    matriceTotale = matrices[0].copy()
+    for mat in matrices[1:]:
+        matriceTotale = matriceTotale.add(mat)
+
+    nbAnnotations = len(annotations)
+    dot.attr(label=str(nbAnnotations) + " annotations")
+    dot.attr(fontsize="18")
+    dot.attr(labeljust="left")
+    dot.attr(labelloc="top")
+
+    nbMax = np.amax(matriceTotale.as_matrix())
+
     i = 0
-    for rel in list(campagne.typesRelations.keys()):
+    for rel in matriceTotale.items:
         i += 1
         for dest in units_names:
             for origine in units_names:
-                val = matrice[rel][dest][origine]
-                if val >= minOccurrences:
-                    label = rel+"\n"+str(val)
-                    poids = (val / nbAnnotations) * 10
-                    dot.edge(dest, origine, label=label, penwidth=str(poids), color=str(i), colorscheme="paired11", dir="back") #dir back car no fait pas un arbre à proprement parler
+                val = matriceTotale[rel, origine, dest]
+                if val/nbAnnotations > seuilAffichage:
+                    label = ""
+                    color = "2"
+                    if regroupement != "emplacement":
+                        label += rel + "\n"
+                        color = str(i)
+                    label += str(val)
+                    poids = (val / nbMax) * 10
+                    dot.edge(dest, origine, label=label, penwidth=str(poids), color=color, colorscheme="paired11", arrowsize="0.5", dir="back") #dir back car no fait pas un arbre à proprement parler
     
+    if montrerThemes:
+        dot.attr(forcelabels="true")
+        nbThemes = dict()
+        for u in texte.unites:
+            nbThemes[u.name] = 0
+        for a in annotations:
+            for t in a.themes:
+                nbThemes[t.unite.name] += 1
+        
+        for u, n in nbThemes.items():
+            if(n > 0):
+                dot.node(u, xlabel='<<B><I><font color="red">'+str(n)+"</font></I></B>>")
     return dot
 
 def save(matrice, nom, nbAnnotations, minOccurrences=1):
@@ -113,3 +169,61 @@ def calculKappa(annotation1, annotation2):
     for i in range(0,len(listA1)):
         ListKappa.append(cohen_kappa_score(listA1[i],listA2[i]))
     return ListKappa
+
+
+def annotationValide(annotation):
+    mat = annotation.matrice().as_matrix()
+    mat = mat.sum(0) #On ne tient pas compte des types de relation
+    # On vérifie que toutes les flèches sont bien vers le haut, c'est-à-dire que la matrice est triangulaire inférieure
+    flechesHaut = np.allclose(mat, np.tril(mat))
+    #On vérifie maintenant qu'il y a exactement une relation qui part de chaque unité (sauf début)
+    sommeLignes = mat.sum(1)
+    zeroDebut = sommeLignes[0] == 0
+    unPartoutAilleurs = np.all(sommeLignes[1:]==1)
+
+    return flechesHaut and zeroDebut and unPartoutAilleurs
+
+def supprimerMauvaisesAnnotations(campagne):
+    annotationsSupprimees = list()
+    for nomAnnot, annotateur in campagne.annotateurs.items():
+        for texte in campagne.textes:
+            if texte in annotateur.annotations:
+                annot = annotateur.annotations[texte]
+                if not annotationValide(annot):
+                    del annotateur.annotations[texte]
+                    annotationsSupprimees.append((nomAnnot, texte))
+    return annotationsSupprimees
+
+
+def calculEntropie(campagne, nomTexte, critere):
+    """
+    annotaion : Annotation
+    critere : String : "emplacement", "type", "emplacement-type"
+    """
+    annotations = campagne.getAnnotations(nomTexte)
+    units = [u.name for u in campagne.textes[nomTexte].unites]
+    nomsCol = list()
+    index = 0
+    if critere == "emplacement":
+        index = 0
+        nomsCol = units
+    elif critere == "type":
+        index = 1
+        nomsCol = campagne.typesRelations
+    elif critere == "emplacement-type":
+        index = 2
+        for u in units:
+            for r in campagne.typesRelations.keys():
+                nomsCol.append(u + "-" + r)
+    zeros = np.zeros((len(units)-1, len(nomsCol)))
+    df = pandas.DataFrame(zeros, units[1:], nomsCol, dtype="int")
+    for a in annotations:
+        tab = a.getArrayRepresentationForKappa()[index]
+        for i, dest in enumerate(tab):
+            df.iloc[i][dest] += 1
+    
+    entropie = pandas.Series(np.zeros(len(units)-1), units[1:])
+    for u in df.index:
+        p = df.loc[u] / df.loc[u].sum()
+        entropie[u] = stats.entropy(p, base=2)
+    return entropie
