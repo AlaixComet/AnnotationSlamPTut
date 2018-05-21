@@ -1159,38 +1159,6 @@
 <term id="clefebvre_1521572059646"/>
 </positioning>
 </relation>
-<relation id="clefebvre_1525352608416">
-<metadata>
-<author>clefebvre</author>
-<creation-date>1525352608416</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
-</metadata>
-<characterisation>
-<type>Réponse</type>
-<featureSet/>
-</characterisation>
-<positioning>
-<term id="clefebvre_1521571989785"/>
-<term id="clefebvre_1521572070848"/>
-</positioning>
-</relation>
-<relation id="clefebvre_1525352610617">
-<metadata>
-<author>clefebvre</author>
-<creation-date>1525352610617</creation-date>
-<lastModifier>n/a</lastModifier>
-<lastModificationDate>0</lastModificationDate>
-</metadata>
-<characterisation>
-<type>Réponse</type>
-<featureSet/>
-</characterisation>
-<positioning>
-<term id="clefebvre_1521572070848"/>
-<term id="clefebvre_1521571989785"/>
-</positioning>
-</relation>
 <relation id="clefebvre_1525352672141">
 <metadata>
 <author>clefebvre</author>
@@ -1333,6 +1301,22 @@
 <positioning>
 <term id="clefebvre_1521572110368"/>
 <term id="clefebvre_1521572003785"/>
+</positioning>
+</relation>
+<relation id="clefebvre_1526899601350">
+<metadata>
+<author>clefebvre</author>
+<creation-date>1526899601350</creation-date>
+<lastModifier>n/a</lastModifier>
+<lastModificationDate>0</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Réponse</type>
+<featureSet/>
+</characterisation>
+<positioning>
+<term id="clefebvre_1521572070848"/>
+<term id="clefebvre_1521571989785"/>
 </positioning>
 </relation>
 <flag id="clefebvre_1525353167107">
