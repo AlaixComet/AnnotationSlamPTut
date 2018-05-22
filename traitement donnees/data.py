@@ -164,6 +164,13 @@ class Annotation():
         self.themes = sorted(themes, key=lambda x:x.debut)
         self.__nettoyerThemes()
         self.relations = relations
+
+    def __eq__(self, other):
+        if isinstance(self, other.__class__):
+            return self.annotateur.id == other.annotateur.id and self.texte.nom == other.texte.nom
+        else:
+            return False
+
     
     def matrice(self):
         """

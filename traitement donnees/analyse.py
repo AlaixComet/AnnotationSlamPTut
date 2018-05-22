@@ -227,3 +227,43 @@ def calculEntropie(campagne, nomTexte, critere):
         p = df.loc[u] / df.loc[u].sum()
         entropie[u] = stats.entropy(p, base=2)
     return entropie
+
+from matplotlib import pyplot as plt
+from scipy.cluster.hierarchy import linkage, dendrogram
+def clustering(camp):
+    """
+    crée un cluster
+    """
+    print("clustering")
+    for textename,t in camp.textes.items():
+        print(textename)
+        matrix = createCondensedDistanceMatrix(camp,textename,0)
+        cluster = linkage(matrix, 'average')
+        print(cluster)
+        print(len(cluster[1]))
+        fig = plt.figure(figsize=(25, 10))
+        dn = dendrogram(cluster)
+        plt.show()
+
+def createCondensedDistanceMatrix(camp, texteName, distanceLevel):
+    """
+    distanceLevel int qui peut être 0, 1 ou 2
+    0 : unité d'arrivée
+    1 : relation à l'unité
+    2 : unité ET relation
+    """
+    matrix = None
+    annotations = camp.getAnnotations(texteName)
+    for i in annotations :
+        kappasforI = []        
+        for j in annotations :
+            if i != j :
+                kappasforI.append(1 - calculKappa(i,j)[distanceLevel])
+        if isinstance(matrix,type(None)) :
+            matrix = np.array(kappasforI)
+        else :
+            matrix = np.vstack([matrix, kappasforI])
+        print(i.annotateur.id)
+        print(kappasforI)
+        
+    return matrix
