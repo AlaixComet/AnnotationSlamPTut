@@ -230,20 +230,19 @@ def calculEntropie(campagne, nomTexte, critere):
 
 from matplotlib import pyplot as plt
 from scipy.cluster.hierarchy import linkage, dendrogram
-def clustering(camp):
+def clustering(camp, critere):
     """
     crée un cluster
     """
-    print("clustering")
     for textename,t in camp.textes.items():
-        print(textename)
-        matrix = createCondensedDistanceMatrix(camp,textename,0)
-        cluster = linkage(matrix, 'average')
-        print(cluster)
-        print(len(cluster[1]))
-        fig = plt.figure(figsize=(25, 10))
-        dn = dendrogram(cluster)
-        plt.show()
+        clusteringParTexte(camp, textename, critere)
+
+def clusteringParTexte(camp, textname, critere) :
+    matrix = createCondensedDistanceMatrix(camp,textname,critere)
+    cluster = linkage(matrix, 'average')
+    fig = plt.figure(figsize=(18, 10))
+    dn = dendrogram(cluster)
+    plt.show()
 
 def createCondensedDistanceMatrix(camp, texteName, distanceLevel):
     """
@@ -263,7 +262,5 @@ def createCondensedDistanceMatrix(camp, texteName, distanceLevel):
             matrix = np.array(kappasforI)
         else :
             matrix = np.vstack([matrix, kappasforI])
-        print(i.annotateur.id)
-        print(kappasforI)
         
     return matrix
