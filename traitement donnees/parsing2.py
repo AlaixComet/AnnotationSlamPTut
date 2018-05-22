@@ -63,7 +63,7 @@ def parsing(directories, id_unites_constants = False):
             id2units[u.id] = u
         
     ##### Parsing des annotations
-        fichiers_annotations = glob.glob(path.join(directory, "Annotations\*.aa"))
+        fichiers_annotations = glob.glob(path.join(directory, "Annotations/*.aa"))
         for f_annot in fichiers_annotations:
             nom_annotateur = path.basename(f_annot).rstrip(".aa")
             if not nom_annotateur in annotateurs:
