@@ -67,7 +67,7 @@ def draw_global_tree(campagne, nomTexte, regroupement="aucun", seuilAffichage=0.
     type : String dans ['aucun', 'catégorie', 'emplacement']
     """
     categories = categories = {"Narration":["Narration"], "Elaborations":["Elaboration descriptive", "Elaboration evaluative", "Elaboration prescriptive", "Contre-élaboration", "Réponse"], "Méta": ["Conduite","Phatique", "Méta-question"], "Question":["Question"]}
-    dot = Digraph(name=nomTexte, format="png", node_attr={'shape':'box','style':'filled'})
+    dot = Digraph(name=nomTexte, format="svg", node_attr={'shape':'box','style':'filled'})
     
     annotations = campagne.getAnnotations(nomTexte)
     texte = campagne.textes[nomTexte]
@@ -95,8 +95,7 @@ def draw_global_tree(campagne, nomTexte, regroupement="aucun", seuilAffichage=0.
         matriceTotale = matriceTotale.add(mat)
 
     nbAnnotations = len(annotations)
-    dot.attr(label=str(nbAnnotations) + " annotations")
-    dot.attr(fontsize="18")
+    dot.attr(label='<<font point-size="20">'+nomTexte+'</font><br/><font point-size="16">'+str(nbAnnotations) + " annotations <br/> seuil = "+str(seuilAffichage)+"</font>>")
     dot.attr(labeljust="left")
     dot.attr(labelloc="top")
 
