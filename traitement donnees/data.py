@@ -29,6 +29,13 @@ class Campagne():
             if nomTexte in annotateur.annotations:
                 annotations.append(annotateur.annotations[nomTexte])
         return annotations
+
+    def getAnnotateurNamesForTexte(self, nomTexte) :
+        annotNames = list()
+        annotations = self.getAnnotations(nomTexte)
+        for a in annotations:
+            annotNames.append(a.annotateur.id)
+        return annotNames
     
     # def getAnnotationListFromText(self, text) :
     #     annoList = list()
