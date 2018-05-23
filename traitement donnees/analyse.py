@@ -239,7 +239,7 @@ def clustering(camp, critere):
 # def clusteringParTexte(camp, textname, critere) :
 #     matrix = createCondensedDistanceMatrix(camp,textname,critere)
 #     cluster = linkage(matrix, 'average')
-#     fig = plt.figure(figsize=(18, 10))
+#     fig = plt.figure(figsize=(15, 10))
 #     dn = dendrogram(cluster)
 #     plt.show()
 
@@ -283,7 +283,7 @@ def clusteringParTexte(camp, textname, critere) :
     """
     vectors = createVectorList(camp,textname, critere)
     cluster = linkage(vectors, 'average')
-    fig = plt.figure(figsize=(18, 10))
+    fig = plt.figure(figsize=(10, 6))
     dn = dendrogram(cluster)
     plt.show()
 
