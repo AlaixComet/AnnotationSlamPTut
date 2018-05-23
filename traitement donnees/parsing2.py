@@ -121,6 +121,17 @@ def parsing(directories, id_unites_constants = False):
     return camp
 
 # camp = parsing(textDirectories)
+
+# typesRel = {"Narration":"horizontale", "Réponse":"horizontale", "Elaboration descriptive":"verticale", "Elaboration evaluative":"verticale", "Elaboration prescriptive":"verticale", "Conduite":"verticale","Phatique":"verticale","Contre-élaboration":"verticale","Méta-question":"verticale","Question":"verticale"}
+# camp.typesRelations = typesRel
+# mauvaisesAnnots = supprimerMauvaisesAnnotations(camp)
+
+# for textename,t in camp.textes.items():
+#     print(textename)
+#     Annotextes = camp.getAnnotateurNamesForTexte(textename)
+#     clusteringParTexte(camp, textename, 0)
+
+# camp = parsing(textDirectories)
 # for textename,t in camp.textes.items():
 #     print(textename)
 #     annotationList = camp.getAnnotations(textename)

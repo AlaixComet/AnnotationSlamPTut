@@ -153,21 +153,21 @@ def save(matrice, nom, nbAnnotations, minOccurrences=1):
     
     return dot
 
-from sklearn.metrics import cohen_kappa_score
-def calculKappa(annotation1, annotation2):
-    """
-    http://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html
-    https://stackoverflow.com/questions/43676905/how-to-calculate-cohens-kappa-coefficient-that-measures-inter-rater-agreement?rq=1&utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-    on calcule 3 kappa à partir des 3 représentations sous forme de liste de deux annotations d'un même texte
-    args : 2 Annotations
-    returns : list of 3 float, result of 3 cohen_kappa_score
-    """
-    listA1 = annotation1.getArrayRepresentationForKappa()
-    listA2 = annotation2.getArrayRepresentationForKappa()
-    ListKappa = []
-    for i in range(0,len(listA1)):
-        ListKappa.append(cohen_kappa_score(listA1[i],listA2[i]))
-    return ListKappa
+# from sklearn.metrics import cohen_kappa_score
+# def calculKappa(annotation1, annotation2):
+#     """
+#     http://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html
+#     https://stackoverflow.com/questions/43676905/how-to-calculate-cohens-kappa-coefficient-that-measures-inter-rater-agreement?rq=1&utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+#     on calcule 3 kappa à partir des 3 représentations sous forme de liste de deux annotations d'un même texte
+#     args : 2 Annotations
+#     returns : list of 3 float, result of 3 cohen_kappa_score
+#     """
+#     listA1 = annotation1.getArrayRepresentationForKappa()
+#     listA2 = annotation2.getArrayRepresentationForKappa()
+#     ListKappa = []
+#     for i in range(0,len(listA1)):
+#         ListKappa.append(cohen_kappa_score(listA1[i],listA2[i]))
+#     return ListKappa
 
 
 def annotationValide(annotation):
@@ -236,12 +236,12 @@ def clustering(camp, critere):
     for textename,t in camp.textes.items():
         clusteringParTexte(camp, textename, critere)
 
-def clusteringParTexte(camp, textname, critere) :
-    matrix = createCondensedDistanceMatrix(camp,textname,critere)
-    cluster = linkage(matrix, 'average')
-    fig = plt.figure(figsize=(18, 10))
-    dn = dendrogram(cluster)
-    plt.show()
+# def clusteringParTexte(camp, textname, critere) :
+#     matrix = createCondensedDistanceMatrix(camp,textname,critere)
+#     cluster = linkage(matrix, 'average')
+#     fig = plt.figure(figsize=(18, 10))
+#     dn = dendrogram(cluster)
+#     plt.show()
 
 def createCondensedDistanceMatrix(camp, texteName, distanceLevel):
     """
@@ -263,3 +263,39 @@ def createCondensedDistanceMatrix(camp, texteName, distanceLevel):
             matrix = np.vstack([matrix, kappasforI])
         
     return matrix
+
+import itertools
+def createVectorList(camp, textName, critere):
+    """
+    distanceLevel int qui peut être 0, 1 ou 2
+    0 : unité d'arrivée
+    1 : relation à l'unité
+    2 : unité ET relation
+    """
+    vectors = []
+    annotations = camp.getAnnotations(textName)
+    vectors = [calculDistanceKappa(annotations[i], annotations[j],critere) for (i,j) in itertools.combinations(range(len(annotations)), 2)]
+    return vectors
+
+def clusteringParTexte(camp, textname, critere) :
+    """
+    TODO
+    """
+    vectors = createVectorList(camp,textname, critere)
+    cluster = linkage(vectors, 'average')
+    fig = plt.figure(figsize=(18, 10))
+    dn = dendrogram(cluster)
+    plt.show()
+
+
+from sklearn.metrics import cohen_kappa_score
+def calculDistanceKappa(annotation1, annotation2, critere):
+    """
+    TODO
+    """
+    listA1 = annotation1.getArrayRepresentationForKappa()
+    listA2 = annotation2.getArrayRepresentationForKappa()
+    ListKappa = []
+    for i in range(0,len(listA1)):
+        ListKappa.append(cohen_kappa_score(listA1[i],listA2[i]))
+    return 1 - ListKappa[critere]
