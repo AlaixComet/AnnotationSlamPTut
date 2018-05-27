@@ -299,3 +299,19 @@ def calculDistanceKappa(annotation1, annotation2, critere):
     for i in range(0,len(listA1)):
         ListKappa.append(cohen_kappa_score(listA1[i],listA2[i]))
     return 1 - ListKappa[critere]
+
+
+def rupturesFrontiereDroite(annotation):
+    """
+    Retourne la liste des unités qui sont rattachées en brisant la règle de la frontière droite dans l'annotation.
+    Pour l'instant ça ne retourne que la première parce qu'on ne sait pas comment "corriger" la rupture à la manière que le fait le psychologue pour vérifier s'il y a d'autres ruptures par la suite.
+    """
+    arbre = annotation.arbre()
+    ordreParcours = arbre.parcoursPrefixe()
+    unites = annotation.texte.unites
+    ruptures = list()
+
+    for i in range(len(unites)):
+        if unites[i] != ordreParcours[i] and unites[i].debut < ordreParcours[i].debut:
+            return [ordreParcours[i]]
+    return ruptures

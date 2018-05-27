@@ -96,9 +96,10 @@ class Unit():
         self.name = name
         
     def __str__(self):
-        return self.name 
+        return self.name + " : " + self.txt
     
-    __repr__ = __str__
+    def __repr__(self):
+        return self.name
     
     def __eq__(self, other):
         if isinstance(self, other.__class__):
@@ -218,9 +219,13 @@ class Annotation():
                 else:
                     filsVert.append((r.origine, r.type))
         
-        #On fait des paires (Noeud, typeRelation)
+        # On fait des paires (Noeud, typeRelation)
         noeudsFilsHoriz = [(self.__makeTree(f[0]), f[1]) for f in filsHoriz]
         noeudsFilsVert = [(self.__makeTree(f[0]), f[1]) for f in filsVert]
+
+        # On trie les fils par ordre d'apparence des unités dans le texte
+        noeudsFilsHoriz.sort(key= lambda x : self.texte.unites.index(x[0].racine))
+        noeudsFilsVert.sort(key= lambda x : self.texte.unites.index(x[0].racine))
         
         return Arbre(debut, noeudsFilsHoriz, noeudsFilsVert)
     
@@ -396,3 +401,16 @@ class Arbre():
         self.racine = racine
         self.filsHoriz = filsHoriz
         self.filsVert = filsVert
+
+    def parcoursPrefixe(self):
+        parcourus = [self.racine]
+        for v in self.filsVert:
+            parcourus.extend(v[0].parcoursPrefixe())
+        for h in self.filsHoriz:
+            parcourus.extend(h[0].parcoursPrefixe())
+        return parcourus
+
+    def __str__(self):
+        return repr(self.racine) + " " + repr(self.filsVert) + " " + repr(self.filsHoriz)
+    
+    __repr__ = __str__
