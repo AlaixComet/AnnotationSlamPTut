@@ -16,7 +16,7 @@ from analyse import *
 AnnotationDirectory = "Campagne 2018"
 projectDirectory = path.dirname(path.realpath(__file__))
 projectDirectory = path.join(path.split(projectDirectory)[0])
-textsNames = ["Bac_a_sable","Florence","Provocation"]
+textsNames = ["Bac_a_sable", "Florence","Provocation", "Nord", "Concours", "Sauveur", "Volley"]
 textDirectories = [path.join(projectDirectory,AnnotationDirectory,t) for t in textsNames]
 
 
@@ -126,10 +126,9 @@ def parsing(directories, id_unites_constants = False):
 # camp.typesRelations = typesRel
 # mauvaisesAnnots = supprimerMauvaisesAnnotations(camp)
 
-# for textename,t in camp.textes.items():
-#     print(textename)
-#     Annotextes = camp.getAnnotateurNamesForTexte(textename)
-#     clusteringParTexte(camp, textename, 0)
+# for annoname,a in camp.annotateurs.items():
+#     print(annoname)
+#     clusteringAnnotateurs(a, 0)
 
 # camp = parsing(textDirectories)
 # for textename,t in camp.textes.items():

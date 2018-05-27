@@ -36,16 +36,19 @@ class Campagne():
         for a in annotations:
             annotNames.append(a.annotateur.id)
         return annotNames
-    
-    # def getAnnotationListFromText(self, text) :
-    #     annoList = list()
-    #     for annotateurName, annotateur in self.annotateurs :
-    #         for annotation in annotateur[text] :
-    #             annoList.append(annotation)
-    #     return annoList
 
+    def getAnnotateursForTextes(self, textlist) :
+        """
+        args : list of string textname
+        result : list of Annotateur which passed the given textes
+        """
+        aList = self.annotateurs.copy()
+        for t in textlist :
+            for i,a in enumerate(aList) :
+                if t not in a.annotations.keys() :
+                    aList.pop(i)
+        return aList
 
-    
 
 class Texte():
     """
@@ -156,6 +159,7 @@ class Theme():
     def __repr__(self):
         return self.label
 
+
 class Annotation():
     """
     Annotation d'un texte par un annotateur (expert ou non)
@@ -178,7 +182,6 @@ class Annotation():
         else:
             return False
 
-    
     def matrice(self):
         """
         Retourne la liste des relation sous forme de pandas.Panel (matrice 3D) 
@@ -377,11 +380,6 @@ class Annotation():
                     array2.append(r.type)
                     array3.append(r.dest.name+"-"+r.type)
         return [array1,array2,array3]
-
-                    
-                    
-            
-
 
 
 class Arbre():
