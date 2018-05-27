@@ -303,8 +303,8 @@ def calculDistanceKappa(annotation1, annotation2, critere):
 
 def rupturesFrontiereDroite(annotation):
     """
-    Retourne la liste des unités qui sont rattachées en brisant la règle de la frontière droite dans l'annotation.
-    Pour l'instant ça ne retourne que la première parce qu'on ne sait pas comment "corriger" la rupture à la manière que le fait le psychologue pour vérifier s'il y a d'autres ruptures par la suite.
+    Retourne la liste des unités qui sont reliées en brisant la règle de la frontière droite.
+    Si tout un sous-arbre est rattaché à gauche d'une ancienne unité, toutes les unités du sous-arbre sont retournées. Plus tard, il pourrait être intéressant de chercher à "réparer" la conversation à la manière du psychologue qui conduit les interviews, et ne retourner que la racine de ce sous-arbre, afin de chercher s'il y a d'autres ruptures à l'intérieur.
     """
     arbre = annotation.arbre()
     ordreParcours = arbre.parcoursPrefixe()
@@ -313,5 +313,6 @@ def rupturesFrontiereDroite(annotation):
 
     for i in range(len(unites)):
         if unites[i] != ordreParcours[i] and unites[i].debut < ordreParcours[i].debut:
-            return [ordreParcours[i]]
+            ruptures.append(ordreParcours[i])
+
     return ruptures
