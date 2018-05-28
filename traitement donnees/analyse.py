@@ -205,7 +205,7 @@ def calculEntropie(campagne, nomTexte, critere):
     zeros = np.zeros((len(units)-1, len(nomsCol)))
     df = pandas.DataFrame(zeros, units[1:], nomsCol, dtype="int")
     for a in annotations:
-        tab = a.getArrayRepresentationForKappa()[index]
+        tab = a.representationEtiquettes()[index]
         for i, dest in enumerate(tab):
             df.iloc[i][dest] += 1
     
@@ -276,8 +276,8 @@ def calculDistanceKappa(annotation1, annotation2, critere):
             critere : int entre 0 et 4 (notre "profondeur" de comparaison entre annotateurs)
     returns : list of 'critere' float, result of cohen_kappa_score
     """
-    listA1 = annotation1.getArrayRepresentationForKappa()
-    listA2 = annotation2.getArrayRepresentationForKappa()
+    listA1 = annotation1.representationEtiquettes()
+    listA2 = annotation2.representationEtiquettes()
     ListKappa = []
     for i in range(0,len(listA1)):
         ListKappa.append(cohen_kappa_score(listA1[i],listA2[i]))

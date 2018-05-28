@@ -333,17 +333,6 @@ class Annotation():
                 previousT = t
         self.themes = themesPropres
 
-    # def detectionChangementTheme(self):
-    #     """
-    #     return  : list d'Unit
-    #     """
-    #     previousT = Theme("null",1, self.texte)
-    #     unitsThemeChanges = list()
-    #     for key, t in enumerate(self.themes) :
-    #         if previousT.label != t.label :
-    #             unitsThemeChanges.append(self.themes[key].unite)
-    #         previousT = t
-    #     return(unitsThemeChanges)
 
     def getThemeByUnit(self, unite):
         """
@@ -367,10 +356,10 @@ class Annotation():
                 themesUnits[i][1].append(u)
         return(themesUnits)
 
-    def getArrayRepresentationForKappa(self):
+    def representationEtiquettes(self):
         """
         return List of 3 list of string
-        chaque case correspond à une unité de départ, on y stocke 
+        chaque case correspond à une unité de départ. Attention, la première case correspond à la première unité après début. on y stocke. 
         1 : string de l'unité d'arrivée
         2 : la catégorie de relation
         3 : la relation
