@@ -195,10 +195,10 @@ def calculEntropie(campagne, nomTexte, critere):
         index = 0
         nomsCol = units
     elif critere == "type":
-        index = 1
+        index = 2
         nomsCol = campagne.typesRelations
     elif critere == "emplacement-type":
-        index = 2
+        index = 4
         for u in units:
             for r in campagne.typesRelations.keys():
                 nomsCol.append(u + "-" + r)
@@ -272,10 +272,10 @@ def calculDistanceKappa(annotation1, annotation2, critere):
     """
     http://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html
     https://stackoverflow.com/questions/43676905/how-to-calculate-cohens-kappa-coefficient-that-measures-inter-rater-agreement?rq=1&utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-    on calcule 3 kappa à partir des 3 représentations sous forme de liste de deux annotations d'un même texte, et on renvoi en fonction du critère choisi
+    on calcule des kappa à partir de chaque représentations sous forme de liste de deux annotations d'un même texte, et on renvoi en fonction du critère choisi
     args :  2 Annotations
-            critere : int entre 0 et 2 (notre "profondeur" de comparaison entre annotateurs)
-    returns : list of 3 float, result of 3 cohen_kappa_score
+            critere : int entre 0 et 4 (notre "profondeur" de comparaison entre annotateurs)
+    returns : list of 'critere' float, result of cohen_kappa_score
     """
     listA1 = annotation1.getArrayRepresentationForKappa()
     listA2 = annotation2.getArrayRepresentationForKappa()

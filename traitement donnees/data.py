@@ -367,19 +367,31 @@ class Annotation():
         return List of 3 list of string
         chaque case correspond à une unité de départ, on y stocke 
         1 : string de l'unité d'arrivée
-        2 : la relation
-        3 : unité d'arrivée-relation
+        2 : la catégorie de relation
+        3 : la relation
+        4 : unité d'arrivée-catégorie de relation
+        5 : unité d'arrivée-relation
         """
-        array1 = []
-        array2 = []
-        array3 = []
+        array1,array2,array3,array4,array5 = ([],[],[],[],[])
+        categories = {
+            "Narration" : ["Narration"],
+            "Elaborations" : ["Elaboration descriptive","Elaboration evaluative","Elaboration prescriptive","Contre-élaboration","Réponse"],
+            "Méta" : ["Conduite", "Phatique", "Méta-question"],                        
+            "Question" : ["Question"],
+            }
         for u in self.texte.unites :
             for r in self.relations :
                 if r.origine == u :
+                    c =""
+                    for cat,rels in categories.items() :
+                        if r.type in rels :
+                            c = cat
                     array1.append(r.dest.name)
-                    array2.append(r.type)
-                    array3.append(r.dest.name+"-"+r.type)
-        return [array1,array2,array3]
+                    array2.append(c)
+                    array3.append(r.type)
+                    array4.append(r.dest.name+"-"+c)
+                    array5.append(r.dest.name+"-"+r.type)
+        return [array1,array2,array3,array4,array5]
 
 
 class Arbre():
