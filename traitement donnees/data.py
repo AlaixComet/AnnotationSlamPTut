@@ -44,10 +44,10 @@ class Campagne():
         """
         aList = self.annotateurs.copy()
         for t in textlist :
-            for i,a in enumerate(aList) :
-                if t not in a.annotations.keys() :
+            for i,a in self.annotateurs.items() :
+                if i in aList.keys() and t not in a.annotations.keys() :
                     aList.pop(i)
-        return aList
+        return list(aList.values())
 
 
 class Texte():

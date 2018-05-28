@@ -249,7 +249,6 @@ def createVectorList(camp, textName, critere):
     1 : relation à l'unité
     2 : unité ET relation
     """
-    vectors = []
     annotations = camp.getAnnotations(textName)
     vectors = [calculDistanceKappa(annotations[i], annotations[j],critere) for (i,j) in itertools.combinations(range(len(annotations)), 2)]
     return vectors
@@ -285,29 +284,56 @@ def calculDistanceKappa(annotation1, annotation2, critere):
     return 1 - ListKappa[critere]
 
 
-def clusteringAnnotateurs(critere, annotateur = None, textList = []):
+def clusteringMultipleTextes(critere, camp, temoin = "", rupture1 = "", rupture2 = ""):
     """
     crée un cluster à partir des textes d'un annotateur
     """
-    if annotateur == None : textList = ["Bac_a_sable"]
-    elif len(textList) == 0 : textList = annotateur.annotations.keys()
-    annotateurList = annotateur.campagne.getAnnotateursForTextes(textList)
+    textList = ["Bac_a_sable",temoin,rupture1,rupture2]
+    textList = list(filter(lambda a: a != "", textList))
+    annotateurList = camp.getAnnotateursForTextes(textList)
     """
     ici : créer un vecteur avec les distances cummulées entre mêmes annotateurs sur plusieurs textes différents
     deux possiblités :
             createVector plusieurs fois et additionner les distances donc Calculer le Kappa de chaque texte et les additionner
             createVector une fois avec un gros Kappa sur toutes les annotations mises à la suite
     """
-    # vectors = []    
-    # for textename in annotateur.annotations.keys():
-    #     print(textename)
-    #     vectors.append(createVectorList(annotateur.campagne,textename, critere, vectors))
-    # cluster = linkage(vectors, 'average')
-    # fig = plt.figure(figsize=(10, 6))
-    # dn = dendrogram(cluster, labels = annotateur.campagne.getAnnotateurNamesForTexte("Bac_a_sable"))
-    # plt.show()
+    """
+    P1 : addition des vecteurs
+    """
+    vectors = []    
+    print("Textes annotés :")
+    print(textList)
+    for textename in textList:
+        vectors = createCumuledVectorList(annotateurList,textename, critere, vectors)
+    cluster = linkage(vectors, 'average')
+    fig = plt.figure(figsize=(10, 6))
+    annonames = []
+    for a in annotateurList :
+        annonames.append(a.id)
+    dn = dendrogram(cluster, labels = annonames)
+    plt.show()
     
+    """
+    P2
+    """
+    #pertinent ?
+    
+    
+def createCumuledVectorList(annotateurList,textename, critere, vector):
+    """
 
+    """
+    v = [calculDistanceKappa(annotateurList[i].annotations[textename], annotateurList[j].annotations[textename],critere) for (i,j) in itertools.combinations(range(len(annotateurList)), 2)]
+    if len(vector) == 0 : 
+        return v
+    else :
+        for i in range(len(v)) :
+            vector[i] = vector[i] + v[i]
+    return vector
+
+"""
+Rupture discursive
+"""
 def rupturesFrontiereDroite(annotation):
     """
     Retourne la liste des unités qui sont reliées en brisant la règle de la frontière droite.
