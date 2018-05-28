@@ -13,13 +13,6 @@ import pandas
 from data import Unit, Texte, Campagne, Annotateur, Relation, Annotation, Theme
 from analyse import *
 
-AnnotationDirectory = "Campagne 2018"
-projectDirectory = path.dirname(path.realpath(__file__))
-projectDirectory = path.join(path.split(projectDirectory)[0])
-textsNames = ["Bac_a_sable", "Florence","Provocation", "Nord", "Concours", "Sauveur", "Volley"]
-textDirectories = [path.join(projectDirectory,AnnotationDirectory,t) for t in textsNames]
-
-
 def parsing(directories, id_unites_constants = False):
     camp = Campagne()
     annotateurs = dict()
@@ -37,7 +30,7 @@ def parsing(directories, id_unites_constants = False):
         with  open(ac_file, "r", encoding="utf_8") as f :
             text = f.read()
         
-        soup = BeautifulSoup(unites, "lxml")
+        soup = BeautifulSoup(unites, "html.parser")
         
         units_list = list()
 
@@ -72,7 +65,7 @@ def parsing(directories, id_unites_constants = False):
             f = open(f_annot, 'r', encoding="utf-8")
             annotation = f.read()
             f.close()
-            soup = BeautifulSoup(annotation, "lxml")
+            soup = BeautifulSoup(annotation, "html.parser")
 
             if not id_unites_constants:
                 units_nulles = list()
@@ -120,6 +113,12 @@ def parsing(directories, id_unites_constants = False):
     camp.annotateurs = annotateurs
     return camp
 
+# AnnotationDirectory = "Campagne 2018"
+# projectDirectory = path.dirname(path.realpath(__file__))
+# projectDirectory = path.join(path.split(projectDirectory)[0])
+# textsNames = ["Bac_a_sable", "Florence","Provocation", "Nord", "Concours", "Sauveur", "Volley"]
+# textDirectories = [path.join(projectDirectory,AnnotationDirectory,t) for t in textsNames]
+
 # camp = parsing(textDirectories)
 
 # typesRel = {"Narration":"horizontale", "Réponse":"horizontale", "Elaboration descriptive":"verticale", "Elaboration evaluative":"verticale", "Elaboration prescriptive":"verticale", "Conduite":"verticale","Phatique":"verticale","Contre-élaboration":"verticale","Méta-question":"verticale","Question":"verticale"}
@@ -146,4 +145,3 @@ def parsing(directories, id_unites_constants = False):
 # for id,unitList in themeChangeUnitList.items() :
 #     print(id)
 #     print(unitList)
-

@@ -218,26 +218,26 @@ def calculEntropie(campagne, nomTexte, critere):
 """
 Not used anymore
 """
-def createCondensedDistanceMatrix(camp, texteName, distanceLevel):
-    """
-    distanceLevel int qui peut être 0, 1 ou 2
-    0 : unité d'arrivée
-    1 : relation à l'unité
-    2 : unité ET relation
-    """
-    matrix = None
-    annotations = camp.getAnnotations(texteName)
-    for i in annotations :
-        kappasforI = []        
-        for j in annotations :
-            if i != j :
-                kappasforI.append(1 - calculKappa(i,j)[distanceLevel])
-        if isinstance(matrix,type(None)) :
-            matrix = np.array(kappasforI)
-        else :
-            matrix = np.vstack([matrix, kappasforI])
+# def createCondensedDistanceMatrix(camp, texteName, distanceLevel):
+#     """
+#     distanceLevel int qui peut être 0, 1 ou 2
+#     0 : unité d'arrivée
+#     1 : relation à l'unité
+#     2 : unité ET relation
+#     """
+#     matrix = None
+#     annotations = camp.getAnnotations(texteName)
+#     for i in annotations :
+#         kappasforI = []        
+#         for j in annotations :
+#             if i != j :
+#                 kappasforI.append(1 - calculKappa(i,j)[distanceLevel])
+#         if isinstance(matrix,type(None)) :
+#             matrix = np.array(kappasforI)
+#         else :
+#             matrix = np.vstack([matrix, kappasforI])
         
-    return matrix
+#     return matrix
 
 """
 Clustering
@@ -308,3 +308,18 @@ def clusteringAnnotateurs(critere, annotateur = None, textList = []):
     # plt.show()
     
 
+def rupturesFrontiereDroite(annotation):
+    """
+    Retourne la liste des unités qui sont reliées en brisant la règle de la frontière droite.
+    Si tout un sous-arbre est rattaché à gauche d'une ancienne unité, toutes les unités du sous-arbre sont retournées. Plus tard, il pourrait être intéressant de chercher à "réparer" la conversation à la manière du psychologue qui conduit les interviews, et ne retourner que la racine de ce sous-arbre, afin de chercher s'il y a d'autres ruptures à l'intérieur.
+    """
+    arbre = annotation.arbre()
+    ordreParcours = arbre.parcoursPrefixe()
+    unites = annotation.texte.unites
+    ruptures = list()
+
+    for i in range(len(unites)):
+        if unites[i] != ordreParcours[i] and unites[i].debut < ordreParcours[i].debut:
+            ruptures.append(ordreParcours[i])
+
+    return ruptures
