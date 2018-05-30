@@ -190,13 +190,23 @@ def calculEntropie(campagne, nomTexte, critere):
     annotations = campagne.getAnnotations(nomTexte)
     units = [u.name for u in campagne.textes[nomTexte].unites]
     nomsCol = list()
+    categories = categories = {"Narration":["Narration"], "Elaborations":["Elaboration descriptive", "Elaboration evaluative", "Elaboration prescriptive", "Contre-élaboration", "Réponse"], "Méta": ["Conduite","Phatique", "Méta-question"], "Question":["Question"]}
+
     index = 0
     if critere == "emplacement":
         index = 0
         nomsCol = units
+    elif critere =="categ":
+        index = 1
+        nomsCol = categories.keys()
     elif critere == "type":
         index = 2
-        nomsCol = campagne.typesRelations
+        nomsCol = campagne.typesRelations.keys()
+    elif critere == "emplacement-categ":
+        index = 3
+        for u in units:
+            for r in categories.keys():
+                nomsCol.append(u + "-" + r)
     elif critere == "emplacement-type":
         index = 4
         for u in units:
