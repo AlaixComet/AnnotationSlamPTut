@@ -289,7 +289,7 @@ def clusteringMultipleTextes(critere, camp, temoin = "", rupture1 = "", rupture2
     
 def createCumuledVectorList(annotateurList,textename, critere, vector):
     """
-
+    creation d'un vecteur prenant en compte le cumul de plusieurs distances sur plusieurs textes
     """
     v = [calculDistanceKappa(annotateurList[i].annotations[textename], annotateurList[j].annotations[textename],critere) for (i,j) in itertools.combinations(range(len(annotateurList)), 2)]
     if len(vector) == 0 : 

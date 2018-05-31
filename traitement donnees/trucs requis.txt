@@ -1,8 +1,0 @@
-bibliothèques python :
-- numpy
-- pandas
-- beautifulsoup4
-- graphviz
-
-
-Installer graphviz windows (ou linux ou mac) aussi
