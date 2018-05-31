@@ -10,6 +10,7 @@ from scipy import stats
 from data import Annotation, Annotateur, Campagne, Theme
 from graphviz import Digraph
 import pandas
+import matplotlib
 from matplotlib import pyplot as plt
 from scipy.cluster.hierarchy import linkage, dendrogram
 from sklearn.metrics import cohen_kappa_score
@@ -317,3 +318,45 @@ def rupturesFrontiereDroite(annotation):
             ruptures.append(ordreParcours[i])
 
     return ruptures
+
+
+def highlight_significant(dataframe, alpha=0.05):
+    """
+    Met en couleur les p-values significatives dans un data-frame
+    """
+    is_significant = dataframe < alpha
+    return ['background-color: green' if v else '' for v in is_significant]
+
+def draw_p_values(p_values, title, triangulaire=False):
+    mat_affichage = p_values.copy()
+    # On remplace les valeurs par la "tranche de significativité"
+    mat_affichage[mat_affichage<0.001] = 4
+    mat_affichage[mat_affichage<0.01] = 3
+    mat_affichage[mat_affichage<0.05] = 2
+    mat_affichage[mat_affichage<0.1] = 1
+    mat_affichage[mat_affichage<=1] = 0
+
+    matplotlib.rcParams.update({'font.size': 12})
+
+    # On ne colore pas la moitié de la matrice si elle est triangulaire
+    if triangulaire:
+        mask =  np.transpose(np.tri(mat_affichage.shape[0]))
+        mat_affichage = np.ma.array(mat_affichage, mask=mask) # mask out the upper triangle
+
+    fig, ax = plt.subplots(figsize=(10,6))
+    cmap = matplotlib.cm.get_cmap("YlOrBr", 5)
+    cmap.set_bad('w') # default value is 'k'
+    cax = ax.matshow(mat_affichage, cmap=cmap, vmin=0, vmax=4)
+    ax.set_title(title)
+    ax.xaxis.set_ticks_position('bottom')
+    ax.set_xticks(range(len(p_values.columns)))
+    ax.set_yticks(range(len(p_values.index)))
+    ax.set_xticklabels(p_values.columns, rotation="vertical") 
+    ax.set_yticklabels(p_values.index) 
+
+    cbar = fig.colorbar(cax, ticks=[0,4/5,8/5,12/5, 16/5, 4],label="p-value")
+    cbar.ax.set_yticklabels(['1', '0.1 .', '0.05 *', '0.01 **', '0.001 ***', '0'])
+    cbar.ax.invert_yaxis() 
+
+    plt.gcf().subplots_adjust(bottom=0.3)
+    plt.show()

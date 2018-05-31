@@ -59,7 +59,7 @@ def parsing(directories, id_unites_constants = False, experts=False):
         fichiers_annotations = glob.glob(path.join(directory, "Annotations/*.aa"))
         for f_annot in fichiers_annotations:
             nom_annotateur = path.basename(f_annot).rstrip(".aa")
-            if  nom_annotateur != "expert" or expert:
+            if  nom_annotateur != "expert" or experts:
                 if not nom_annotateur in annotateurs:
                     annotateurs[nom_annotateur] = Annotateur(nom_annotateur, camp)
                 
