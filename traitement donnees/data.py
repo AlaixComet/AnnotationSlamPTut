@@ -24,6 +24,11 @@ class Campagne():
         self.infosAnnotateurs = None
 
     def getAnnotations(self, nomTexte):
+        """
+        génère une liste d'Annotation pour un texte donné
+        args    : string nomTexte
+        result  : Annotation list 
+        """
         annotations = list()
         for annotateur in self.annotateurs.values():
             if nomTexte in annotateur.annotations:
@@ -31,6 +36,11 @@ class Campagne():
         return annotations
 
     def getAnnotateurNamesForTexte(self, nomTexte) :
+        """
+        retourne la liste des nom des annotateurs qui ont passé le texte donné en entrée
+        args    : string nomTexte
+        result  : list string Annotateur id
+        """
         annotNames = list()
         annotations = self.getAnnotations(nomTexte)
         for a in annotations:

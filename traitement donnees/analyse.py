@@ -16,18 +16,48 @@ from sklearn.metrics import cohen_kappa_score
 import itertools
 
 
+"""
+Correction de fichiers de campagne
+"""
 
-def distance(mat1, mat2):
-    mat1 = mat1.sum(0) #on fait abstraction du type de relation pour l'instant
-    mat2 = mat2.sum(0)
-    
-    #On fait un grand vecteur
-    mat1 = mat1.as_matrix().reshape(-1)
-    mat2 = mat2.as_matrix().reshape(-1)
-    
-    return scipy.spatial.distance.hamming(mat1,mat2)
+def annotationValide(annotation):
+    """
+    renvoie faux si l'annotation n'est pas valide, vrai sinon
+    on regarde le nombre de relation et le sens de relation
+    args : Annotation annotation
+    """
+    mat = annotation.matrice().as_matrix()
+    mat = mat.sum(0) #On ne tient pas compte des types de relation
+    # On vérifie que toutes les flèches sont bien vers le haut, c'est-à-dire que la matrice est triangulaire inférieure
+    flechesHaut = np.allclose(mat, np.tril(mat))
+    #On vérifie maintenant qu'il y a exactement une relation qui part de chaque unité (sauf début)
+    sommeLignes = mat.sum(1)
+    zeroDebut = sommeLignes[0] == 0
+    unPartoutAilleurs = np.all(sommeLignes[1:]==1)
 
-        
+    return flechesHaut and zeroDebut and unPartoutAilleurs
+
+def supprimerMauvaisesAnnotations(campagne):
+    """
+    si l'annotation n'est pas valide alors on la supprime de la campagne
+    args : Campagne campagne
+    results : list of tuples (string nom annotation, Texte texte)
+    """
+    annotationsSupprimees = list()
+    for nomAnnot, annotateur in campagne.annotateurs.items():
+        for texte in campagne.textes:
+            if texte in annotateur.annotations:
+                annot = annotateur.annotations[texte]
+                if not annotationValide(annot):
+                    del annotateur.annotations[texte]
+                    annotationsSupprimees.append((nomAnnot, texte))
+    return annotationsSupprimees
+
+
+"""
+Analyses générales et outils
+"""
+
 def matriceSansType(matrice3d):
     """
     Aplatit la matrice 3d de relations d'une anotation en une matrice 2d où on ne tient plus compte du type des relations mais seulement des unités qu'elles relient.
@@ -57,19 +87,17 @@ def matriceAvecCategories(matrice3d, categories):
     matrice = np.stack(matrices, axis=0)
     return pandas.Panel(matrice, nomsCateg, matrice3d.major_axis, matrice3d.minor_axis)
 
-
-def ruptureDeLaFrontiereDroite(annotation):
-    """
-    parcours postfixe
-    """
-    pass
-    #TODO
-
 def draw_global_tree(campagne, nomTexte, regroupement="aucun", seuilAffichage=0.05, montrerThemes=True):
     """
-    campagne : Campagne
-    nomTexte : String
-    type : String dans ['aucun', 'catégorie', 'emplacement']
+    dessine l'arbre d'un texte donné
+    args :
+        campagne : Campagne
+        nomTexte : String
+        regroupement : String dans ['aucun', 'catégorie', 'emplacement']
+        seuilAffichage : Float
+        montrerThemes : Boolean
+    results :
+        Le Digraph correspondant
     """
     categories = categories = {"Narration":["Narration"], "Elaborations":["Elaboration descriptive", "Elaboration evaluative", "Elaboration prescriptive", "Contre-élaboration", "Réponse"], "Méta": ["Conduite","Phatique", "Méta-question"], "Question":["Question"]}
     dot = Digraph(name=nomTexte, format="svg", node_attr={'shape':'box','style':'filled'})
@@ -86,7 +114,6 @@ def draw_global_tree(campagne, nomTexte, regroupement="aucun", seuilAffichage=0.
             dot.node(u.name, u.name + " : " + u.txt, fillcolor='skyblue')
         else:
             dot.node(u.name, u.name + " : " + u.txt) 
-
 
     matrices = [a.matrice() for a in annotations]
 
@@ -135,53 +162,7 @@ def draw_global_tree(campagne, nomTexte, regroupement="aucun", seuilAffichage=0.
             if(n > 0):
                 dot.node(u, xlabel='<<B><I><font color="red">'+str(n)+"</font></I></B>>")
     return dot
-
-def save(matrice, nom, nbAnnotations, minOccurrences=1):
-    """
-
-    """
-    dot = Digraph(name=nom, format="png")
-    units_names = list()
-    for u in units_list:
-        dot.node(u.name, u.name + " : " + u.txt)
-        units_names.append(u.name)
-    i = 0
-    for rel in types_relations:
-        i += 1
-        for dest in units_names:
-            for origine in units_names:
-                val = matrice[rel][dest][origine]
-                if val >= minOccurrences:
-                    label = rel+"\n"+str(val)
-                    poids = (val / nbAnnotations) * 10
-                    dot.edge(dest, origine, label=label, penwidth=str(poids), color=str(i), colorscheme="paired11", dir="back") #dir back car no fait pas un arbre à proprement parler
     
-    return dot
-
-def annotationValide(annotation):
-    mat = annotation.matrice().as_matrix()
-    mat = mat.sum(0) #On ne tient pas compte des types de relation
-    # On vérifie que toutes les flèches sont bien vers le haut, c'est-à-dire que la matrice est triangulaire inférieure
-    flechesHaut = np.allclose(mat, np.tril(mat))
-    #On vérifie maintenant qu'il y a exactement une relation qui part de chaque unité (sauf début)
-    sommeLignes = mat.sum(1)
-    zeroDebut = sommeLignes[0] == 0
-    unPartoutAilleurs = np.all(sommeLignes[1:]==1)
-
-    return flechesHaut and zeroDebut and unPartoutAilleurs
-
-def supprimerMauvaisesAnnotations(campagne):
-    annotationsSupprimees = list()
-    for nomAnnot, annotateur in campagne.annotateurs.items():
-        for texte in campagne.textes:
-            if texte in annotateur.annotations:
-                annot = annotateur.annotations[texte]
-                if not annotationValide(annot):
-                    del annotateur.annotations[texte]
-                    annotationsSupprimees.append((nomAnnot, texte))
-    return annotationsSupprimees
-
-
 def calculEntropie(campagne, nomTexte, critere):
     """
     annotaion : Annotation
@@ -225,33 +206,11 @@ def calculEntropie(campagne, nomTexte, critere):
         entropie[u] = stats.entropy(p, base=2)
     return entropie
 
-"""
-Not used anymore
-"""
-# def createCondensedDistanceMatrix(camp, texteName, distanceLevel):
-#     """
-#     distanceLevel int qui peut être 0, 1 ou 2
-#     0 : unité d'arrivée
-#     1 : relation à l'unité
-#     2 : unité ET relation
-#     """
-#     matrix = None
-#     annotations = camp.getAnnotations(texteName)
-#     for i in annotations :
-#         kappasforI = []        
-#         for j in annotations :
-#             if i != j :
-#                 kappasforI.append(1 - calculKappa(i,j)[distanceLevel])
-#         if isinstance(matrix,type(None)) :
-#             matrix = np.array(kappasforI)
-#         else :
-#             matrix = np.vstack([matrix, kappasforI])
-        
-#     return matrix
 
 """
 Clustering
 """
+
 def createVectorList(camp, textName, critere):
     """
     distanceLevel int qui peut être 0, 1 ou 2
@@ -324,9 +283,8 @@ def clusteringMultipleTextes(critere, camp, temoin = "", rupture1 = "", rupture2
     plt.show()
     
     """
-    P2
+    P2 : n'a pas été retenue
     """
-    #pertinent ?
     
     
 def createCumuledVectorList(annotateurList,textename, critere, vector):

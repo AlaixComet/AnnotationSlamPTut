@@ -113,36 +113,3 @@ def parsing(directories, id_unites_constants = False, experts=False):
     
     camp.annotateurs = annotateurs
     return camp
-
-# AnnotationDirectory = "Campagne 2018"
-# projectDirectory = path.dirname(path.realpath(__file__))
-# projectDirectory = path.join(path.split(projectDirectory)[0])
-# textsNames = ["Bac_a_sable", "Florence","Provocation", "Nord", "Concours", "Sauveur", "Volley"]
-# textDirectories = [path.join(projectDirectory,AnnotationDirectory,t) for t in textsNames]
-
-# camp = parsing(textDirectories)
-
-# typesRel = {"Narration":"horizontale", "Réponse":"horizontale", "Elaboration descriptive":"verticale", "Elaboration evaluative":"verticale", "Elaboration prescriptive":"verticale", "Conduite":"verticale","Phatique":"verticale","Contre-élaboration":"verticale","Méta-question":"verticale","Question":"verticale"}
-# camp.typesRelations = typesRel
-# mauvaisesAnnots = supprimerMauvaisesAnnotations(camp)
-
-# for annoname,a in camp.annotateurs.items():
-#     print(annoname)
-#     clusteringAnnotateurs(a, 0)
-
-# camp = parsing(textDirectories)
-# for textename,t in camp.textes.items():
-#     print(textename)
-#     annotationList = camp.getAnnotations(textename)
-#     print(annotationList[0].annotateur.id+" --> "+annotationList[1].annotateur.id)
-#     print(calculDistanceKappa(annotationList[0],annotationList[1],0))
-# themeChangeUnitList = dict()
-# for annotateurName, annotateur in camp.annotateurs.items() :
-#     print("\nAnnotateur "+ annotateurName)
-#     for annotationTexte, annotation in annotateur.annotations.items() :
-#         print("Texte " + annotationTexte)
-#         themeChangeUnitList[annotateurName + "-" + annotationTexte] = detectionChangementTheme(annotation)
-
-# for id,unitList in themeChangeUnitList.items() :
-#     print(id)
-#     print(unitList)
